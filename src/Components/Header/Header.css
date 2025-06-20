@@ -27,10 +27,10 @@
 }
 
 .header-nav-text {
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0px;
     margin: 0;
     padding: 10px 0;
     font-weight: 500;
