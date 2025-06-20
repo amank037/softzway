@@ -1,44 +1,25 @@
-import { useEffect, useState } from 'react';
-import './Header.css';
+import { useEffect, useState } from 'react'
+import './Header.css'
 
 function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const [isMobile, setIsMobile] = useState(false)
-    const [activeDropdown, setActiveDropdown] = useState(null)
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+    const [activeDropdown, setActiveDropdown] = useState(null);
+    const [activeSubDropdown, setActiveSubDropdown] = useState(null);
 
     useEffect(() => {
         const checkIfMobile = () => {
-            setIsMobile(window.innerWidth <= 1200)
-        }
-
-        checkIfMobile()
-        window.addEventListener('resize', checkIfMobile)
-
-        return () => window.removeEventListener('resize', checkIfMobile)
+            setIsMobile(window.innerWidth <= 1200);
+        };
+        checkIfMobile();
+        window.addEventListener('resize', checkIfMobile);
+        return () => window.removeEventListener('resize', checkIfMobile);
     }, [])
-
-    const handleDropdownToggle = (index) => {
-        if(isMobile){
-            setActiveDropdown(activeDropdown === index ? null : index)
-        }
-    }
-
-    const handleMouseEnter = (index) => {
-        if(!isMobile) {
-            setActiveDropdown(index)
-        }
-    }
-
-    const handleMouseLeave = () => {
-        if(!isMobile) {
-            setActiveDropdown(null)
-        }
-    }
 
     const navItems = [
         {
             title: "AI Solutions",
-            items: [
+            dropdown: [
                 "Generative AI Application Development",
                 "AI Agent Development",
                 "LLM Development",
@@ -46,49 +27,70 @@ function Header() {
                 "NLP Development",
                 "Predictive Analytics",
                 "Chatbot Development",
-                "Computer Vision"]
+                "Computer Vision"
+            ]
         },
         {
-            title: "Mobile App Solutions",
-            items: [
-                "Android App Development",
-                "iOS App Development",
-                "React Native App Development",
-                "Swift App Development",
-                "Flutter App Development",
-                "Enterprise Application Development",
-                "IoT Application Development"]
-        },
-        {
-            title: "Web App Development",
-            items: [
-                "Web Application Development"]
+            title: "App Development",
+            dropdown: [
+                {
+                    title: "Web App Development",
+                    submenu: [
+                        "Web Application Development"
+                    ]
+                },
+                {
+                    title: "Mobile App Development",
+                    submenu: [
+                        "Android App Development",
+                        "iOS App Development",
+                        "React Native App Development",
+                        "Swift App Development",
+                        "Flutter App Development",
+                        "Enterprise Application Development",
+                        "IoT Application Development"
+                    ]
+                }
+            ]
         },
         {
             title: "Software Development",
-            items: [
-                "Crypto Exchange Development",
-                "Ethereum Development",
-                "Smart Contract Development",
-                "Cardano Development",
-                "NFT Development",
-                "DAO Development",
-                "Web3 Development",
-                "Solana Development",
-                "NFT Marketplace Development",
-                "Binance Development",
-                "DeFi Development"]
-        },
-        {
-            title: "Metaverse Development",
-            items: [
-                "AR VR Development",
-                "Metaverse Game",
-                "Metaverse NFT"]
+            dropdown: [
+                {
+                    title: "Blockchain Development",
+                    submenu: [
+                        "Crypto Exchange Development",
+                        "Ethereum Development",
+                        "Smart Contract Development",
+                        "Cardano Development",
+                        "NFT Development",
+                        "DAO Development",
+                        "Web3 Development",
+                        "Solana Development",
+                        "NFT Marketplace Development",
+                        "Binance Development",
+                        "DeFi Development"
+                    ]
+                },
+                {
+                    title: "Metaverse Development",
+                    submenu: [
+                        "AR VR Development",
+                        "Metaverse Game",
+                        "Metaverse NFT"
+                    ]
+                }
+            ]
         },
         {
             title: "Hire Talent",
-            items: [
+            dropdown: [
+                // {
+                //     title:"Frontend",
+                //     submenu: [
+                //         "Hire ReactJS Developer"
+                //     ]
+                // }
                 "Frontend",
                 "Backend",
                 "Software",
@@ -99,9 +101,49 @@ function Header() {
                 "Machine Learning",
                 "DevOps",
                 "Data Science",
-                "Cloud"]
-        },
+                "Cloud"
+            ]
+        }
     ]
+
+    const handleDropdownToggle = (index) => {
+        if (isMobile) {
+            setActiveDropdown(activeDropdown === index ? null : index);
+            setActiveSubDropdown(null);
+        }
+    };
+
+    const handleMouseEnter = (index) => {
+        if (!isMobile) {
+            setActiveDropdown(index);
+            setActiveSubDropdown(null);
+        }
+    };
+
+    const handleMouseLeave = () => {
+        if (!isMobile) {
+            setActiveDropdown(null);
+            setActiveSubDropdown(null);
+        }
+    };
+
+    const handleSubDropdownToggle = (subIndex) => {
+        if (isMobile) {
+            setActiveSubDropdown(activeSubDropdown === subIndex ? null : subIndex);
+        }
+    };
+
+    const handleSubMouseEnter = (subIndex) => {
+        if (!isMobile) {
+            setActiveSubDropdown(subIndex);
+        }
+    };
+
+    const handleSubMouseLeave = () => {
+        if (!isMobile) {
+            setActiveSubDropdown(null);
+        }
+    };
 
     return (
         <div className='header'>
@@ -112,7 +154,7 @@ function Header() {
             <div className={`header-navbar ${isMenuOpen ? 'active' : ''}`}>
                 <nav className='header-nav'>
                     {navItems.map((item, index) => (
-                        <div 
+                        <div
                             key={index}
                             className='header-nav-item'
                             onMouseEnter={() => handleMouseEnter(index)}
@@ -122,35 +164,50 @@ function Header() {
                             <p className={`header-nav-text ${activeDropdown === index ? 'active' : ''}`}>
                                 {item.title}
                             </p>
-                            {activeDropdown === index && (
-                                <div className='header-nav-dropdown'>
-                                    {item.items.map((subItem, subIndex) => (
-                                        <p key={subIndex} className='header-nav-dropdown-item'>
-                                            {subItem}
-                                        </p>
-                                    ))}
+                            
+                            {activeDropdown === index && item.dropdown && (
+                                <div className={`header-nav-dropdown${Array.isArray(item.dropdown[0]) || typeof item.dropdown[0] === 'object' ? '-extra' : ''}`}>
+                                    
+                                    {typeof item.dropdown[0] === 'object'
+                                        ? item.dropdown.map((sub, subIndex) => (
+                                            <div
+                                                key={subIndex}
+                                                className="header-nav-dropdown-item header-nav-dropdown-parent"
+                                                onMouseEnter={() => handleSubMouseEnter(subIndex)}
+                                                onMouseLeave={handleSubMouseLeave}
+                                                onClick={e => {
+                                                    e.stopPropagation();
+                                                    handleSubDropdownToggle(subIndex);
+                                                }}
+                                                style={{ position: 'relative' }}
+                                            >
+                                                <span>
+                                                    {sub.title}
+                                                    <span style={{ marginLeft: 8, fontSize: 12 }}>▸</span>
+                                                </span>
+                                                
+                                                {(activeSubDropdown === subIndex) && (
+                                                    <div className="header-nav-dropdown-flyout">
+                                                        {sub.submenu.map((menuItem, menuIndex) => (
+                                                            <div key={menuIndex} className="header-nav-dropdown-item">
+                                                                {menuItem}
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                )}
+                                            </div>
+                                        ))
+                                        
+                                        : item.dropdown.map((subItem, subIndex) => (
+                                            <div key={subIndex} className="header-nav-dropdown-item">
+                                                {subItem}
+                                            </div>
+                                        ))
+                                    }
                                 </div>
                             )}
                         </div>
                     ))}
-
-                    {/* <div className='header-nav-item'>
-                        <p className='header-nav-text'>Hire Talent</p>
-                        <div className='header-nav-dropdown-extra'>
-                            <div className='header-nav-dropdown-item'>Frontend</div>
-                            <div className='header-nav-dropdown-item'>Backend</div>
-                            <div className='header-nav-dropdown-item'>Software</div>
-                            <div className='header-nav-dropdown-item'>Mobile App</div>
-                            <div className='header-nav-dropdown-item'>Automation</div>
-                            <div className='header-nav-dropdown-item'>Platforms</div>
-                            <div className='header-nav-dropdown-item'>Artificial Intelligence</div>
-                            <div className='header-nav-dropdown-item'>Machine Learning</div>
-                            <div className='header-nav-dropdown-item'>DevOps</div>
-                            <div className='header-nav-dropdown-item'>Data Science</div>
-                            <div className='header-nav-dropdown-item'>Cloud</div>
-                        </div>
-                    </div> */}
-                    
                 </nav>
             </div>
 
@@ -167,4 +224,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Header;
