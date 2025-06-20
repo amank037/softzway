@@ -1,0 +1,25 @@
+:root {
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  --primary-green: #6CAF45;
+  --primary-orange: #FFA602;
+  --primary-grey: #232323;
+  --secondary-grey: #212529;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+.text-green {
+  color: var(--primary-green);
+}
+.text-bold {
+  font-weight: 600;
+}

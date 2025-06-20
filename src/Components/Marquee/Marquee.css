@@ -1,0 +1,41 @@
+.marquee {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-fixed {
+    background-color: var(--primary-green);
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 2;
+}
+
+.marquee-text {
+    background-color: var(--primary-grey);
+    color: #fff;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+    }
+
+.marquee-content {
+    display: inline-flex;
+    animation: scroll-left 20s linear infinite;
+}
+
+.marquee-content p {
+    color: #fff;
+    padding: 0 200px;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
