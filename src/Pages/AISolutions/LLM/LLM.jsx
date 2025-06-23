@@ -186,7 +186,7 @@ const aiFaqItems = [
     title: "Do You Offer Post-Maintenance Support?",
     description: "Sure! It is our responsibility as a leading LLM Artificial Intelligence organization not only to create and launch your customized models using Gen AI but also to enhance its performance and scalability with on-demand support and maintenance solutions. We are always motivated to offer tailored LLM AI solutions."
   }
-];
+]
 
 
 function LLM() {
@@ -199,7 +199,6 @@ function LLM() {
         desc="Unlock the potential of Artificial Intelligence with our cutting-edge AI agent development company. From automating tasks to enhancing user experiences, our AI-powered agents streamline operations and boost business efficiency. Collaborate with our expert team to build intelligent agents that drive efficiency and enhance user experience."
         img="https://www.inoru.com/img/ai-agent-development-company/banner-img3.webp"
       />
-
       <SolutionsSection
         title="Transform Your Business with LLM AI App Development"
         p1="LLM AI is reshaping the way organizations innovate, automate, and engage. At Softzway, we specialize in developing advanced LLM AI applications that empower businesses to create content, streamline workflows, and unlock new creative possibilities. Whether you need AI-powered text, image, audio, or video generation, our team delivers scalable solutions tailored to your unique goals."
@@ -231,7 +230,6 @@ function LLM() {
       <AIFaq
         aiFaqItems={aiFaqItems}
       />
-
       <Contact />
 
     </div>
