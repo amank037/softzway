@@ -31,11 +31,11 @@ function Contact() {
     return (
         <div className='contact-div'>
             <div className='contact-container'>
-                <div className='contact-title'>
+                {/* <div className='contact-title'>
                     <h2>Contact Us</h2>
                     <p>We Assure you to revert within one business day</p>
                     <div className='contact-line'></div>
-                </div>
+                </div> */}
 
                 <div className='contact-content'>
                     <div className='contact-text'>

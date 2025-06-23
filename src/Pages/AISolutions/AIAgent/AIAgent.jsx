@@ -85,6 +85,109 @@ const aiAgentServices = [
   }
 ]
 
+const useCases = [
+    {
+        title: "Healthcare",
+        items: [
+        "Deep learning models identify anomalies in X-rays, MRIs, and CT scans with high precision and speed.",
+        "AI chatbots manage appointment scheduling, medication reminders, and patient queries with natural language processing (NLP).",
+        "AI agent automates administrative tasks like billing, claims processing, and medical record management for operational efficiency",
+        "AI-driven analysis of patient data recommends evidence-based treatment plans and enhances diagnostic accuracy"
+        ]
+    },
+    {
+        title: "Software & Technology",
+        items: [
+        "AI-driven agents generate test cases, detect anomalies, and enhance software quality assurance workflows",
+        "AI agents analyze pull requests, ensure code quality standards, and suggest performance optimizations.",
+        "AI agent uses advanced language models to convert user stories or requirements into functional code.",
+        "AI identifies code vulnerabilities and suggests fixes by analyzing patterns in codebases."
+        ]
+    },
+    {
+        title: "Ecommerce",
+        items: [
+        "NLP-powered AI agents handle order inquiries, returns, and product questions with human-like interactions",
+        "AI agents use collaborative filtering and deep learning to suggest products based on user behavior and purchase history.",
+        "AI predicts demand, optimizes stock levels, and prevents overstocking or understocking through predictive analytics",
+        "AI agents identify suspicious transactions and prevent chargebacks using anomaly detection and pattern recognition models."
+        ]
+    },
+    {
+        title: "Banking and Finance",
+        items: [
+        "AI-driven robo-advisors offer personalized investment strategies based on risk profiles and market conditions.",
+        "AI agent ensures adherence to financial regulations by automating risk assessments and transaction monitoring",
+        "AI agent blending Machine learning models predict market trends and execute high-frequency trades with data-driven insights",
+        "AI chatbots handle inquiries, transaction history checks, and account management efficiently."
+        ]
+    },
+    {
+        title: "Education",
+        items: [
+        "AI agent creates educational materials, quizzes, and interactive modules using natural language generation models",
+        "AI agent manages administrative tasks, schedules, and Q&A sessions in virtual classrooms through voice and text interaction",
+        "AI agent provides real-time feedback and personalized assistance based on individual learning pace and style.",
+        "AI agents customize learning paths based on student performance data and cognitive behavior analysis."
+        ]
+    },
+    {
+        title: "Media & Entertainment",
+        items: [
+        "AI agents generate creative storylines and dialogues based on genre and character profiles.",
+        "AI agents suggest movies, music, and articles using collaborative filtering and user behavior analysis.",
+        "AI agent places contextually relevant advertisements in videos or games using behavior-driven targeting models",
+        "AI agents filter offensive content in live streams and comments using advanced pattern recognition."
+        ]
+    }
+]
+
+const processItems = [
+    {
+        title: "Requirement Gathering",
+        description: "Our team devotes time to understanding your business needs properly. This helps them to create a proper roadmap to proceed."
+    },
+    {
+        title: "Conducting Validation",
+        description: "Our Artificial Intelligence developers run a feasibility test to identify challenges and opportunities to ensure the better execution of your project."
+    },
+    {
+        title: "Development & Training",
+        description: "With advanced ML algorithms, our AI experts train your AI model to make it an invaluable business asset for your success."
+    },
+    {
+        title: "Integrate & Test",
+        description: "We add AI models to your existing system to ensure its seamless working with proper testing and security assessments."
+    },
+    {
+        title: "Deploy & Implement",
+        description: "When the test outcome is satisfactory, we deploy your AI models in your real-time environment with a smooth implementation process."
+    }
+]
+
+const aiFaqItems = [
+    {
+        title: "How Will Artificial Intelligence Agents Benefit My Organization?",
+        description: "Using advanced Artificial Intelligence agents will help boost your business efficiency by automating tasks, improving customer service, providing data-based insights, personalizing experiences, cutting costs, and enhancing decisions. Hence, to develop AI-powered chatbots, you must communicate with a leading Artificial Intelligence development agency like Red Apple Technologies."
+    },
+    {
+        title: "Do I Need Technical Expertise to Implement AI Agents for My Business?",
+        description: "No! At Red Apple Technologies, we will help you with end-to-end AI Agent development services that involve managing development, integration, and support. It shall reduce your time and effort to get the cherished outcome with an improved ROI."
+    },
+    {
+        title: "How Do You Ensure the Quality and Performance of Your AI Agents?",
+        description: "Quality and performance are ensured through rigorous testing and validation. Our Artificial Intelligence agents undergo multiple tests: functionality, performance, and user acceptance. Besides, when creating an Artificial Intelligence agent, we also evaluate your specific needs for virtual assistant creation."
+    },
+    {
+        title: "How Do You Ensure the Security and Integrity of AI Agents?",
+        description: "We ensure the security and transparency of our Artificial Intelligence agents through robust encryption, access controls, and audits. Thorough testing identifies and mitigates vulnerabilities, guaranteeing secure and reliable operation. For more insights, you can talk to the enterprising team of Red Apple Technologies."
+    },
+    {
+        title: "What Type of Post-Deployment Support Do You Provide?",
+        description: "We provide complete post-deployment support like monitoring, maintenance, and updates. Our team ensures your Artificial Intelligence agents continue to work smoothly by addressing issues and enhancing capabilities as your business grows. As a leading Artificial Intelligence software agency, we bring value to your business with customized solutions."
+    }
+]
+
 
 
 function AIAgent() {
@@ -97,14 +200,22 @@ function AIAgent() {
         img="https://www.inoru.com/img/ai-agent-development-company/banner-img3.webp"
       />
 
-      <SolutionsSection/>
+      <SolutionsSection
+        title="Take Your Business Potential to the Next Level With Our AI Agent Development Solutions"
+        p1="In today’s fast-paced digital landscape, businesses and individuals are turning to artificial intelligence (AI) to revolutionize how they work, communicate, and solve problems. At INORU, we specialize in delivering state-of-the-art AI agent development solutions designed to bring your innovative ideas to life. Whether you're looking to automate complex tasks, enhance customer engagement, or create an intelligent assistant tailored to your needs, our expert team is here to provide scalable and efficient solutions."
+        p2="Our AI agents are built with advanced machine learning algorithms and tailored to industry-specific requirements, ensuring they seamlessly integrate into your workflows. From natural language processing (NLP) for conversational interfaces to predictive analytics for strategic decision-making, we empower your organization to stay ahead of the competition. Let us help you unlock AI's full potential with reliable, cost-effective, and future-proof solutions. Together, we can redefine how you interact with technology and transform your business into an AI-powered success story."
+        p3="Ready to elevate your business with AI? Contact us today and let’s build intelligent solutions that make a difference!"
+      />
       <AIDevelopment
         aidevTitle="Comprehensive AI Agent Development Solutions of Red Apple Technologies"
         aidevDesc="At Red Apple Technologies, we are proficient in offering high-end AI agent development solutions that will streamline and optimize your business operations."
         aidevGrid={aiAgentServices}
         columns={4}
       />
-      <AIUseCases />
+      <AIUseCases 
+        title="Industry-Specific Use Cases of AI Agent Development"
+        useCases={useCases}
+      />
       <Cta />
       <AIDevelopment
         aidevTitle="How Do We Assist You In AI Agent Development?"
@@ -112,9 +223,14 @@ function AIAgent() {
         aidevGrid={aidevGrid}
         columns={3}
       />
-      <AIProcess />
-      <AIFaq />
-      <Marquee />
+      <AIProcess 
+        title="AI Agent Development Process- Our Method to Madness"
+        processItems={processItems}
+      />
+      <AIFaq
+        aiFaqItems={aiFaqItems}
+      />
+
       <Contact />
     </div>
   )
