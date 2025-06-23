@@ -27,7 +27,7 @@ a{
 }
 
 .text-green {
-  color: var(--light-green);
+  color: var(--medium-teal);
 }
 .text-bold {
   font-weight: 600;

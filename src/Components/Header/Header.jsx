@@ -96,30 +96,40 @@ function Header() {
         {
             title: "Software Development",
             dropdown: [
-            {
-                title: "Blockchain Development",
-                submenu: [
-                { name: "Crypto Exchange Development", to: "/crypto-exchange-development" },
-                { name: "Ethereum Development", to: "/ethereum-development" },
-                { name: "Smart Contract Development", to: "/smart-contract-development" },
-                { name: "Cardano Development", to: "/cardano-development" },
-                { name: "NFT Development", to: "/nft-development" },
-                { name: "DAO Development", to: "/dao-development" },
-                { name: "Web3 Development", to: "/web3-development" },
-                { name: "Solana Development", to: "/solana-development" },
-                { name: "NFT Marketplace Development", to: "/nft-marketplace-development" },
-                { name: "Binance Development", to: "/binance-development" },
-                { name: "DeFi Development", to: "/defi-development" }
-                ]
-            },
-            {
-                title: "Metaverse Development",
-                submenu: [
-                { name: "AR VR Development", to: "/ar-vr-development" },
-                { name: "Metaverse Game", to: "/metaverse-game" },
-                { name: "Metaverse NFT", to: "/metaverse-nft" }
-                ]
-            }
+                {
+                    title: "Software Development",
+                    submenu: [
+                        { name: "Custom Software Development", to: "/custom-software-development"},
+                        { name: "IoT Development", to: "/iot-development"},
+                        { name: "Product Development", to: "/product-development"},
+                        { name: "Prototype Development", to: "/prototype-development"},
+                        { name: "Microservices Development", to: "/microservices-development"},
+                    ]
+                },
+                {
+                    title: "Blockchain Development",
+                    submenu: [
+                    { name: "Crypto Exchange Development", to: "/crypto-exchange-development" },
+                    { name: "Ethereum Development", to: "/ethereum-development" },
+                    { name: "Smart Contract Development", to: "/smart-contract-development" },
+                    { name: "Cardano Development", to: "/cardano-development" },
+                    { name: "NFT Development", to: "/nft-development" },
+                    { name: "DAO Development", to: "/dao-development" },
+                    { name: "Web3 Development", to: "/web3-development" },
+                    { name: "Solana Development", to: "/solana-development" },
+                    { name: "NFT Marketplace Development", to: "/nft-marketplace-development" },
+                    { name: "Binance Development", to: "/binance-development" },
+                    { name: "DeFi Development", to: "/defi-development" }
+                    ]
+                },
+                {
+                    title: "Metaverse Development",
+                    submenu: [
+                    { name: "AR VR Development", to: "/ar-vr-development" },
+                    { name: "Metaverse Game", to: "/metaverse-game" },
+                    { name: "Metaverse NFT", to: "/metaverse-nft" }
+                    ]
+                }
             ]
         },
         {

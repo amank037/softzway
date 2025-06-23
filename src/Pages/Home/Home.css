@@ -54,7 +54,7 @@
     padding: 15px 30px;
     font-size: 1rem;
     font-weight: 600;
-    background-color: var(--light-green);
+    background-color: var(--medium-teal);
     color: white;
     border: none;
     border-radius: 30px;
@@ -87,7 +87,7 @@
 }
 
 .custom-pagination .swiper-pagination-bullet-active {
-    background: var(--light-green);
+    background: var(--medium-teal);
     width: 30px;
     border-radius: 10px;
 }
@@ -163,7 +163,7 @@
 .home-strat-grid-item h3{
     font-size: 1.5rem;
     margin-bottom: 10px;
-    border-bottom: var(--light-green) 1px solid;
+    border-bottom: var(--medium-teal) 1px solid;
 }
 .home-strat-grid-item p{
     font-size: 1rem;
@@ -247,7 +247,7 @@
 .home-future-bottom-number{
     font-size: 3.5rem;
     font-weight: 600;
-    color: var(--light-green);
+    color: var(--medium-teal);
 }
 .home-future-bottom-text{
     font-size: 1rem;
@@ -341,14 +341,14 @@
 }
 
 .text-green {
-    color: var(--light-green);
+    color: var(--medium-teal);
 }
 
 
 .home-cta{
     width: 100%;
     padding: 80px 20px;
-    background-color: var(--light-green);
+    background-color: var(--medium-teal);
 }
 .home-cta-container{
     max-width: 1140px;
@@ -486,7 +486,7 @@
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 20px;
-    color: var(--light-green);
+    color: var(--medium-teal);
     border: 1px solid #000;
     border-radius: 50%;
     padding: 10px;
@@ -511,9 +511,9 @@
     right: -14px;
     width: 125px;
     height: 125px;
-    background: #6caf45;
+    background: var(--medium-teal);
     z-index: 0;
-    outline: 1px solid #6caf45;
+    outline: 1px solid var(--medium-teal);
     outline-offset: 10px;
 }
 .home-tech-content-image img {
@@ -652,7 +652,7 @@
     transition: color 0.3s ease-in-out;
 }
 .home-trans-grid-item:hover h3 {
-    color: var(--light-green);
+    color: var(--medium-teal);
 }
 @media screen and (max-width: 768px){
     .home-trans-grid-item h3{
@@ -775,5 +775,5 @@
     transition: color 0.3s ease-in-out;
 }
 .home-insight-grid-item:hover p{
-    color: var(--light-green);
+    color: var(--medium-teal);
 }

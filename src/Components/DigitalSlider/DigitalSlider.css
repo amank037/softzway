@@ -23,7 +23,7 @@
 
 .home-digital-list-item.active {
     background: #6969696f;
-    border-left: 4px solid var(--light-green);
+    border-left: 4px solid var(--medium-teal);
 }
 
 .home-digital-list-item:hover {
@@ -80,7 +80,7 @@
 }
 
 .home-digital-slider-desc2:hover {
-    color: var(--light-green);
+    color: var(--medium-teal);
 }
 
 .home-digital-slider-list {
@@ -144,7 +144,7 @@
 }
 
 .custom-pagination2 .swiper-pagination-bullet-active {
-    background: var(--light-green);
+    background: var(--medium-teal);
     width: 30px;
     border-radius: 10px;
 }

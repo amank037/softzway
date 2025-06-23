@@ -102,7 +102,7 @@
 }
 
 .home-future2-slider-button button {
-  background: var(--light-green);
+  background: var(--medium-teal);
   border: none;
   border-radius: 2rem;
   width: 100px;
@@ -151,7 +151,7 @@
 }
 
 .custom-pagination3 .swiper-pagination-bullet-active {
-  background: var(--light-green);
+  background: var(--medium-teal);
   transform: scale(1.2);
   box-shadow: 0 0 0 4px rgba(111, 255, 0, 0.2);
 }
