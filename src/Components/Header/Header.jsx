@@ -340,7 +340,9 @@ function Header() {
 
                                 {/* MIDDLE: Submenu items (for dropdown-extra only) */}
                                 {item.dropdown[0]?.submenu && (
+                                    
                                 <div className="header-nav-dropdown-middle">
+                                    <p className='header-nav-dropdown-middle-title'>{item.title}</p>
                                     {item.dropdown[activeSubDropdown || 0]?.submenu?.map((menuItem, menuIndex) => (
                                     <Link to={menuItem.to} key={menuIndex} className="header-nav-dropdown-item">
                                         {menuItem.name}

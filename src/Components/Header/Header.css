@@ -196,6 +196,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-left: 5px solid #fff;
 }
 
 .header-nav-dropdown-flyout {
@@ -228,7 +229,8 @@
   position: absolute;
   left: 0;
   top: 100%;
-  width: 600px;
+  width: 900px;
+  height: 500px;
   /* width: 100vw;
   min-width: 100vw; */
   background: #fff;
@@ -267,23 +269,42 @@
   padding: 24px 0;
   background: #fafafa;
 }
+.header-nav-dropdown-middle-title{
+  font-size: 16px;
+  padding: 10px 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative
+}
+.header-nav-dropdown-middle-title::after{
+  content:'';
+  height: 1px;
+  width: 30%;
+  margin: 0 auto;
+  border-bottom: 2px solid var(--dark-teal);
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+}
 
 .header-nav-dropdown-cta {
   flex: 1 1 320px;
   min-width: 420px;
+  max-height: 250px;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: flex-start;
   padding: 32px 40px;
-  background: #f9fafb;
+  margin: 20px;
+  background: #59c49277;
 }
 
 .header-nav-dropdown-cta-title {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 12px;
-  color: var(--dark-teal, #186f7a);
+  color: #000;
 }
 
 .header-nav-dropdown-cta-desc {
@@ -293,7 +314,7 @@
 }
 
 .header-nav-dropdown-cta-btn {
-  background: var(--dark-teal, #186f7a);
+  background: #000;
   color: #fff;
   border: none;
   border-radius: 1.5rem;
@@ -311,13 +332,17 @@
 
 .header-nav-dropdown-parent.active{
   background: #dbdbdb;
-  color: #000;
-  border-left: 5px solid var(--medium-teal)
+  color: var(--medium-teal);
+  border-left: 5px solid var(--medium-teal);
+  font-weight: 600;
+  font-size: 16px;
 }
 .header-nav-dropdown-parent:hover{
   background: #f5f5f5;
   color: #000;
-  border-left: 5px solid var(--light-teal)
+  border-left: 5px solid var(--light-teal);
+  font-size: 15px;
+  font-weight: 600;
 }
 
 @media (max-width: 1200px) {
@@ -330,6 +355,7 @@
     height: auto;
     box-shadow: none;
     border-top: none;
+  
   }
   .header-nav-dropdown-left,
   .header-nav-dropdown-middle,
