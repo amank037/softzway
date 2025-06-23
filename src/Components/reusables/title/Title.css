@@ -4,6 +4,7 @@
 .title{
     font-size: 2.75rem;
     color: var(--secondary-grey);
+    text-align: center;
 }
 .title-line{
     height: 2px;

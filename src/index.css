@@ -28,6 +28,8 @@ a{
 
 .text-green {
   color: var(--medium-teal);
+}.text-grey {
+  color: var(--primary-grey);
 }
 .text-bold {
   font-weight: 600;

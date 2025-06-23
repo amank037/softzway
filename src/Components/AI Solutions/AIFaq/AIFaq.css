@@ -1,0 +1,95 @@
+.aifaq-div {
+    padding: 40px 20px;
+}
+
+.aifaq-container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aifaq-accordion {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.aifaq-panel {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    transition: box-shadow 0.2s;
+}
+
+.aifaq-panel.open {
+    box-shadow: 0 4px 24px rgba(59,201,219,0.10);
+    border-color: var(--light-green);
+}
+
+.aifaq-panel-title {
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: var(--medium-teal);
+    cursor: pointer;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 0.2s;
+    user-select: none;
+}
+
+.aifaq-panel-title.open {
+    color: var(--light-green);
+}
+
+.aifaq-chevron {
+    margin-left: 16px;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.aifaq-chevron.open {
+    transform: rotate(180deg);
+}
+
+.aifaq-panel-content {
+    padding: 0 24px 0 24px;
+    background: #fff;
+}
+
+.aifaq-panel-answer {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+    margin: 0;
+    font-size: 1rem;
+    color: #444;
+}
+
+.aifaq-panel-answer.open {
+    max-height: 400px;
+    opacity: 1;
+    margin: 12px 0 18px 0;
+}
+
+@media (max-width: 600px) {
+    .aifaq-container {
+        max-width: 100%;
+        padding: 0 4px;
+    }
+    .aifaq-panel-title, .aifaq-panel-content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}

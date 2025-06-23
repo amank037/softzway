@@ -45,7 +45,7 @@ function Cta() {
     const achievements = [
         { number: 500, suffix: '+', title: 'PROJECTS LAUNCHED', image: 'https://cdn-ilahpcd.nitrocdn.com/jDuDYworkYvtwHuagfVDTYpuGfPymqvt/assets/images/optimized/rev-55963ef/www.redappletech.com/wp-content/uploads/2024/08/project-management-50x50_c.png' },
         { number: 200, suffix: '+', title: 'GLOBAL CLIENTS', image: 'https://cdn-ilahpcd.nitrocdn.com/jDuDYworkYvtwHuagfVDTYpuGfPymqvt/assets/images/optimized/rev-55963ef/www.redappletech.com/wp-content/uploads/2024/08/handshake-100x100_c.png' },
-        { number: 13, suffix: '+', title: 'YEARS OF INDUSTRY EXPOSURE', image: 'https://cdn-ilahpcd.nitrocdn.com/jDuDYworkYvtwHuagfVDTYpuGfPymqvt/assets/images/optimized/rev-55963ef/www.redappletech.com/wp-content/uploads/2024/08/exposure-80x80_c.png' },
+        { number: 13, suffix: '+', title: 'YEARS OF EXPERIENCE', image: 'https://cdn-ilahpcd.nitrocdn.com/jDuDYworkYvtwHuagfVDTYpuGfPymqvt/assets/images/optimized/rev-55963ef/www.redappletech.com/wp-content/uploads/2024/08/exposure-80x80_c.png' },
     ]
 
     return (
@@ -56,23 +56,25 @@ function Cta() {
                     <button>Get A Free Consultation</button>
                 </div>
 
-                {achievements.map((achievement, index) => (
-                <div className='cta-card' key={index}>
-                    <div className='cta-icon'>
-                        <img className='cta-img' src={achievement.image} alt={achievement.title} />
+                <div className='cta-card-container'>
+                    {achievements.map((achievement, index) => (
+                    <div className='cta-card' key={index}>
+                        <div className='cta-icon'>
+                            <img className='cta-img' src={achievement.image} alt={achievement.title} />
+                        </div>
+                        <div className='cta-text'>
+                            <h1
+                                ref={el => countersRef.current[index] = el}
+                                data-target={achievement.number}
+                                data-suffix={achievement.suffix}
+                            >
+                                0
+                            </h1>
+                            <h3>{achievement.title}</h3>
+                        </div>
                     </div>
-                    <div className='cta-text'>
-                        <h1 
-                            ref={el => countersRef.current[index] = el}
-                            data-target={achievement.number}
-                            data-suffix={achievement.suffix}
-                        >
-                            0
-                        </h1>
-                        <h3>{achievement.title}</h3>
-                    </div>
+                    ))}
                 </div>
-                ))}
             </div>
         </div>
     )

@@ -135,20 +135,115 @@ function Header() {
         {
             title: "Hire Talent",
             dropdown: [
-            { name: "Frontend", to: "/frontend" },
-            { name: "Backend", to: "/backend" },
-            { name: "Software", to: "/software" },
-            { name: "Mobile App", to: "/mobile-app" },
-            { name: "Automation", to: "/automation" },
-            { name: "Platforms", to: "/platforms" },
-            { name: "Artificial Intelligence", to: "/artificial-intelligence" },
-            { name: "Machine Learning", to: "/machine-learning" },
-            { name: "DevOps", to: "/devops" },
-            { name: "Data Science", to: "/data-science" },
-            { name: "Cloud", to: "/cloud" }
+                {
+                title: "Frontend",
+                submenu: [
+                    { name: "Hire ReactJS Developers", to: "/reactjs-developer" },
+                    { name: "Hire Vue.JS Developers", to: "/vuejs-developer" },
+                    { name: "Hire Angular Developers", to: "/angular-developer" },
+                    { name: "Hire Front End Developers", to: "/front-end-developer" },
+                    { name: "Hire Html5 Developers", to: "/html5-developer" }
+                ]
+                },
+                {
+                title: "Backend",
+                submenu: [
+                    { name: "Hire NodeJS Developers", to: "/nodejs-developer" },
+                    { name: "Hire Laravel Developers", to: "/laravel-developer" },
+                    { name: "Hire PHP Developers", to: "/php-developer" },
+                    { name: "Cake PHP Developers", to: "/cake-php-developer" },
+                    { name: "Hire Python Developers", to: "/python-developer" },
+                    { name: "Hire Dot Net Developers", to: "/dot-net-developer" }
+                ]
+                },
+                {
+                title: "Software",
+                submenu: [
+                    { name: "Hire Custom Software Developers", to: "/custom-software-developer" },
+                    { name: "Hire Product Developers", to: "/product-developer" },
+                    { name: "Hire Prototype Developers", to: "/prototype-developer" },
+                    { name: "Hire Microservices Developers", to: "/microservices-developer" },
+                    { name: "Hire Dedicated Developer", to: "/dedicated-developer" }
+                ]
+                },
+                {
+                title: "Mobile App",
+                submenu: [
+                    { name: "Hire iOS Developers", to: "/ios-developer" },
+                    { name: "Hire Android Developers", to: "/android-developer" },
+                    { name: "Hire Flutter Developers", to: "/flutter-developer" },
+                    { name: "Hire Ionic Developers", to: "/ionic-developer" },
+                    { name: "Hire Swift Developers", to: "/swift-developer" },
+                    { name: "Hire Kotlin Developers", to: "/kotlin-developer" },
+                    { name: "Hire Game Developers", to: "/game-developer" }
+                ]
+                },
+                {
+                title: "Automation",
+                submenu: [
+                    { name: "Hire Salesforce Developers", to: "/salesforce-developer" },
+                    { name: "Hire ServiceNow Developers", to: "/servicenow-developer" },
+                    { name: "Hire Zoho Developers", to: "/zoho-developer" }
+                ]
+                },
+                {
+                title: "Platforms",
+                submenu: [
+                    { name: "Hire MEAN Stack Developers", to: "/mean-stack-developer" },
+                    { name: "Hire MERN Stack Developers", to: "/mern-stack-developer" },
+                    { name: "Hire Full Stack Developers", to: "/full-stack-developer" }
+                ]
+                },
+                {
+                title: "Artificial Intelligence",
+                submenu: [
+                    { name: "Hire Artificial Intelligence Developers", to: "/artificial-intelligence-developer" }
+                ]
+                },
+                {
+                title: "Machine Learning",
+                submenu: [
+                    { name: "Hire Machine Learning Developers", to: "/machine-learning-developer" }
+                ]
+                },
+                {
+                title: "DevOps",
+                submenu: [
+                    { name: "Hire DevOps Developers", to: "/devops-developer" }
+                ]
+                },
+                {
+                title: "Data Science",
+                submenu: [
+                    { name: "Hire Data Science Developers", to: "/data-science-developer" }
+                ]
+                },
+                {
+                title: "Cloud",
+                submenu: [
+                    { name: "Hire Cloud Developers", to: "/cloud-developer" }
+                ]
+                }
             ]
-        }
-    ];
+            }
+        // {
+        //     title: "Hire Talent",
+        //     dropdown: [
+        //     { name: "Frontend", to: "/frontend" },
+        //     { name: "Backend", to: "/backend" },
+        //     { name: "Software", to: "/software" },
+        //     { name: "Mobile App", to: "/mobile-app" },
+        //     { name: "Automation", to: "/automation" },
+        //     { name: "Platforms", to: "/platforms" },
+        //     { name: "Artificial Intelligence", to: "/artificial-intelligence" },
+        //     { name: "Machine Learning", to: "/machine-learning" },
+        //     { name: "DevOps", to: "/devops" },
+        //     { name: "Data Science", to: "/data-science" },
+        //     { name: "Cloud", to: "/cloud" }
+        //     ]
+        // }
+
+    ]
 
     return (
         <div className='header'>
@@ -170,7 +265,7 @@ function Header() {
                                 {item.title}
                             </p>
                             
-                            {activeDropdown === index && item.dropdown && (
+                            {/* {activeDropdown === index && item.dropdown && (
                                 <div className={`header-nav-dropdown${item.dropdown[0]?.submenu ? '-extra' : ''}`}>
                                 {item.dropdown[0]?.submenu
                                     ? item.dropdown.map((sub, subIndex) => (
@@ -206,6 +301,64 @@ function Header() {
                                         </Link>
                                     ))
                                 }
+                            </div>
+                            )} */}
+
+
+                            {activeDropdown === index && item.dropdown && (
+                            <div className={`header-nav-dropdown-fullwidth${item.dropdown[0]?.submenu ? '-extra' : ''}`}>
+                                {/* LEFT: Main dropdown or parent items */}
+                                <div className="header-nav-dropdown-left">
+                                {item.dropdown[0]?.submenu
+                                    ? item.dropdown.map((sub, subIndex) => (
+                                        <div
+                                        key={subIndex}
+                                        className={`header-nav-dropdown-item header-nav-dropdown-parent${activeSubDropdown === subIndex ? ' active' : ''}`}
+                                        onMouseEnter={() => handleSubMouseEnter(subIndex)}
+                                        onMouseLeave={handleSubMouseLeave}
+                                        onClick={e => {
+                                            e.stopPropagation();
+                                            handleSubDropdownToggle(subIndex);
+                                        }}
+                                        >
+                                        <span>
+                                            {sub.title}
+                                            <span style={{ marginLeft: 8, fontSize: 12 }} className='header-nav-sub-arrow'>▸</span>
+                                        </span>
+                                        </div>
+                                    ))
+                                    : item.dropdown.map((subItem, subIndex) => (
+                                        <Link to={subItem.to} key={subIndex} className="header-nav-dropdown-item">
+                                        {subItem.name}
+                                        </Link>
+                                    ))
+                                }
+                                </div>
+
+                                {/* MIDDLE: Submenu items (for dropdown-extra only) */}
+                                {item.dropdown[0]?.submenu && (
+                                <div className="header-nav-dropdown-middle">
+                                    {item.dropdown[activeSubDropdown || 0]?.submenu?.map((menuItem, menuIndex) => (
+                                    <Link to={menuItem.to} key={menuIndex} className="header-nav-dropdown-item">
+                                        {menuItem.name}
+                                    </Link>
+                                    ))}
+                                </div>
+                                )}
+
+                                {/* RIGHT: CTA Box */}
+                                <div className="header-nav-dropdown-cta">
+                                <div className="header-nav-dropdown-cta-title">{item.title}</div>
+                                <div className="header-nav-dropdown-cta-desc">
+                                    {/* You can customize these descriptions per nav item if you want */}
+                                    <p>
+                                    Discover our {item.title} services.<br />
+                                    Unlock new possibilities for your business.<br />
+                                    Get started with our expert team today!
+                                    </p>
+                                    <button className="header-nav-dropdown-cta-btn">Contact Us</button>
+                                </div>
+                                </div>
                             </div>
                             )}
                         </div>

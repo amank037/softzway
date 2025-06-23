@@ -1,0 +1,116 @@
+.ai-process-div{
+    padding: 40px 20px;
+}
+.aiprocess-container{
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aiprocess-timeline-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 250px 0;
+  /* height: 250px; */
+  width: 100%;
+}
+
+.aiprocess-timeline-bar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--dark-teal);
+  border-radius: 2px;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.aiprocess-timeline-dot-wrapper {
+  position: relative;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.aiprocess-timeline-dot {
+  width: 22px;
+  height: 22px;
+  background: var(--light-teal);
+  border: 4px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 3;
+}
+
+.aiprocess-timeline-card {
+  position: absolute;
+  width: 350px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 18px 16px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.aiprocess-timeline-card.up {
+  bottom: 52px; /* space above the line */
+}
+
+.aiprocess-timeline-card.down {
+  top: 52px; /* space below the line */
+}
+
+.aiprocess-timeline-card h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #00000080;
+  margin-bottom: 10px;
+}
+
+.aiprocess-timeline-card p {
+  font-size: 0.98rem;
+  color: #444;
+}
+
+@media (max-width: 1200px) {
+  .aiprocess-timeline-bar {
+    flex-direction: column;
+    height: auto;
+    margin: 40px 0;
+  }
+  .aiprocess-timeline-bar::before {
+    width: 4px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  .aiprocess-timeline-dot-wrapper {
+    flex-direction: row;
+    margin: 40px 0;
+  }
+  .aiprocess-timeline-card {
+    position: static;
+    width: 90vw;
+    transform: none;
+    margin: 0 0 0 24px;
+    text-align: left;
+  }
+  .aiprocess-timeline-card.up,
+  .aiprocess-timeline-card.down {
+    top: unset;
+    bottom: unset;
+  }
+}

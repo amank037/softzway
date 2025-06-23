@@ -1,3 +1,82 @@
 .cta-div{
+    padding: 40px 20px;
+    width: 100%;
+    background: linear-gradient(140deg, var(--dark-teal), #000000);
+}
+
+.cta-container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.cta-title{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+.cta-title h1{
+    font-size: 2.75rem;
+}
+.cta-title button{
+    border: 2px solid var(--light-teal);
+    border-radius: 25px 0 25px 0;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.cta-title button:hover{
+    background-color: var(--light-teal);
+}
+.cta-card-container{
+    flex:1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+
+}
+.cta-card{
+    display: flex;
     
+    justify-content: center;
+    align-items: center;
+}
+.cta-icon{
+    width:100%;
+}
+.cta-img{
+    width: 64px;
+    margin: 0 auto;
+}
+.cta-text{
+    text-align: center;
+}
+.cta-text h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.cta-text h3{
+    font-size: 14px;
+}
+
+@media screen and (max-width:1200px){
+    .cta-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .cta-title{
+        align-items: center;
+        text-align: center;
+    }
+    .cta-card-container{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
