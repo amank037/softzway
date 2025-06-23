@@ -1,3 +1,4 @@
+import './AIAgent.css'
 import AIDevelopment from '../../../Components/AI Solutions/AIDevelopment/AIDevelopment'
 import AIFaq from '../../../Components/AI Solutions/AIFaq/AIFaq'
 import AIProcess from '../../../Components/AI Solutions/AIProcess/AIProcess'
@@ -6,8 +7,7 @@ import AILandingSection from '../../../Components/AI Solutions/LandingSection/AI
 import SolutionsSection from '../../../Components/AI Solutions/SolutionsSection/SolutionsSection'
 import Contact from '../../../Components/Contact/Contact'
 import Cta from '../../../Components/Cta/Cta'
-import Marquee from '../../../Components/Marquee/Marquee'
-import './AIAgent.css'
+
 
 const aidevGrid = [
   {
@@ -215,6 +215,7 @@ function AIAgent() {
       <AIUseCases 
         title="Industry-Specific Use Cases of AI Agent Development"
         useCases={useCases}
+        img="https://cdn-ilahpcd.nitrocdn.com/jDuDYworkYvtwHuagfVDTYpuGfPymqvt/assets/images/optimized/rev-55963ef/www.redappletech.com/wp-content/uploads/2025/03/AiAgentdevelopmentBannerimage.jpg"
       />
       <Cta />
       <AIDevelopment

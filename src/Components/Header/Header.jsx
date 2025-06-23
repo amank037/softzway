@@ -38,10 +38,13 @@ function Header() {
         }
     };
 
+    // const handleSubDropdownToggle = (subIndex) => {
+    //     if (isMobile) {
+    //         setActiveSubDropdown(activeSubDropdown === subIndex ? null : subIndex);
+    //     }
+    // };
     const handleSubDropdownToggle = (subIndex) => {
-        if (isMobile) {
-            setActiveSubDropdown(activeSubDropdown === subIndex ? null : subIndex);
-        }
+        setActiveSubDropdown(activeSubDropdown === subIndex ? subIndex : subIndex);
     };
 
     const handleSubMouseEnter = (subIndex) => {
@@ -73,13 +76,7 @@ function Header() {
         {
             title: "App Development",
             dropdown: [
-            {
-                title: "Web App Development",
-                submenu: [
-                { name: "Web Application Development", to: "/web-application-development" }
-                ]
-            },
-            {
+                            {
                 title: "Mobile App Development",
                 submenu: [
                 { name: "Android App Development", to: "/android-app-development" },
@@ -90,7 +87,13 @@ function Header() {
                 { name: "Enterprise Application Development", to: "/enterprise-application-development" },
                 { name: "IoT Application Development", to: "/iot-application-development" }
                 ]
-            }
+            },
+            {
+                title: "Web App Development",
+                submenu: [
+                { name: "Web Application Development", to: "/web-application-development" }
+                ]
+            },
             ]
         },
         {
@@ -314,8 +317,8 @@ function Header() {
                                         <div
                                         key={subIndex}
                                         className={`header-nav-dropdown-item header-nav-dropdown-parent${activeSubDropdown === subIndex ? ' active' : ''}`}
-                                        onMouseEnter={() => handleSubMouseEnter(subIndex)}
-                                        onMouseLeave={handleSubMouseLeave}
+                                        // onMouseEnter={() => handleSubMouseEnter(subIndex)}
+                                        // onMouseLeave={handleSubMouseLeave}
                                         onClick={e => {
                                             e.stopPropagation();
                                             handleSubDropdownToggle(subIndex);
@@ -348,16 +351,15 @@ function Header() {
 
                                 {/* RIGHT: CTA Box */}
                                 <div className="header-nav-dropdown-cta">
-                                <div className="header-nav-dropdown-cta-title">{item.title}</div>
-                                <div className="header-nav-dropdown-cta-desc">
-                                    {/* You can customize these descriptions per nav item if you want */}
-                                    <p>
-                                    Discover our {item.title} services.<br />
-                                    Unlock new possibilities for your business.<br />
-                                    Get started with our expert team today!
-                                    </p>
-                                    <button className="header-nav-dropdown-cta-btn">Contact Us</button>
-                                </div>
+                                    <div className="header-nav-dropdown-cta-title">{item.title}</div>
+                                        <div className="header-nav-dropdown-cta-desc">
+                                        <p>
+                                        Discover our {item.title} services.<br />
+                                        Unlock new possibilities for your business.<br />
+                                        Get started with our expert team today!
+                                        </p>
+                                        <button className="header-nav-dropdown-cta-btn">Contact Us</button>
+                                    </div>
                                 </div>
                             </div>
                             )}

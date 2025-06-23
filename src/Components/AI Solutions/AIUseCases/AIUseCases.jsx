@@ -4,7 +4,7 @@ import './AIUseCases.css'
 
 
 
-function AIUseCases({ title, useCases }) {
+function AIUseCases({ title, useCases, img }) {
     const [openIndex, setOpenIndex] = useState(0);
 
     return (
@@ -30,7 +30,7 @@ function AIUseCases({ title, useCases }) {
                     ))}
                 </div>
                 <img
-                    src="https://cdn-ilahpcd.nitrocdn.com/jDuDYworkYvtwHuagfVDTYpuGfPymqvt/assets/images/optimized/rev-55963ef/www.redappletech.com/wp-content/uploads/2025/03/AiAgentdevelopmentBannerimage.jpg"
+                    src={img}
                     alt=""
                 />
             </div>
