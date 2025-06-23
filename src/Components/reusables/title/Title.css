@@ -1,0 +1,13 @@
+.title-div{
+
+}
+.title{
+    font-size: 2.75rem;
+    color: var(--secondary-grey);
+}
+.title-line{
+    height: 2px;
+    width: 200px;
+    background-color: var(--medium-teal);
+    margin: 20px auto;
+}

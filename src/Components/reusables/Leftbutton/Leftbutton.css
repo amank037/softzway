@@ -1,0 +1,14 @@
+.leftbtn-div button{
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--dark-teal);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 25px 25px 0 25px;
+}
+.leftbtn-div button:hover{
+    background-color: var(--medium-teal);
+
+}

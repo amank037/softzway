@@ -53,18 +53,18 @@
 }
 
 .home-future2-slider-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 465px;
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 0 15px;
-    padding: 20px;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background-size: cover !important;
-    background-position: center !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 465px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 15px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 
@@ -96,13 +96,13 @@
 }
 
 .home-future2-slider-button {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 
 }
 
 .home-future2-slider-button button {
-  background: var(--primary-green);
+  background: var(--light-green);
   border: none;
   border-radius: 2rem;
   width: 100px;
@@ -151,7 +151,7 @@
 }
 
 .custom-pagination3 .swiper-pagination-bullet-active {
-  background: var(--primary-green);
+  background: var(--light-green);
   transform: scale(1.2);
   box-shadow: 0 0 0 4px rgba(111, 255, 0, 0.2);
 }
@@ -173,7 +173,7 @@
   .home-future2-title h1 {
     font-size: 2rem;
   }
-  
+
   .home-future2-title p {
     font-size: 1.1rem;
   }
@@ -184,15 +184,15 @@
   .home-future2 {
     padding: 60px 0;
   }
-  
+
   .home-future2-title {
     margin-bottom: 40px;
   }
-  
+
   .home-future2-title h1 {
     font-size: 1.8rem;
   }
-  
+
   .home-future2-title p {
     font-size: 1rem;
   }
@@ -202,7 +202,7 @@
   .home-future2-container {
     padding: 0 15px;
   }
-  
+
   .home-future2-title h1 {
     font-size: 1.6rem;
   }

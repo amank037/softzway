@@ -55,9 +55,11 @@
     gap: 60px;
     align-items: start;
 }
-.contact-text{
+
+.contact-text {
     flex: 2;
 }
+
 .contact-text h2 {
     font-size: 2rem;
     color: #ffffff;
@@ -84,6 +86,7 @@
     flex-direction: column;
     gap: 15px;
 }
+
 .contact-info a {
     color: #ffffff;
     text-decoration: none;
@@ -97,7 +100,7 @@
 .contact-form {
     flex: 3;
     background: white;
-    padding: 40px; 
+    padding: 40px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -126,7 +129,7 @@
 
 .contact-form-info input:focus {
     outline: none;
-    border-color: var(--primary-green);
+    border-color: var(--light-green);
     background: white;
     transform: translateY(-1px);
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
@@ -163,7 +166,7 @@
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
 }
 
-.contact-form-captcha-container{
+.contact-form-captcha-container {
     display: flex;
     background-color: #ccc;
     width: 60%;
@@ -171,6 +174,7 @@
     border: 1px solid #000;
     margin-bottom: 40px;
 }
+
 .contact-form-captcha {
     display: flex;
     flex-direction: column;
@@ -203,7 +207,7 @@
 
 .contact-form-captcha input:focus {
     outline: none;
-    border-color: var(--primary-green);
+    border-color: var(--light-green);
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
 }
 
@@ -259,7 +263,7 @@
 .contact-form-button input[type="checkbox"] {
     width: 20px;
     height: 20px;
-    accent-color: var(--primary-green);
+    accent-color: var(--light-green);
 }
 
 .contact-form-button p {
@@ -268,20 +272,23 @@
     font-size: 0.95rem;
 }
 
-@media screen and (max-width: 1200px){
-    .contact-content{
+@media screen and (max-width: 1200px) {
+    .contact-content {
         flex-direction: column;
     }
-    .contact-text{
+
+    .contact-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .contact-form{
+
+    .contact-form {
         width: 100%;
     }
-    .contact-form-captcha-container{
+
+    .contact-form-captcha-container {
         width: 100%;
     }
 }

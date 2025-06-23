@@ -6,7 +6,7 @@
 }
 
 .marquee-fixed {
-    background-color: var(--primary-green);
+    background-color: var(--light-green);
     color: #fff;
     padding: 10px 20px;
     z-index: 2;
@@ -19,7 +19,7 @@
     overflow: hidden;
     position: relative;
     padding: 10px 0;
-    }
+}
 
 .marquee-content {
     display: inline-flex;
@@ -35,6 +35,7 @@
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-50%);
     }

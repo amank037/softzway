@@ -54,7 +54,7 @@
     padding: 15px 30px;
     font-size: 1rem;
     font-weight: 600;
-    background-color: var(--primary-green);
+    background-color: var(--light-green);
     color: white;
     border: none;
     border-radius: 30px;
@@ -87,7 +87,7 @@
 }
 
 .custom-pagination .swiper-pagination-bullet-active {
-    background: var(--primary-green);
+    background: var(--light-green);
     width: 30px;
     border-radius: 10px;
 }
@@ -163,7 +163,7 @@
 .home-strat-grid-item h3{
     font-size: 1.5rem;
     margin-bottom: 10px;
-    border-bottom: var(--primary-green) 1px solid;
+    border-bottom: var(--light-green) 1px solid;
 }
 .home-strat-grid-item p{
     font-size: 1rem;
@@ -247,7 +247,7 @@
 .home-future-bottom-number{
     font-size: 3.5rem;
     font-weight: 600;
-    color: var(--primary-green);
+    color: var(--light-green);
 }
 .home-future-bottom-text{
     font-size: 1rem;
@@ -341,14 +341,14 @@
 }
 
 .text-green {
-    color: var(--primary-green);
+    color: var(--light-green);
 }
 
 
 .home-cta{
     width: 100%;
     padding: 80px 20px;
-    background-color: var(--primary-green);
+    background-color: var(--light-green);
 }
 .home-cta-container{
     max-width: 1140px;
@@ -486,7 +486,7 @@
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 20px;
-    color: var(--primary-green);
+    color: var(--light-green);
     border: 1px solid #000;
     border-radius: 50%;
     padding: 10px;
@@ -652,7 +652,7 @@
     transition: color 0.3s ease-in-out;
 }
 .home-trans-grid-item:hover h3 {
-    color: var(--primary-green);
+    color: var(--light-green);
 }
 @media screen and (max-width: 768px){
     .home-trans-grid-item h3{
@@ -775,5 +775,5 @@
     transition: color 0.3s ease-in-out;
 }
 .home-insight-grid-item:hover p{
-    color: var(--primary-green);
+    color: var(--light-green);
 }

@@ -1,8 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   /* font-family: "Inter", sans-serif; */
   font-family: "Montserrat", sans-serif;
-  --primary-green: #6CAF45;
-  --primary-orange: #FFA602;
+  --light-green: #6CAF45;
+  --dark-green: #3b732d;
+  --primary-orange: #f9bc40;
+  --secondary-orange: #fbd17d;
+  --light-teal: #7fb099;
+  --medium-teal: #3d8865;
+  --dark-teal: #005f3a;
   --primary-grey: #232323;
   --secondary-grey: #212529;
 }
@@ -18,7 +27,7 @@ a{
 }
 
 .text-green {
-  color: var(--primary-green);
+  color: var(--light-green);
 }
 .text-bold {
   font-weight: 600;

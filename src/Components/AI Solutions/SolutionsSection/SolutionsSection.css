@@ -1,0 +1,55 @@
+.aisolutions{
+    width: 100%;
+    padding: 40px 20px;
+    color: var(--secondary-grey);
+}
+
+.aisolutions-container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.aisolutions-line{
+    height: 2px;
+    width: 200px;
+    background-color: var(--medium-teal);
+}
+.aisolutions-container h1{
+    font-size: 2.75rem;
+    text-align: center;
+}
+.aisolutions-container p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+}
+.aisolutions-btns{
+    display: flex;
+    gap: 30px;
+}
+/* .aisolutions-btns button{
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--dark-teal);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.aisolutions-talk-btn{
+    border: none;
+    border-radius: 25px 25px 0 25px;
+}
+.aisolutions-meet-btn{
+    border: none;
+    border-radius: 0 25px 25px 25px;
+}
+.aisolutions-btns button:hover{
+    background-color: var(--medium-teal);
+
+} */
