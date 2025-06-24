@@ -1,4 +1,6 @@
+import { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Lenis from 'lenis'
 import './App.css'
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
@@ -48,6 +50,23 @@ import ProtoDev from './Pages/SoftwareDevelopment/ProtoDev/ProtoDev.jsx'
 
 
 function App() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.5, // Increase for heavier feel
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   return (
     <Router>
