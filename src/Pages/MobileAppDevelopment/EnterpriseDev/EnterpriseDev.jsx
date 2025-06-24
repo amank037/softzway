@@ -195,7 +195,7 @@ function EnterpriseApp() {
             subtitle="Build Powerful Mobile Solutions with Our"
             title="Enterprise App Development Company"
             desc="Unlock the potential of mobile technology with our expert Enterprise app development services. From concept to launch, we deliver high-quality, user-friendly Enterprise applications that drive business growth and enhance user engagement."
-            img="https://cdn.pixabay.com/photo/2017/01/06/19/15/smartphone-1957740_1280.jpg"
+            bg="/enterprise-app-development.png"
         />
     
         <SolutionsSection

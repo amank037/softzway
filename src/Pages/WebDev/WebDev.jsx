@@ -304,7 +304,7 @@ function WebDev() {
             subtitle="Build Powerful Web Solutions with Our"
             title="Web App Development Company"
             desc="Unlock the potential of web technology with our expert web app development services. From concept to launch, we deliver high-quality, user-friendly applications that drive business growth and enhance user engagement."
-            img="https://cdn.pixabay.com/photo/2017/01/06/19/15/smartphone-1957740_1280.jpg"
+            bg="/web-app.png"
         />
         <AIDevelopment
             aidevTitle="Why Choose us for Web app Development team"

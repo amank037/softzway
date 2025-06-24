@@ -195,7 +195,7 @@ function IosDev() {
             subtitle="Build Powerful Mobile Solutions with Our"
             title="iOS App Development Company"
             desc="Unlock the potential of mobile technology with our expert iOS app development services. From concept to launch, we deliver high-quality, user-friendly iOS applications that drive business growth and enhance user engagement."
-            img="https://cdn.pixabay.com/photo/2017/01/06/19/15/smartphone-1957740_1280.jpg"
+            bg="/ios-app-development.png"
         />
     
         <SolutionsSection

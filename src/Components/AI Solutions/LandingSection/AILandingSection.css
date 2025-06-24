@@ -32,10 +32,12 @@
     gap: 20px;
 }
 .ailanding-content h1{
-    font-size: 2.75rem;
+    font-size: 2.75vw;
+    /* font-size: 2.75rem; */
 }
 .ailanding-content p{
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
+    font-size: 1.2vw;
     font-weight: 400;
 }
 .ailanding-btns{
@@ -44,7 +46,7 @@
 }
 .ailanding-btns button{
     padding: 15px 30px;
-    font-size: 1.15rem;
+    font-size: 1.15vw;
     font-weight: 600;
     color: #fff;
 }
