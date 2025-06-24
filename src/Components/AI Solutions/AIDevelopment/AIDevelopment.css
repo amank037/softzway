@@ -60,3 +60,6 @@
     font-weight: 700;
     color: #000000;
 }
+.aidev-grid-title img{
+    max-height: 64px;
+}

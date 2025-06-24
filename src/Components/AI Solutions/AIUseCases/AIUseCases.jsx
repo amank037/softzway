@@ -29,10 +29,12 @@ function AIUseCases({ title, useCases, img }) {
                     </div>
                     ))}
                 </div>
+                {img &&
                 <img
                     src={img}
                     alt=""
                 />
+                }
             </div>
         </div>
         </div>

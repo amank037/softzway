@@ -23,6 +23,7 @@ import IotAppDev from './Pages/MobileAppDevelopment/IotAppDev/IotAppDev'
 import ReactNativeDev from './Pages/MobileAppDevelopment/ReactNativeDev/ReactNativeDev'
 import SwiftDev from './Pages/MobileAppDevelopment/SwiftDev/SwiftDev'
 
+import WebDev from './Pages/WebDev/WebDev.jsx'
 
 import NFTDev from './Pages/BlockchainDevelopment/NFTDev/NFTDev'
 import CardanoDev from './Pages/BlockchainDevelopment/CardanoDev/CardanoDev'
@@ -42,6 +43,7 @@ import IotSoftwareDev from './Pages/SoftwareDevelopment/IotSoftwareDev/IotSoftwa
 import MicroDev from './Pages/SoftwareDevelopment/MicroDev/MicroDev.jsx'
 import ProductDev from './Pages/SoftwareDevelopment/ProductDev/ProductDev.jsx'
 import ProtoDev from './Pages/SoftwareDevelopment/ProtoDev/ProtoDev.jsx'
+
 
 function App() {
 
@@ -71,6 +73,8 @@ function App() {
             <Route path="/iot-application-development" element={<IotAppDev/>}/>
             <Route path="/react-native-app-development" element={<ReactNativeDev/>}/>
             <Route path="/swift-app-development" element={<SwiftDev/>}/>
+
+            <Route path="/web-application-development" element={<WebDev />}/>
             
 
             <Route path="/nft-development" element={<NFTDev/>}/>

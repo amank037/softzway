@@ -75,11 +75,11 @@ const navItems = [
         dropdown: [
         { name: "Generative AI Application Development", to: "/generative-ai-application-development", ctaDesc: "Build next-gen generative AI apps for content, automation, and creativity." },
         { name: "AI Agent Development", to: "/ai-agent-development", ctaDesc: "Create intelligent AI agents to streamline and automate complex tasks." },
+        { name: "Chatbot Development", to: "/chatbot-development", ctaDesc: "Deploy intelligent chatbots for customer support and engagement." },
         { name: "LLM Development", to: "/llm-development", ctaDesc: "Utilize large language models for cutting-edge language solutions." },
         { name: "ML Development", to: "/ml-development", ctaDesc: "Develop predictive models and automate decisions with ML." },
         { name: "NLP Development", to: "/nlp-development", ctaDesc: "Enhance systems with smart natural language understanding." },
         { name: "Predictive Analytics", to: "/predictive-analytics", ctaDesc: "Gain foresight and drive smarter business strategies." },
-        { name: "Chatbot Development", to: "/chatbot-development", ctaDesc: "Deploy intelligent chatbots for customer support and engagement." },
         { name: "Computer Vision", to: "/computer-vision", ctaDesc: "Extract insights from images and videos using computer vision." }
         ]
     },
