@@ -217,12 +217,6 @@ function AndroidDev() {
             img="https://cdn-ilahpcd.nitrocdn.com/jDuDYworkYvtwHuagfVDTYpuGfPymqvt/assets/images/optimized/rev-aa47245/www.redappletech.com/wp-content/uploads/2025/03/GenerativeAiBannerimage.jpg"
         />
         <Cta />
-        {/* <AIDevelopment
-            aidevTitle="Why Choose Softzway for Android App Development?"
-            aidevDesc="Our team combines technical expertise, creative design, and a client-focused approach to deliver Android apps that exceed expectations."
-            aidevGrid={aidevGrid}
-            columns={3}
-        /> */}
         <AIProcess 
             title="Our Android App Development Process"
             processItems={processItems}

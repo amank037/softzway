@@ -14,7 +14,8 @@ import PredAnalytics from './Pages/AISolutions/PredAnalytics/PredAnalytics'
 import Chatbot from './Pages/AISolutions/Chatbot/Chatbot'
 import CompVision from './Pages/AISolutions/CompVision/CompVision'
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
-import AndroidDev from './Pages/AppDevelopment/AndroidDev/AndroidDev'
+import AndroidDev from './Pages/MobileAppDevelopment/AndroidDev/AndroidDev'
+import NFTDev from './Pages/BlockchainDevelopment/NFTDev/NFTDev'
 
 function App() {
 
@@ -36,6 +37,9 @@ function App() {
             <Route path="/computer-vision" element={<CompVision/>}/>
 
             <Route path="/android-app-development" element={<AndroidDev/>}/>
+
+
+            <Route path="/nft-development" element={<NFTDev/>}/>
           </Routes>
         </div>
         <Footer />

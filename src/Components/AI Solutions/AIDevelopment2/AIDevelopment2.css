@@ -1,0 +1,61 @@
+.aidev2-div{
+    width: 100%;
+    padding: 40px 20px;
+}
+.aidev2-container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aidev2-title{
+    text-align: center;
+}
+.aidev2-grid{
+    margin: 30px 0;
+    display: grid;
+    gap: 30px;
+}
+@media screen and (max-width: 993px){
+    .aidev2-grid{
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .aidev2-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+@media screen and (max-width: 580px){
+    .aidev2-grid{
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+}
+.aidev2-grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center ;
+    /* border: 1px solid #000; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.aidev2-grid-title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+}
+.aidev2-grid-title h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+}

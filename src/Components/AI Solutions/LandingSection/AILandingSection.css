@@ -1,8 +1,12 @@
 .ailanding{
     background: linear-gradient(140deg, #000000, var(--medium-teal));
-    /* height: 60vh; */
+    height: 70vh;
     padding: 40px 20px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .ailanding-container{

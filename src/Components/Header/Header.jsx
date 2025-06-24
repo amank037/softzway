@@ -319,8 +319,6 @@ const navItems = [
             { name: "Web3 Development", to: "/web3-development", ctaDesc: "Build the next-gen internet with Web3 technologies." },
             { name: "Solana Development", to: "/solana-development", ctaDesc: "Create high-performance apps on the Solana blockchain." },
             { name: "NFT Marketplace Development", to: "/nft-marketplace-development", ctaDesc: "Launch secure and scalable NFT marketplaces." },
-            { name: "Binance Development", to: "/binance-development", ctaDesc: "Develop apps and tokens on Binance Smart Chain." },
-            { name: "DeFi Development", to: "/defi-development", ctaDesc: "Create decentralized finance platforms for global access." }
             ]
         },
         {
@@ -428,9 +426,6 @@ const navItems = [
         ]
     }
 ]
-
-
-
 
     return (
         <div className='header'>
