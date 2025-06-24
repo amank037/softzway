@@ -14,7 +14,9 @@ function AIDevelopment({ aidevTitle, aidevDesc, aidevGrid, columns }) {
                     {aidevGrid.map((item, index) => (
                         <div className='aidev-grid-item' key={index}>
                             <div className='aidev-grid-title'>
-                                <img src={item.image} alt={item.title} />
+                                {item.image && 
+                                    <img src={item.image} alt={item.title} />
+                                }
                                 <h3>{item.title}</h3>
                             </div>
                             <p>{item.description}</p>

@@ -94,7 +94,7 @@ const navItems = [
             { name: "React Native App Development", to: "/react-native-app-development", ctaDesc: "Build cross-platform apps with React Native efficiency." },
             { name: "Swift App Development", to: "/swift-app-development", ctaDesc: "Develop native iOS apps with powerful Swift programming." },
             { name: "Flutter App Development", to: "/flutter-app-development", ctaDesc: "Create beautiful and fast apps using Flutter framework." },
-            { name: "Enterprise Application Development", to: "/enterprise-application-development", ctaDesc: "Empower enterprises with scalable custom applications." },
+            { name: "Enterprise App Development", to: "/enterprise-application-development", ctaDesc: "Empower enterprises with scalable custom applications." },
             { name: "IoT Application Development", to: "/iot-application-development", ctaDesc: "Connect and control smart devices with IoT applications." }
             ]
         },

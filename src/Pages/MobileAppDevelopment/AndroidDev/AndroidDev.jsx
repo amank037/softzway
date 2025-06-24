@@ -8,39 +8,6 @@ import SolutionsSection from '../../../Components/AI Solutions/SolutionsSection/
 import Contact from '../../../Components/Contact/Contact'
 import Cta from '../../../Components/Cta/Cta'
 
-const aidevGrid = [
-    {
-        image: "https://cdn-icons-png.flaticon.com/512/888/888879.png",
-        title: "Extensive Android Expertise",
-        description: "Our developers have years of experience building robust, scalable Android apps for startups and enterprises."
-    },
-    {
-        image: "https://cdn-icons-png.flaticon.com/512/888/888879.png",
-        title: "Custom Android Solutions",
-        description: "We deliver tailor-made Android applications that address your unique business challenges and goals."
-    },
-    {
-        image: "https://cdn-icons-png.flaticon.com/512/888/888879.png",
-        title: "User-Centric Design",
-        description: "Our team prioritizes intuitive UI/UX, ensuring your app is engaging, easy to use, and visually appealing."
-    },
-    {
-        image: "https://cdn-icons-png.flaticon.com/512/888/888879.png",
-        title: "Agile Development Process",
-        description: "We follow agile methodologies for transparent communication, rapid iterations, and on-time delivery."
-    },
-    {
-        image: "https://cdn-icons-png.flaticon.com/512/888/888879.png",
-        title: "End-to-End Support",
-        description: "From ideation to deployment and maintenance, we provide comprehensive support throughout your app’s lifecycle."
-    },
-    {
-        image: "https://cdn-icons-png.flaticon.com/512/888/888879.png",
-        title: "Data Security & Confidentiality",
-        description: "We implement strict security protocols to protect your app’s data and intellectual property."
-    }
-]
-
 const androidServices = [
   {
     image: "https://www.redappletech.com/wp-content/uploads/2024/01/software-red-50x50_c.png",
@@ -82,8 +49,7 @@ const androidServices = [
     title: "Support",
     description: "As technology is constantly evolving, your apps must also need to adjust to the changing landscape. Hire Android app developer to maintain the standards of your Android apps with the deployment of on-demand support and maintenance solutions consistently."
   }
-];
-
+]
 
 const useCases = [
     {
@@ -188,13 +154,13 @@ const aiFaqItems = [
     }
 ]
 
-function ARVRDev() {
+function AndroidDev() {
     return (
         <div>
         <AILandingSection
             subtitle="Build Powerful Mobile Solutions with Our"
-            title="AR & VR Application Development Services Company"
-            desc= "Our AR/VR app development company fulfills your business objectives with an impressive work quality. Our app development agency makes sure that you get the ideal AR/VR app development services that will allow you to captivate the attention of your end users naturally. Comprising industry experience of 13 years, we are proficient in executing AR/VR app development projects of distinct complexities."
+            title="Android App Development Company"
+            desc="Unlock the potential of mobile technology with our expert Android app development services. From concept to launch, we deliver high-quality, user-friendly Android applications that drive business growth and enhance user engagement."
             img="https://cdn.pixabay.com/photo/2017/01/06/19/15/smartphone-1957740_1280.jpg"
         />
     
@@ -229,4 +195,4 @@ function ARVRDev() {
     )
 }
 
-export default ARVRDev
+export default AndroidDev
