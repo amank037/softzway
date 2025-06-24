@@ -37,6 +37,8 @@ import Web3Dev from './Pages/BlockchainDevelopment/Web3Dev/Web3Dev'
 
 
 import ARVRDev from './Pages/MetaverseDevelopment/ARVRDev/ARVRDev.jsx'
+import MetaverseGame from './Pages/MetaverseDevelopment/MetaverseGame/MetaverseGame.jsx'
+import MetaverseNFT from './Pages/MetaverseDevelopment/MetaverseNFT/MetaverseNFT.jsx'
 
 import CustomSoftwareDev from './Pages/SoftwareDevelopment/CustomSoftwareDev/CustomSoftwareDev.jsx'
 import IotSoftwareDev from './Pages/SoftwareDevelopment/IotSoftwareDev/IotSoftwareDev.jsx'
@@ -90,6 +92,8 @@ function App() {
 
 
             <Route path="/ar-vr-development" element={<ARVRDev/>}/>
+            <Route path="/metaverse-game" element={<MetaverseGame/>}/>
+            <Route path="/metaverse-nft" element={<MetaverseNFT/>}/>
 
 
             <Route path="/custom-software-development" element={<CustomSoftwareDev/>}/>

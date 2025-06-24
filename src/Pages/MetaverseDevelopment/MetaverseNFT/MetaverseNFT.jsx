@@ -69,23 +69,23 @@ const arvrServices = [
 
 const arvrFaqItems = [
   {
-    title: "Why should I invest in Metaverse or AR/VR development?",
-    description: "Metaverse and AR/VR technologies offer immersive experiences that can revolutionize user engagement, training, collaboration, and entertainment. They open new opportunities for businesses to innovate and connect with audiences in unique ways."
+    title: "Why should I invest in Metaverse or NFT development?",
+    description: "Metaverse and NFT technologies offer immersive experiences that can revolutionize user engagement, training, collaboration, and entertainment. They open new opportunities for businesses to innovate and connect with audiences in unique ways."
   },
   {
-    title: "How long does it take to develop a Metaverse or AR/VR application?",
-    description: "The development timeline depends on the complexity, features, and platforms involved. Simple AR/VR experiences can be built in a few weeks, while advanced metaverse platforms may take several months."
+    title: "How long does it take to develop a Metaverse or NFT application?",
+    description: "The development timeline depends on the complexity, features, and platforms involved. Simple NFT experiences can be built in a few weeks, while advanced metaverse platforms may take several months."
   },
   {
-    title: "Will my Metaverse or AR/VR app work on all devices?",
+    title: "Will my Metaverse or NFT work on all devices?",
     description: "We ensure your application is compatible with a wide range of devices, including VR headsets, AR-enabled smartphones, tablets, and desktop platforms, through responsive design and thorough testing."
   },
   {
-    title: "Do you provide post-launch support for Metaverse and AR/VR projects?",
-    description: "Absolutely! We offer ongoing maintenance, updates, and technical support to keep your Metaverse or AR/VR application running smoothly and up-to-date with the latest technologies."
+    title: "Do you provide post-launch support for Metaverse and NFT projects?",
+    description: "Absolutely! We offer ongoing maintenance, updates, and technical support to keep your Metaverse or NFT application running smoothly and up-to-date with the latest technologies."
   },
   {
-    title: "Can you help with publishing my AR/VR app on app stores or VR platforms?",
+    title: "Can you help with publishing my NFT on app stores or VR platforms?",
     description: "Yes, we handle the entire submission process for platforms like the Oculus Store, Apple App Store, Google Play, and others, ensuring your app meets all guidelines and requirements."
   }
 ]
@@ -94,17 +94,17 @@ const arvrItems = [
   {
     image: "https://www.redappletech.com/wp-content/uploads/2024/08/expertise-50x50_c.png",
     title: "Expertise",
-    description: "Our team consists of seasoned professionals with extensive experience in AR/VR technologies. We leverage this expertise to create innovative and effective solutions tailored to your needs."
+    description: "Our team consists of seasoned professionals with extensive experience in NFT technologies. We leverage this expertise to create innovative and effective solutions tailored to your needs."
   },
   {
     image: "https://www.redappletech.com/wp-content/uploads/2024/08/customize-50x50_c.png",
     title: "Customization",
-    description: "We offer outsourcing AR/VR app development services to meet the specific requirements of your business. Our solutions are crafted to ensure they align perfectly with your goals and objectives."
+    description: "We offer outsourcing NFT development services to meet the specific requirements of your business. Our solutions are crafted to ensure they align perfectly with your goals and objectives."
   },
   {
     image: "https://www.redappletech.com/wp-content/uploads/2024/08/innovation-50x50_c.png",
     title: "Innovation",
-    description: "At the forefront of technology, we integrate the latest advancements in AR/VR to deliver cutting-edge solutions. Our focus on innovation ensures your app stands out in a competitive market."
+    description: "At the forefront of technology, we integrate the latest advancements in NFT to deliver cutting-edge solutions. Our focus on innovation ensures your app stands out in a competitive market."
   },
   {
     image: "https://www.redappletech.com/wp-content/uploads/2024/01/quality-assurance-50x50_c.png",
@@ -119,46 +119,45 @@ const arvrItems = [
   {
     image: "https://www.redappletech.com/wp-content/uploads/2024/08/support-50x50_c.png",
     title: "Support",
-    description: "Our AR/VR app development agency provides comprehensive support throughout and after the development process. Our team is available to assist with troubleshooting, updates, and ongoing maintenance."
+    description: "Our NFT development agency provides comprehensive support throughout and after the development process. Our team is available to assist with troubleshooting, updates, and ongoing maintenance."
   },
   {
     image: "https://www.redappletech.com/wp-content/uploads/2024/02/cross-platform-2-50x50_c.png",
     title: "Flexibility",
-    description: "The agile development process allows our AR/VR app development agency to adapt to changing requirements and feedback. We ensure flexibility in project management to meet evolving business needs and market demands."
+    description: "The agile development process allows our NFT development agency to adapt to changing requirements and feedback. We ensure flexibility in project management to meet evolving business needs and market demands."
   },
   {
     image: "https://www.redappletech.com/wp-content/uploads/2024/08/digital-wallet-50x50_c.png",
     title: "Cost-Effectiveness",
-    description: "We offer competitive pricing without compromising on quality. Our cost-effective solutions are designed to provide maximum value and return on investment for your AR/VR initiatives."
+    description: "We offer competitive pricing without compromising on quality. Our cost-effective solutions are designed to provide maximum value and return on investment for your NFT initiatives."
   }
 ]
 
-function ARVRDev() {
+function MetaverseNFT() {
     return (
         <div>
         <AILandingSection
-            subtitle="Build Powerful VR Solutions with Our"
-            title="AR & VR Application Development Services Company"
-            desc= "Our AR/VR app development company fulfills your business objectives with an impressive work quality. Our app development agency makes sure that you get the ideal AR/VR app development services that will allow you to captivate the attention of your end users naturally. Comprising industry experience of 13 years, we are proficient in executing AR/VR app development projects of distinct complexities."
-            img="https://cdn.pixabay.com/photo/2017/01/06/19/15/smartphone-1957740_1280.jpg"
+            subtitle="Build Powerful Metaverse Solutions with Our"
+            title="Metaverse NFT Development Services Company"
+            desc= "Our Metaverse NFT development company fulfills your business objectives with an impressive work quality. Our app development agency makes sure that you get the ideal Metaverse NFT development services that will allow you to captivate the attention of your end users naturally. Comprising industry experience of 13 years, we are proficient in executing Metaverse NFT development projects of distinct complexities."
+            
         />
     
         <SolutionsSection
-            title="Transform Your Business with Custom Metaverse AR VR Development"
-            p1="ur AR/VR app development solution is always aligned with your project objectives. It enables you to derive the right outcome effortlessly. Our AR/VR app development company is committed to bringing alive your AR/VR project vision with the smooth implementation of advanced technological resources."
-            p2="Our solutions leverage the latest technologies and design trends to ensure seamless performance, intuitive user experiences, and maximum security. From e-commerce and healthcare to education and entertainment, we help you harness the full potential of the our platform to stay ahead in a competitive market."
-            p3=" Connect with our experts today and let’s build a future-ready mobile solution that sets your business apart!"
+            title="Transform Your Business with Custom Metaverse NFT Development"
+            p1="Our Metaverse NFT development solution is always aligned with your project objectives. It enables you to derive the right outcome effortlessly. Our NFT development company is committed to bringing alive your Metaverse NFT project vision with the smooth implementation of advanced technological resources."
+            p3=" Connect with our experts today and let’s build a future-ready solution that sets your business apart!"
         />
         <AIDevelopment
-            aidevTitle="Why Choose us for AR/VR App Development"
-            aidevDesc="No matter how complex your AR/VR app development project is, our app development agency offers customized AR/VR app development services to help stay ahead of the competition. Blending leading-edge technologies with perfection, our AR/VR app development company optimizes the AR/VR app usage experience of your customers."
+            aidevTitle="Why Choose us for Metaverse NFT Development"
+            aidevDesc="No matter how complex your Metaverse NFT development project is, our app development agency offers customized Metaverse NFT development services to help stay ahead of the competition. Blending leading-edge technologies with perfection, our Metaverse NFT development company optimizes the NFT usage experience of your customers."
             aidevGrid={arvrItems}
             columns={4}
         />
-        <MetaARVRFrameworks2/>
+
         <Cta />
         <AIDevelopment
-            aidevTitle="Our AR/VR App Development Services"
+            aidevTitle="Our Metaverse NFT Development Services"
             aidevDesc="We always strive for adapting new-age technologies in order to keep updated with the global competitions. After research and several hours of working, we deliver customer-centric solutions to our clients utilizing the full potential of Metaverse technology."
             aidevGrid={arvrServices}
             columns={3}
@@ -171,4 +170,4 @@ function ARVRDev() {
     )
 }
 
-export default ARVRDev
+export default MetaverseNFT

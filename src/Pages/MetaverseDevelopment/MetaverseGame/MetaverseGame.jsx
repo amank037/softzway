@@ -133,32 +133,31 @@ const arvrItems = [
   }
 ]
 
-function ARVRDev() {
+function MetaverseGame() {
     return (
         <div>
         <AILandingSection
-            subtitle="Build Powerful VR Solutions with Our"
-            title="AR & VR Application Development Services Company"
-            desc= "Our AR/VR app development company fulfills your business objectives with an impressive work quality. Our app development agency makes sure that you get the ideal AR/VR app development services that will allow you to captivate the attention of your end users naturally. Comprising industry experience of 13 years, we are proficient in executing AR/VR app development projects of distinct complexities."
-            img="https://cdn.pixabay.com/photo/2017/01/06/19/15/smartphone-1957740_1280.jpg"
+            subtitle="Build Powerful Metaverse Solutions with Our"
+            title="Metaverse Game Development Services Company"
+            desc= "Our Metaverse Game development company fulfills your business objectives with an impressive work quality. Our app development agency makes sure that you get the ideal Metaverse Game development services that will allow you to captivate the attention of your end users naturally. Comprising industry experience of 13 years, we are proficient in executing Metaverse Game development projects of distinct complexities."
+            
         />
     
         <SolutionsSection
-            title="Transform Your Business with Custom Metaverse AR VR Development"
-            p1="ur AR/VR app development solution is always aligned with your project objectives. It enables you to derive the right outcome effortlessly. Our AR/VR app development company is committed to bringing alive your AR/VR project vision with the smooth implementation of advanced technological resources."
-            p2="Our solutions leverage the latest technologies and design trends to ensure seamless performance, intuitive user experiences, and maximum security. From e-commerce and healthcare to education and entertainment, we help you harness the full potential of the our platform to stay ahead in a competitive market."
-            p3=" Connect with our experts today and let’s build a future-ready mobile solution that sets your business apart!"
+            title="Transform Your Business with Custom Metaverse Game Development"
+            p1="Our Metaverse Game development solution is always aligned with your project objectives. It enables you to derive the right outcome effortlessly. Our AR/VR app development company is committed to bringing alive your Metaverse Game project vision with the smooth implementation of advanced technological resources."
+            p3=" Connect with our experts today and let’s build a future-ready solution that sets your business apart!"
         />
         <AIDevelopment
-            aidevTitle="Why Choose us for AR/VR App Development"
-            aidevDesc="No matter how complex your AR/VR app development project is, our app development agency offers customized AR/VR app development services to help stay ahead of the competition. Blending leading-edge technologies with perfection, our AR/VR app development company optimizes the AR/VR app usage experience of your customers."
+            aidevTitle="Why Choose us for Metaverse Game Development"
+            aidevDesc="No matter how complex your Metaverse Game development project is, our app development agency offers customized Metaverse Game development services to help stay ahead of the competition. Blending leading-edge technologies with perfection, our Metaverse Game development company optimizes the AR/VR app usage experience of your customers."
             aidevGrid={arvrItems}
             columns={4}
         />
-        <MetaARVRFrameworks2/>
+
         <Cta />
         <AIDevelopment
-            aidevTitle="Our AR/VR App Development Services"
+            aidevTitle="Our Metaverse Game Development Services"
             aidevDesc="We always strive for adapting new-age technologies in order to keep updated with the global competitions. After research and several hours of working, we deliver customer-centric solutions to our clients utilizing the full potential of Metaverse technology."
             aidevGrid={arvrServices}
             columns={3}
@@ -171,4 +170,4 @@ function ARVRDev() {
     )
 }
 
-export default ARVRDev
+export default MetaverseGame
