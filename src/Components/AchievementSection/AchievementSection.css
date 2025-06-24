@@ -1,0 +1,68 @@
+.ach-div{
+    padding: 40px 20px;
+    width: 100%
+}
+.ach-container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ach-grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+    padding: 30px 0;
+}
+.ach-grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+}
+.ach-grid-item h2{
+    font-weight: 600;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ach-grid-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+.ach-grid-text h3{
+    font-size: 14px;
+    font-weight: 600;
+}
+.ach-grid-text p{
+    font-size: 14px;
+}
+.ach1{
+    color:#238d5b;
+    background-color: #7ed2ab7f;
+}
+.ach2{
+    color:#8d2f23;
+    background-color: #873e344f;
+}
+.ach3{
+    color:#694a00;
+    background-color: #8d6d2363;
+}
+
+@media screen and (max-width: 993px){
+    .ach-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

@@ -14,6 +14,7 @@ import PredAnalytics from './Pages/AISolutions/PredAnalytics/PredAnalytics'
 import Chatbot from './Pages/AISolutions/Chatbot/Chatbot'
 import CompVision from './Pages/AISolutions/CompVision/CompVision'
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
+import AndroidDev from './Pages/AppDevelopment/AndroidDev/AndroidDev'
 
 function App() {
 
@@ -33,6 +34,8 @@ function App() {
             <Route path="/predictive-analytics" element={<PredAnalytics/>}/>
             <Route path="/chatbot-development" element={<Chatbot/>}/>
             <Route path="/computer-vision" element={<CompVision/>}/>
+
+            <Route path="/android-app-development" element={<AndroidDev/>}/>
           </Routes>
         </div>
         <Footer />
