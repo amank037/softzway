@@ -19,6 +19,12 @@ function Header() {
         return () => window.removeEventListener('resize', checkIfMobile);
     }, [])
 
+    useEffect(() => {
+        setIsMenuOpen(false)
+        setActiveDropdown(null)
+        setActiveSubDropdown(null)
+    }, [location.pathname])
+
     const handleDropdownToggle = (index) => {
         if (isMobile) {
             setActiveDropdown(activeDropdown === index ? null : index);

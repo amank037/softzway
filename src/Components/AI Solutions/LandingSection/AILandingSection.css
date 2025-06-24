@@ -1,14 +1,15 @@
 .ailanding{
     /* background: linear-gradient(140deg, #000000, var(--medium-teal)); */
     /* background-image: url('/AI agent development.png'); */
-    /* height: 70vh; */
-    height: 650px;
+    height: 75vh;
     padding: 40px 20px;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .ailanding-container{
@@ -59,6 +60,9 @@
 }
 
 @media screen and (max-width: 768px){
+    .ailanding{
+        height: 650px;
+    }
     .ailanding-container{
         display: block;
     }

@@ -197,7 +197,7 @@ function CompVision() {
         subtitle="Build Smart Computer Vision AI Solutions to Transform Your Business with Our"
         title="Computer Vision Agent Development Company"
         desc="Unlock the potential of Artificial Intelligence with our cutting-edge AI agent development company. From automating tasks to enhancing user experiences, our AI-powered agents streamline operations and boost business efficiency. Collaborate with our expert team to build intelligent agents that drive efficiency and enhance user experience."
-        img="https://www.inoru.com/img/ai-agent-development-company/banner-img3.webp"
+        bg="/computer-vision.png"
       />
 
       <SolutionsSection
