@@ -8,6 +8,7 @@ import SolutionsSection from '../../../Components/AI Solutions/SolutionsSection/
 import Contact from '../../../Components/Contact/Contact'
 import Cta from '../../../Components/Cta/Cta'
 import MetaARVRFrameworks from '../../../Components/MetaARVRFrameworks/MetaARVRFrameworks'
+import MetaARVRFrameworks2 from '../../../Components/MetaARVRFrameworks2/MetaARVRFrameworks2'
 
 const aidevGrid = [
     {
@@ -312,7 +313,8 @@ function ARVRDev() {
             aidevGrid={arvrItems}
             columns={4}
         />
-        <MetaARVRFrameworks />
+        <MetaARVRFrameworks2/>
+        {/* <MetaARVRFrameworks /> */}
         {/* <AIUseCases 
             title="Industry-Specific Use Cases for Android Apps"
             useCases={useCases}
