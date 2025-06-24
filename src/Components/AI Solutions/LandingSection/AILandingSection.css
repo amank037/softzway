@@ -1,5 +1,6 @@
 .ailanding{
-    background: linear-gradient(140deg, #000000, var(--medium-teal));
+    /* background: linear-gradient(140deg, #000000, var(--medium-teal)); */
+    /* background-image: url('/AI agent development.png'); */
     height: 70vh;
     padding: 40px 20px;
     color: #fff;

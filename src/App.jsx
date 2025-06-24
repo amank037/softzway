@@ -16,6 +16,7 @@ import CompVision from './Pages/AISolutions/CompVision/CompVision'
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
 import AndroidDev from './Pages/MobileAppDevelopment/AndroidDev/AndroidDev'
 import NFTDev from './Pages/BlockchainDevelopment/NFTDev/NFTDev'
+import ARVRDev from './Pages/MetaverseDevelopment/ARVRDev/ARVRDev.jsx'
 
 function App() {
 
@@ -40,6 +41,9 @@ function App() {
 
 
             <Route path="/nft-development" element={<NFTDev/>}/>
+
+
+            <Route path="/ar-vr-development" element={<ARVRDev/>}/>
           </Routes>
         </div>
         <Footer />
