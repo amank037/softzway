@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './ContactUs.css'
+import { Link } from 'react-router-dom';
 
 function ContactUs() {
     const [captcha, setCaptcha] = useState({ num1: 0, num2: 0, answer: 0 });
@@ -32,21 +33,28 @@ function ContactUs() {
         <div className='contactus-div'>
             <div className='contactus-container'>
                 <div className='contactus-title'>
-                    <h2>Contact Us</h2>
-                    <p>We Assure you to revert within one business day</p>
-                    <div className='contactus-line'></div>
+                    <img src="https://d2e3cmtjkfw2a3.cloudfront.net/static/media/forms/con-form.svg" alt="" />
                 </div>
 
                 <div className='contactus-content'>
                     <div className='contactus-text'>
-                        <h2>Let's plan for a new project!</h2>
-                        <p>We understand your project perspective to convert your amazing ideas into reality. Usher your business into a futuristic realm with our high-quality development services.</p>
-                        <h3>Reach Us</h3>
-
-                        <div className='contactus-info'>
+                        <h3>For general queries fill this form or have a look at end of the page for more options.</h3>
+        
+                        <div>
+                            <h3>Start a project</h3>
+                            <p>Looking to discuss a project with us?</p>
+                            <Link>ENQUIRY</Link>
+                        </div>
+                        <div>
+                            <h3>Work with us</h3>
+                            <p>Do you want to join our tribe?</p>
+                            <Link>CAREERS</Link>
+                        </div>
+                        
+                        {/* <div className='contactus-info'>
                             <a href="">+91 – 7878044044</a>
                             <a href="">info@softzway.com</a>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className='contactus-form'>
@@ -89,6 +97,13 @@ function ContactUs() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className='contactus-info'>
+                    <h1>Connect with us directly</h1>
+                    <p>You can also contact us via Email or Phone</p>
+                    <a href="">+91 – 7878044044</a>
+                    <a href="">info@softzway.com</a>
                 </div>
             </div>
         </div>
