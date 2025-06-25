@@ -93,7 +93,7 @@
 }
 
 .contactus-info a {
-    color: #ffffff;
+    color: var(--light-green);
     text-decoration: none;
     font-weight: 500;
     padding: 10px 0;
