@@ -143,39 +143,39 @@ const useCases = [
 ]
 
 const processItems = [
-    {
-        title: "Requirement Gathering",
-        description: "We understand client needs, defining objectives, target audience, and desired outcomes for AI-powered solutions."
-    },
-    {
-        title: "Data Collection",
-        description: "Our team gathers diverse, high-quality datasets to train AI models for optimal performance and accuracy."
-    },
-    {
-        title: "Model Development",
-        description: "We design and train AI algorithms, ensuring scalability, efficiency, and seamless integration with applications."
-    },
-    {
-        title: "Testing & Validation",
-        description: "Rigorous testing verifies model accuracy, eliminating biases and optimizing results for real-world applications."
-    },
-    {
-        title: "Deployment & Support",
-        description: "We deploy AI solutions, providing continuous updates and enhancements for long-term client satisfaction."
-    }
+  {
+    title: "Requirement Gathering",
+    description: "We understand client needs, defining objectives, target audience, and desired outcomes for AI-powered solutions."
+  },
+  {
+    title: "Data Collection",
+    description: "Our team gathers diverse, high-quality datasets to train AI models for optimal performance and accuracy."
+  },
+  {
+    title: "Model Development",
+    description: "We design and train AI algorithms, ensuring scalability, efficiency, and seamless integration with applications."
+  },
+  {
+    title: "Testing & Validation",
+    description: "Rigorous testing verifies model accuracy, eliminating biases and optimizing results for real-world applications."
+  },
+  {
+    title: "Deployment & Support",
+    description: "We deploy AI solutions, providing continuous updates and enhancements for long-term client satisfaction."
+  }
 ]
 
 const aiFaqItems = [
   {
     title: "How Do Chatbot Artificial Intelligence Solutions Benefit My Business?",
-    description: "Deploying a custom Chatbot AI development solution shall empower your business with abilities like customer sentiment analysis, projecting future market trends, tracking inventories and supply chain management, and much more. However, to deploy this next-gen technology, you should connect with the best Chatbot AI agency like Red Apple Technologies."
+    description: "Deploying a custom Chatbot AI development solution shall empower your business with abilities like customer sentiment analysis, projecting future market trends, tracking inventories and supply chain management, and much more. However, to deploy this next-gen technology, you should connect with the best Chatbot AI agency like Softzway Technologies."
   },
   {
     title: "How Much Time Does It Take to Build a Chatbot AI Model?",
-    description: "It entirely depends on the project size, technology stack integration, types of features to be added, development team structure, and much more. Hence, to get an accurate timeline estimation, you should connect with the enterprising team of Red Apple Technologies. It will help you with Chatbot AI model deployment."
+    description: "It entirely depends on the project size, technology stack integration, types of features to be added, development team structure, and much more. Hence, to get an accurate timeline estimation, you should connect with the enterprising team of Softzway Technologies. It will help you with Chatbot AI model deployment."
   },
   {
-    title: "How Does Red Apple Technologies Approach Chatbot AI Development?",
+    title: "How Does Softzway Technologies Approach Chatbot AI Development?",
     description: "We first gather essential requirements from clients that they want to implement. Then we evaluate them thoroughly to identify challenges and modification scopes. Once clarifying the essential details from clients, we schedule a meeting with our technical team to create the project delivery roadmap. For more details about our business AI solutions, communicate with our enterprising team now."
   },
   {
@@ -207,12 +207,12 @@ function Chatbot() {
         p3="Ready to revolutionize your business with Chatbot AI? Connect with our experts today and let’s build innovative, future-ready applications that drive growth and set you apart from the competition!"
       />
       <AIDevelopment
-        aidevTitle="Comprehensive AI Agent Development Solutions of Red Apple Technologies"
-        aidevDesc="At Red Apple Technologies, we are proficient in offering high-end AI agent development solutions that will streamline and optimize your business operations."
+        aidevTitle="Comprehensive AI Agent Development Solutions of Softzway Technologies"
+        aidevDesc="At Softzway Technologies, we are proficient in offering high-end AI agent development solutions that will streamline and optimize your business operations."
         aidevGrid={aiAgentServices}
         columns={4}
       />
-      <AIUseCases 
+      <AIUseCases
         title="Industry-Specific Use Cases of Chatbot AI"
         useCases={useCases}
         img="https://cdn-ilahpcd.nitrocdn.com/jDuDYworkYvtwHuagfVDTYpuGfPymqvt/assets/images/optimized/rev-aa47245/www.redappletech.com/wp-content/uploads/2025/03/GenerativeAiBannerimage.jpg"
@@ -220,11 +220,11 @@ function Chatbot() {
       <Cta />
       <AIDevelopment
         aidevTitle="How Do We Assist You In AI Agent Development?"
-        aidevDesc="We, at Red Apple Technologies, provide AI-powered chatbots that swiftly transform your business operations, going beyond basic agent creation to deliver impactful results."
+        aidevDesc="We, at Softzway Technologies, provide AI-powered chatbots that swiftly transform your business operations, going beyond basic agent creation to deliver impactful results."
         aidevGrid={aidevGrid}
         columns={3}
       />
-      <AIProcess 
+      <AIProcess
         title="AI Agent Development Process- Our Method to Madness"
         processItems={processItems}
       />

@@ -54,44 +54,44 @@ const iosServicesData = [
 ]
 
 const tableData = {
-    headers: [
-        "Range of Developers",
-        "Junior Developers",
-        "Mid-Level Developers",
-        "Senior Developers"
-    ],
-    rows: [
-        {
-        label: "Years of Experience",
-        values: ["1-3 Years", "3-5 Years", "5+ Years"]
-        },
-        {
-        label: "Methodology",
-        values: ["Agile", "Agile", "Agile"]
-        },
-        {
-        label: "Project Manager",
-        values: ["Yes", "Yes", "Yes"]
-        },
-        {
-        label: "Time Zone Flexibilities",
-        values: ["Yes", "Yes", "Yes"]
-        },
-        {
-        label: "Quality Guarantee",
-        values: ["Yes", "Yes", "Yes"]
-        },
-        {
-        label: "Working Hours",
-        values: ["40 hours/week", "40 hours/week", "40 hours/week"]
-        }
-    ]
+  headers: [
+    "Range of Developers",
+    "Junior Developers",
+    "Mid-Level Developers",
+    "Senior Developers"
+  ],
+  rows: [
+    {
+      label: "Years of Experience",
+      values: ["1-3 Years", "3-5 Years", "5+ Years"]
+    },
+    {
+      label: "Methodology",
+      values: ["Agile", "Agile", "Agile"]
+    },
+    {
+      label: "Project Manager",
+      values: ["Yes", "Yes", "Yes"]
+    },
+    {
+      label: "Time Zone Flexibilities",
+      values: ["Yes", "Yes", "Yes"]
+    },
+    {
+      label: "Quality Guarantee",
+      values: ["Yes", "Yes", "Yes"]
+    },
+    {
+      label: "Working Hours",
+      values: ["40 hours/week", "40 hours/week", "40 hours/week"]
+    }
+  ]
 }
 
 const tableData2 = {
   headers: [
     "Parameters",
-    "Red Apple Technologies",
+    "Softzway Technologies",
     "In-house Developers",
     "Freelancing Platform (Upwork, Toptal etc.)"
   ],
@@ -200,54 +200,54 @@ const iosFaqItems = [
 function HireIOS() {
   return (
     <div>
-        <HireLanding 
-            title="Hire iOS App Developers"
-            desc="Unlock the potential of mobile technology with our expert Android app development services. From concept to launch, we deliver high-quality, user-friendly Android applications that drive business growth and enhance user engagement."
-            img="https://www.redappletech.com/wp-content/uploads/2024/08/ios-top-image.png"
-        />
-        <AIDevelopment 
-            aidevTitle="Specialization Of Our iOS App Development Team"
-            aidevDesc="Hire iOS app developers of Softzway who bring alive your dream project with the effective use of advanced technological resources"
-            aidevGrid={iosServicesData}
-            columns={4}
-        />
-        <HireTable 
-            title="Hire Dedicated iOS App Developers to Empower your Project"
-            description="Hire iOS app developers to meet your business needs by leveraging our technical elegance."
-            tableData={tableData}
-        />
-        <HireStack
-            title="Tech Competence of Our iOS App Developers"
-        />
-        <Cta />
-        <HireTable2
-            title="Hire Dedicated iOS App Developers to Empower your Project"
-            description="Hire iOS app developers to meet your business needs by leveraging our technical elegance."
-            tableData={tableData2}
-        />
-        <HireProcess 
-            title="How Does The Process Work?"
-            processItems={processItems}
-        />
-        <HireBenefits 
-            title="Benefits of Hiring our Dedicated iOS App Developers"
-            description="Hire iOS app developers who have in-depth knowledge of various iOS app development tools to bring alive your imagination."
-            benefits={benefits}
-            image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
-        />
-        <HireBenefits2
-            title="Our Commitment to Code Quality"
-            description="At the core of our development process, we prioritize code quality, implementing stringent testing. detailed reviews, and industry best practices to deliver software that excels in both functionality and longevity."
-            image="https://www.redappletech.com/wp-content/uploads/2024/07/Group-22.png"
-        />
-        <HireCta
-            title="Want to create A Robust Backend for Your App Using iOS?"
-            description="Hire iOS developers from Red Apple Technologies to plan, execute, and infuse brilliance into your projects."
-            image="https://www.redappletech.com/wp-content/uploads/2024/07/Rectangle-83-1.png"
-        />
-        <AIFaq 
-            aiFaqItems={iosFaqItems}
-        />
+      <HireLanding
+        title="Hire iOS App Developers"
+        desc="Unlock the potential of mobile technology with our expert Android app development services. From concept to launch, we deliver high-quality, user-friendly Android applications that drive business growth and enhance user engagement."
+        img="https://www.redappletech.com/wp-content/uploads/2024/08/ios-top-image.png"
+      />
+      <AIDevelopment
+        aidevTitle="Specialization Of Our iOS App Development Team"
+        aidevDesc="Hire iOS app developers of Softzway who bring alive your dream project with the effective use of advanced technological resources"
+        aidevGrid={iosServicesData}
+        columns={4}
+      />
+      <HireTable
+        title="Hire Dedicated iOS App Developers to Empower your Project"
+        description="Hire iOS app developers to meet your business needs by leveraging our technical elegance."
+        tableData={tableData}
+      />
+      <HireStack
+        title="Tech Competence of Our iOS App Developers"
+      />
+      <Cta />
+      <HireTable2
+        title="Hire Dedicated iOS App Developers to Empower your Project"
+        description="Hire iOS app developers to meet your business needs by leveraging our technical elegance."
+        tableData={tableData2}
+      />
+      <HireProcess
+        title="How Does The Process Work?"
+        processItems={processItems}
+      />
+      <HireBenefits
+        title="Benefits of Hiring our Dedicated iOS App Developers"
+        description="Hire iOS app developers who have in-depth knowledge of various iOS app development tools to bring alive your imagination."
+        benefits={benefits}
+        image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+      />
+      <HireBenefits2
+        title="Our Commitment to Code Quality"
+        description="At the core of our development process, we prioritize code quality, implementing stringent testing. detailed reviews, and industry best practices to deliver software that excels in both functionality and longevity."
+        image="https://www.redappletech.com/wp-content/uploads/2024/07/Group-22.png"
+      />
+      <HireCta
+        title="Want to create A Robust Backend for Your App Using iOS?"
+        description="Hire iOS developers from Softzway Technologies to plan, execute, and infuse brilliance into your projects."
+        image="https://www.redappletech.com/wp-content/uploads/2024/07/Rectangle-83-1.png"
+      />
+      <AIFaq
+        aiFaqItems={iosFaqItems}
+      />
     </div>
   )
 }

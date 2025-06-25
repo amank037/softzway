@@ -76,6 +76,7 @@ function CustomSoftwareDev() {
             subtitle="Build Powerful Software Solutions with Our"
             title="Custom Software Development Company"
             desc="Tailored Processes, Configurable Methods, and a Specialized Team Behind Every Custom Build. Co-create with a driven team that has designed and developed 2500+ bespoke software systems combining unique product vision with finely tuned, purpose-built tech."
+            bg="/software/custom-software.png"
         />
         <Tabs />
         <AIDevelopment

@@ -76,6 +76,7 @@ function MicroDev() {
             subtitle="Build Powerful Microservices Solutions with Our"
             title="Custom Microservices Development Company"
             desc="Tailored Processes, Configurable Methods, and a Specialized Team Behind Every Custom Build. Co-create with a driven team that has designed and developed 2500+ bespoke Microservices systems combining unique product vision with finely tuned, purpose-built tech."
+            bg="/software/microservices.png"
         />
         <Tabs />
         <AIDevelopment

@@ -3,7 +3,7 @@ import './HireLanding.css'
 function HireLanding({ subtitle, title, desc, img, bg }) {
     const style = bg
         ? { backgroundImage: `url(${bg})` }
-        : { background: 'linear-gradient(140deg, #000000, var(--medium-teal))' };
+        : { background: 'linear-gradient(140deg, var(--medium-teal), #000000)' };
 
     return (
         <div className='hirelanding' style={style}>
@@ -18,7 +18,7 @@ function HireLanding({ subtitle, title, desc, img, bg }) {
                     <h1>{title}</h1>
                     <p>{desc}</p>
                     <div className='hirelanding-btns'>
-                        <button className='hirelanding-demo-btn'>VIEW DEMO</button>
+                        {/* <button className='hirelanding-demo-btn'>VIEW DEMO</button> */}
                         <button className='hirelanding-talk-btn'>TALK TO US</button>
                     </div>
                 </div>

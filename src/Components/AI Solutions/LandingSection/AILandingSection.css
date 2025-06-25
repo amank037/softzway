@@ -52,7 +52,6 @@
     padding: 15px 30px;
     font-size: 1.15rem;
     font-weight: 600;
-    color: #fff;
 }
 .ailanding-demo-btn{
     background-color: var(--dark-teal);
@@ -60,8 +59,10 @@
     border-radius: 25px 25px 0 25px;
 }
 .ailanding-talk-btn{
-    background-color: transparent;
-    border: 2px solid var(--light-teal);
+    /* background-color: transparent; */
+    background-color: var(--primary-orange);
+    color: #000;
+    /* border: 2px solid var(--light-teal); */
     border-radius: 0 25px 25px 25px;
 }
 

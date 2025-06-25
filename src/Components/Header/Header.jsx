@@ -177,7 +177,6 @@ const navItems = [
             { name: "Hire ReactJS Developers", to: "/reactjs-developer", ctaDesc: "Hire expert ReactJS developers for interactive UIs." },
             { name: "Hire Vue.JS Developers", to: "/vuejs-developer", ctaDesc: "Build modern interfaces with skilled Vue.js developers." },
             { name: "Hire Angular Developers", to: "/angular-developer", ctaDesc: "Develop scalable apps with experienced Angular devs." },
-            { name: "Hire Front End Developers", to: "/front-end-developer", ctaDesc: "Strengthen your UI/UX with professional frontend developers." },
             { name: "Hire Html5 Developers", to: "/html5-developer", ctaDesc: "Build dynamic websites with proficient HTML5 coders." }
             ]
         },
@@ -187,7 +186,6 @@ const navItems = [
             { name: "Hire NodeJS Developers", to: "/nodejs-developer", ctaDesc: "Hire Node.js experts for fast, scalable backend systems." },
             { name: "Hire Laravel Developers", to: "/laravel-developer", ctaDesc: "Develop secure and elegant PHP applications with Laravel." },
             { name: "Hire PHP Developers", to: "/php-developer", ctaDesc: "Get robust web solutions with dedicated PHP developers." },
-            { name: "Cake PHP Developers", to: "/cake-php-developer", ctaDesc: "Build web apps efficiently with CakePHP specialists." },
             { name: "Hire Python Developers", to: "/python-developer", ctaDesc: "Hire Python devs for AI, web, or data-driven projects." },
             { name: "Hire Dot Net Developers", to: "/dot-net-developer", ctaDesc: "Create enterprise-grade apps using .NET technologies." }
             ]
@@ -210,8 +208,7 @@ const navItems = [
             { name: "Hire Flutter Developers", to: "/flutter-developer", ctaDesc: "Create cross-platform apps with Flutter specialists." },
             { name: "Hire Ionic Developers", to: "/ionic-developer", ctaDesc: "Build hybrid mobile apps using the Ionic framework." },
             { name: "Hire Swift Developers", to: "/swift-developer", ctaDesc: "Leverage Swift developers for high-quality iOS apps." },
-            { name: "Hire Kotlin Developers", to: "/kotlin-developer", ctaDesc: "Develop Android apps with expert Kotlin engineers." },
-            { name: "Hire Game Developers", to: "/game-developer", ctaDesc: "Design and develop captivating mobile and web games." }
+            { name: "Hire Kotlin Developers", to: "/kotlin-developer", ctaDesc: "Develop Android apps with expert Kotlin engineers." }
             ]
         },
         {
@@ -270,134 +267,148 @@ const navItems = [
                 <Link to="/"><img src="https://beta.softzway.com/images/logo.png" alt="" /></Link>
             </div>
 
-            <div className={`header-navbar ${isMenuOpen ? 'active' : ''}`}>
-                <nav className='header-nav'>
-                    {navItems.map((item, index) => (
-                        <div
-                            key={index}
-                            className='header-nav-item'
-                            onMouseEnter={() => handleMouseEnter(index)}
-                            onMouseLeave={handleMouseLeave}
-                            onClick={() => handleDropdownToggle(index)}
-                        >
-                            <p className={`header-nav-text ${activeDropdown === index || isDropdownActive(item.dropdown) ? 'active' : ''}`}>
-                                {item.title}
-                            </p>
-
-
-                            {activeDropdown === index && item.dropdown && (
-                            <div className={`header-nav-dropdown-fullwidth${item.dropdown[0]?.submenu ? '-extra' : ''}`}>
-                                {/* LEFT: Main dropdown or parent items */}
-                                <div className="header-nav-dropdown-left">
-                                {item.dropdown[0]?.submenu
-                                    ? item.dropdown.map((sub, subIndex) => (
-                                        <div
-                                        key={subIndex}
-                                        className={`header-nav-dropdown-item header-nav-dropdown-parent${
-                                            activeSubDropdown === subIndex ? ' open' : ''
-                                            } ${
-                                            sub.submenu && sub.submenu.some(menuItem => location.pathname === menuItem.to)
-                                                ? ' current-route'
-                                                : ''
-                                        }`}
-                                        onClick={e => {
-                                            e.stopPropagation();
-                                            handleSubDropdownToggle(subIndex);
-                                        }}
-                                        >
-                                            <span>
-                                                {sub.title}
-                                                <span style={{ marginLeft: 8, fontSize: 12 }} className='header-nav-sub-arrow'>▸</span>
-                                            </span>
-                                        </div>
-                                    ))
-                                    : item.dropdown.map((subItem, subIndex) => (
-                                        <Link 
-                                            to={subItem.to} 
-                                            key={subIndex} 
-                                            className={`header-nav-dropdown-item${location.pathname === subItem.to ? ' active' : ''}`}>
-                                        {subItem.name}
+            <div className='navbar-wrapper'>
+                <div className={`header-navbar ${isMenuOpen ? 'active' : ''}`}>
+                    <nav className='header-nav'>
+                        {navItems.map((item, index) => (
+                            <div
+                                key={index}
+                                className='header-nav-item'
+                                onMouseEnter={() => handleMouseEnter(index)}
+                                onMouseLeave={handleMouseLeave}
+                                onClick={() => handleDropdownToggle(index)}
+                            >
+                                <p className={`header-nav-text ${activeDropdown === index || isDropdownActive(item.dropdown) ? 'active' : ''}`}>
+                                    {item.title}
+                                </p>
+                                {activeDropdown === index && item.dropdown && (
+                                <div className={`header-nav-dropdown-fullwidth${item.dropdown[0]?.submenu ? '-extra' : ''}`}>
+                                    {/* LEFT: Main dropdown or parent items */}
+                                    <div className="header-nav-dropdown-left">
+                                    {item.dropdown[0]?.submenu
+                                        ? item.dropdown.map((sub, subIndex) => (
+                                            <div
+                                            key={subIndex}
+                                            className={`header-nav-dropdown-item header-nav-dropdown-parent${
+                                                activeSubDropdown === subIndex ? ' open' : ''
+                                                } ${
+                                                sub.submenu && sub.submenu.some(menuItem => location.pathname === menuItem.to)
+                                                    ? ' current-route'
+                                                    : ''
+                                            }`}
+                                            onClick={e => {
+                                                e.stopPropagation();
+                                                handleSubDropdownToggle(subIndex);
+                                            }}
+                                            >
+                                                <span>
+                                                    {sub.title}
+                                                    <span style={{ marginLeft: 8, fontSize: 12 }} className='header-nav-sub-arrow'>▸</span>
+                                                </span>
+                                            </div>
+                                        ))
+                                        : item.dropdown.map((subItem, subIndex) => (
+                                            <Link
+                                                to={subItem.to}
+                                                key={subIndex}
+                                                className={`header-nav-dropdown-item${location.pathname === subItem.to ? ' active' : ''}`}>
+                                            {subItem.name}
+                                            </Link>
+                                        ))
+                                    }
+                                    </div>
+                                    {/* MIDDLE: Submenu items (for dropdown-extra only) */}
+                                    {item.dropdown[0]?.submenu && (
+                
+                                    <div className="header-nav-dropdown-middle">
+                                        <p className='header-nav-dropdown-middle-title'>{item.dropdown[activeSubDropdown ?? 0]?.title}</p>
+                                        {item.dropdown[activeSubDropdown || 0]?.submenu?.map((menuItem, menuIndex) => (
+                                        <Link
+                                            to={menuItem.to}
+                                            key={menuIndex}
+                                            className={`header-nav-dropdown-item${location.pathname === menuItem.to ? ' active' : ''}`}>
+                                            {menuItem.name}
                                         </Link>
-                                    ))
-                                }
-                                </div>
-
-                                {/* MIDDLE: Submenu items (for dropdown-extra only) */}
-                                {item.dropdown[0]?.submenu && (
-                                    
-                                <div className="header-nav-dropdown-middle">
-                                    <p className='header-nav-dropdown-middle-title'>{item.dropdown[activeSubDropdown ?? 0]?.title}</p>
-                                    {item.dropdown[activeSubDropdown || 0]?.submenu?.map((menuItem, menuIndex) => (
-                                    <Link 
-                                        to={menuItem.to}
-                                        key={menuIndex} 
-                                        className={`header-nav-dropdown-item${location.pathname === menuItem.to ? ' active' : ''}`}>
-                                        {menuItem.name}
-                                    </Link>
-                                    ))}
-                                </div>
-                                )}
-
-                                {/* RIGHT: CTA Box */}
-                                {/* <div className="header-nav-dropdown-cta">
-                                    <div className="header-nav-dropdown-cta-title">{item.title}</div>
-                                        <div className="header-nav-dropdown-cta-desc">
-                                        <p>
-                                        Discover our {item.title} services.<br />
-                                        Unlock new possibilities for your business.<br />
-                                        Get started with our expert team today!
-                                        </p>
-                                        <button className="header-nav-dropdown-cta-btn">Contact Us</button>
+                                        ))}
                                     </div>
-                                </div> */}
-                                {/* RIGHT: CTA Box */}
-                                <div className="header-nav-dropdown-cta">
-                                    <div className="header-nav-dropdown-cta-title">
-                                        {/* Show relevant CTA title */}
-                                        {item.dropdown[0]?.submenu
-                                            ? (() => {
-                                                const submenuParent = item.dropdown[activeSubDropdown ?? 0];
-                                                const activeSubmenuItem = submenuParent.submenu.find(sub => location.pathname === sub.to) || submenuParent.submenu[0];
-                                                return activeSubmenuItem?.name || submenuParent?.title;
-                                            })()
-                                            : (
-                                                item.dropdown.find(subItem => location.pathname === subItem.to)?.name || item.title
-                                            )
-                                        }
-                                    </div>
-                                    <div className="header-nav-dropdown-cta-desc">
-                                        <p>
-                                            {/* Show relevant CTA description */}
+                                    )}
+                                    {/* RIGHT: CTA Box */}
+                                    <div className="header-nav-dropdown-cta">
+                                        <div className="header-nav-dropdown-cta-title">
+                                            {/* Show relevant CTA title */}
                                             {item.dropdown[0]?.submenu
                                                 ? (() => {
                                                     const submenuParent = item.dropdown[activeSubDropdown ?? 0];
-                                                    // Find the active submenu item by route, or fallback to first
                                                     const activeSubmenuItem = submenuParent.submenu.find(sub => location.pathname === sub.to) || submenuParent.submenu[0];
-                                                    return activeSubmenuItem?.ctaDesc
-                                                        || submenuParent?.ctaDesc
-                                                        || `Discover our ${activeSubmenuItem?.name || submenuParent?.title} services. Unlock new possibilities for your business. Get started with our expert team today!`;
+                                                    return activeSubmenuItem?.name || submenuParent?.title;
                                                 })()
                                                 : (
-                                                    // Regular dropdown: find the active item by route, or fallback to first
-                                                    (item.dropdown.find(subItem => location.pathname === subItem.to)?.ctaDesc) ||
-                                                    item.dropdown[0]?.ctaDesc ||
-                                                    `Discover our ${item.title} services. Unlock new possibilities for your business. Get started with our expert team today!`
+                                                    item.dropdown.find(subItem => location.pathname === subItem.to)?.name || item.title
                                                 )
                                             }
-                                        </p>
-                                        <button className="header-nav-dropdown-cta-btn">Contact Us</button>
+                                        </div>
+                                        <div className="header-nav-dropdown-cta-desc">
+                                            <p>
+                                                {/* Show relevant CTA description */}
+                                                {item.dropdown[0]?.submenu
+                                                    ? (() => {
+                                                        const submenuParent = item.dropdown[activeSubDropdown ?? 0];
+                                                        // Find the active submenu item by route, or fallback to first
+                                                        const activeSubmenuItem = submenuParent.submenu.find(sub => location.pathname === sub.to) || submenuParent.submenu[0];
+                                                        return activeSubmenuItem?.ctaDesc
+                                                            || submenuParent?.ctaDesc
+                                                            || `Discover our ${activeSubmenuItem?.name || submenuParent?.title} services. Unlock new possibilities for your business. Get started with our expert team today!`;
+                                                    })()
+                                                    : (
+                                                        // Regular dropdown: find the active item by route, or fallback to first
+                                                        (item.dropdown.find(subItem => location.pathname === subItem.to)?.ctaDesc) ||
+                                                        item.dropdown[0]?.ctaDesc ||
+                                                        `Discover our ${item.title} services. Unlock new possibilities for your business. Get started with our expert team today!`
+                                                    )
+                                                }
+                                            </p>
+                                            <button className="header-nav-dropdown-cta-btn"><Link to="/contact-us">Contact Us</Link></button>
+                                        </div>
                                     </div>
+                
                                 </div>
-                                
+                                )}
                             </div>
-                            )}
+                        ))}
+                    </nav>
+                </div>
+                <div className='header-contact-wrapper'>
+                    <div className='header-button'>
+                        <button><Link to="/contact-us">Contact Us</Link></button>
+                    </div>
+                    <div className='contact-menu'>
+                        <div className="contact-content">
+                            <div className="contact-talk">
+                                <h1>Talk To Us</h1>
+                                <h2>Welcome to digital product engineering</h2>
+                                <p>Thanks for your interest. How can we help?</p>
+                                <h3>sales@softzway.com</h3>
+                            </div>
+                            <div className="contact-locations">
+                                <h1>Locations</h1>
+                                <p>India, Jaipur</p>
+                            </div>
+                            <div className="contact-socials">
+                                <h1>Follow Us</h1>
+                                    <p><i className="fa-brands fa-facebook-f" style={{color: "#000"}}></i>Facebook</p>
+                                    <p><i className="fa-brands fa-x-twitter" style={{color:"#000"}}></i>Twitter</p>
+                                    <p><i className="fa-brands fa-linkedin-in" style={{color:"#000"}}></i>LinkedIn</p>
+                            </div>
                         </div>
-                    ))}
-                </nav>
-            </div>
-
-            <div className='header-button'>
-                <button>Contact Us</button>
+                
+                        <div>
+                            <button>
+                                <Link to="/contact-us">Contact Us</Link>
+                            </button>
+                        </div>
+                
+                    </div>
+                </div>
             </div>
 
             <div className='hamburger-menu' onClick={() => setIsMenuOpen(!isMenuOpen)}>

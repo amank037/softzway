@@ -13,7 +13,7 @@ function AILandingSection({ subtitle, title, desc, img, bg }) {
           <h1>{title}</h1>
           <p>{desc}</p>
           <div className='ailanding-btns'>
-            <button className='ailanding-demo-btn'>VIEW DEMO</button>
+            {/* <button className='ailanding-demo-btn'>VIEW DEMO</button> */}
             <button className='ailanding-talk-btn'>TALK TO US</button>
           </div>
         </div>

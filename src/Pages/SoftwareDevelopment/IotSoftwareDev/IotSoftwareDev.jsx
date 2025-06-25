@@ -47,52 +47,53 @@ const softwareServices = [
 ]
 
 const aiFaqItems = [
-    {
-        title: "Why should I choose Android for my mobile app?",
-        description: "Android offers a vast user base, flexible customization, and seamless integration with Google services, making it ideal for businesses targeting a wide audience."
-    },
-    {
-        title: "How long does it take to develop an Android app?",
-        description: "The timeline depends on app complexity, features, and integrations. Simple apps may take a few weeks, while complex solutions can take several months."
-    },
-    {
-        title: "Will my Android app work on all devices?",
-        description: "Yes, we ensure your app is compatible with a wide range of Android devices and screen sizes through responsive design and thorough testing."
-    },
-    {
-        title: "Do you provide post-launch support?",
-        description: "Absolutely! We offer ongoing maintenance, updates, and technical support to keep your app running smoothly."
-    },
-    {
-        title: "Can you help with app store submission?",
-        description: "Yes, we handle the entire Google Play Store submission process, ensuring your app meets all guidelines and requirements."
-    }
+  {
+    title: "Why should I choose Android for my mobile app?",
+    description: "Android offers a vast user base, flexible customization, and seamless integration with Google services, making it ideal for businesses targeting a wide audience."
+  },
+  {
+    title: "How long does it take to develop an Android app?",
+    description: "The timeline depends on app complexity, features, and integrations. Simple apps may take a few weeks, while complex solutions can take several months."
+  },
+  {
+    title: "Will my Android app work on all devices?",
+    description: "Yes, we ensure your app is compatible with a wide range of Android devices and screen sizes through responsive design and thorough testing."
+  },
+  {
+    title: "Do you provide post-launch support?",
+    description: "Absolutely! We offer ongoing maintenance, updates, and technical support to keep your app running smoothly."
+  },
+  {
+    title: "Can you help with app store submission?",
+    description: "Yes, we handle the entire Google Play Store submission process, ensuring your app meets all guidelines and requirements."
+  }
 ]
 
 function IotSoftwareDev() {
-    return (
-        <div>
-            <AILandingSection
-                subtitle="Build Powerful IOT Software Solutions with Our"
-                title="Custom IOT Software Development Company"
-                desc="Tailored Processes, Configurable Methods, and a Specialized Team Behind Every Custom Build. Co-create with a driven team that has designed and developed 2500+ bespoke IOT Software systems combining unique product vision with finely tuned, purpose-built tech."
-            />
-            <Tabs />
-            <AIDevelopment
-                aidevTitle="A Comprehensive Portfolio of Custom IOT Software Engineering Services"
-                aidevDesc="Our development solutions propel your IOT Software to the forefront of the market competition. With the proper utilization of the latest technologies, we, as an experienced IOT Software development company, create immersive user experiences that adapt to ever-evolving trends."
-                aidevGrid={softwareServices}
-                columns={3}
-            />
-            <Cta />
-            <Tabs2 />
-            <IndustryGrid />
-            <AIFaq
-                aiFaqItems={aiFaqItems}
-            />
-            <Contact />
-        </div>
-    )
+  return (
+    <div>
+      <AILandingSection
+        subtitle="Build Powerful IOT Software Solutions with Our"
+        title="Custom IOT Software Development Company"
+        desc="Tailored Processes, Configurable Methods, and a Specialized Team Behind Every Custom Build. Co-create with a driven team that has designed and developed 2500+ bespoke IOT Software systems combining unique product vision with finely tuned, purpose-built tech."
+        bg="/software/iot.png"
+      />
+      <Tabs />
+      <AIDevelopment
+        aidevTitle="A Comprehensive Portfolio of Custom IOT Software Engineering Services"
+        aidevDesc="Our development solutions propel your IOT Software to the forefront of the market competition. With the proper utilization of the latest technologies, we, as an experienced IOT Software development company, create immersive user experiences that adapt to ever-evolving trends."
+        aidevGrid={softwareServices}
+        columns={3}
+      />
+      <Cta />
+      <Tabs2 />
+      <IndustryGrid />
+      <AIFaq
+        aiFaqItems={aiFaqItems}
+      />
+      <Contact />
+    </div>
+  )
 }
 
 export default IotSoftwareDev

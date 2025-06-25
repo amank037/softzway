@@ -76,6 +76,7 @@ function ProductDev() {
             subtitle="Build Powerful Product Solutions with Our"
             title="Custom Product Development Company"
             desc="Tailored Processes, Configurable Methods, and a Specialized Team Behind Every Custom Build. Co-create with a driven team that has designed and developed 2500+ bespoke Product systems combining unique product vision with finely tuned, purpose-built tech."
+            bg="/software/product.png"
         />
         <Tabs />
         <AIDevelopment

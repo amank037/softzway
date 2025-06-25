@@ -76,6 +76,7 @@ function ProtoDev() {
             subtitle="Build Powerful Prototype Software Solutions with Our"
             title="Custom Prototype Software Development Company"
             desc="Tailored Processes, Configurable Methods, and a Specialized Team Behind Every Custom Build. Co-create with a driven team that has designed and developed 2500+ bespoke Prototype Software systems combining unique product vision with finely tuned, purpose-built tech."
+            bg="/software/prototype.png"
         />
         <Tabs />
         <AIDevelopment
