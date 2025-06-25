@@ -23,15 +23,14 @@
 .aifaq-panel {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-    overflow: hidden;
-    border: 1px solid #e5e7eb;
+    /* box-shadow: 0 2px 16px rgba(0,0,0,0.07); */
+    /* overflow: hidden; */
+    /* border: 1px solid #e5e7eb; */
     transition: box-shadow 0.2s;
 }
 
 .aifaq-panel.open {
-    box-shadow: 0 4px 24px rgba(59,201,219,0.10);
-    border-color: var(--light-green);
+
 }
 
 .aifaq-panel-title {
@@ -47,9 +46,9 @@
     user-select: none;
 }
 
-.aifaq-panel-title.open {
+/* .aifaq-panel-title.open {
     color: var(--medium-teal);
-}
+} */
 
 .aifaq-chevron {
     margin-left: 16px;
@@ -65,6 +64,8 @@
 .aifaq-panel-content {
     padding: 0 24px 0 24px;
     background: #fff;
+    box-shadow: 0 4px 24px rgba(59, 219, 118, 0.4);
+    border: 1px solid var(--light-green);
 }
 
 .aifaq-panel-answer {
