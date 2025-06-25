@@ -14,7 +14,7 @@ function AILandingSection({ subtitle, title, desc, img, bg }) {
           <p>{desc}</p>
           <div className='ailanding-btns'>
             {/* <button className='ailanding-demo-btn'>VIEW DEMO</button> */}
-            <button className='ailanding-talk-btn'>TALK TO US</button>
+            <button className='hirelanding-talk-btn'><span>TALK TO US</span></button>
           </div>
         </div>
 

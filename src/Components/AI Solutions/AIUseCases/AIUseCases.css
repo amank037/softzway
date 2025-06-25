@@ -1,99 +1,161 @@
-.aiuse-div {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
+.aiuse-tab-root {
     width: 100%;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px 20px;
+    background: #fff;
+    padding: 40px 0;
 }
 
 .aiuse-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.aiuse-accordion {
-  flex: 3;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-  padding: 32px 24px;
+.aiuse-tab-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+    margin-top: 32px;
+    overflow: hidden;
 }
 
-.aiuse-panel {
-  border-bottom: 1px solid #e5e7eb;
-  padding-bottom: 12px;
+.aiuse-tab-list {
+    flex: 1.2;
+    /* background: var(--primary-grey, #f5f7fa); */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 32px;
+    border-right: 1px solid #e5e7eb;
+    min-width: 220px;
+    gap: 4px;
 }
 
-.aiuse-panel-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 12px 0;
-  transition: color 0.2s;
-  color: var(--primary-grey);
-  position: relative;
-  display: flex;
-  justify-content: space-between;
+.aiuse-tab-item {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #555;
+    padding: 18px 32px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+    position: relative;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 20px 0;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
 }
 
-.aiuse-panel-title.open {
-    color: var(--secondary-grey);
+.aiuse-tab-item.active {
+    background: var(--dark-teal, #1e3a3a);
+    color: #fff;
 }
-.aiuse-panel-title span{
-    transition: transform 0.3s ease-in-out;
-}
-.aiuse-panel-title.open span{
-    transform: rotate(180deg);
-}
-
-.aiuse-panel-list {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
-  margin: 0;
-  padding-left: 20px;
-  pointer-events: none;
+.aiuse-tab-item:hover{
+  background: var(--medium-teal);
+  color: #fff;
 }
 
-.aiuse-panel.open .aiuse-panel-list {
-  max-height: 500px; /* or a value that fits your content */
-  opacity: 1;
-  margin: 12px 0 0 0;
-  pointer-events: auto;
-  list-style:inside;
-}
-.aiuse-panel.open .aiuse-panel-list li{
-  margin: 10px 0;
+/* .aiuse-tab-item.active .aiuse-tab-indicator {
+    opacity: 1;
+    transform: scaleY(1);
+} */
+
+.aiuse-tab-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--dark-teal, #1e3a3a);
+    border-radius: 0 6px 6px 0;
+    opacity: 0;
+    transform: scaleY(0.5);
+    transition: opacity 0.3s, transform 0.3s;
 }
 
-.aiuse-div > img {
-  width: 40%;
-  max-width: 100%;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-  margin-left: 0;
+.aiuse-tab-content-outer {
+    flex: 3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 48px;
+    background: #fff;
+    min-height: 400px;
+    animation: fadeInTab 0.5s cubic-bezier(0.4,0,0.2,1);
+    width: 100%;
+}
+
+@keyframes fadeInTab {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.aiuse-tab-content {
+    width: 100%;
+    animation: fadeInTab 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+
+.aiuse-tab-content ul {
+    margin: 0;
+    padding: 0 0 0 10px;
+    list-style: inside disc;
+}
+
+.aiuse-tab-content-li {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: fadeInList 0.5s forwards;
+}
+
+@keyframes fadeInList {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.aiuse-tab-content-li:not(:last-child) {
+    margin-bottom: 18px;
 }
 
 @media (max-width: 900px) {
-  .aiuse-div {
-    flex-direction: column;
-    gap: 24px;
-    align-items: stretch;
-  }
-  .aiuse-accordion, .aiuse-div > img {
-    flex: unset;
-    width: 100%;
-    max-width: 100%;
-  }
-  .aiuse-accordion {
-    padding: 20px 10px;
-  }
+    .aiuse-tab-layout {
+        flex-direction: column;
+        min-height: unset;
+    }
+    .aiuse-tab-list {
+        flex-direction: row;
+        flex: unset;
+        min-width: unset;
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+        padding: 0;
+        overflow-x: auto;
+        background: var(--primary-grey, #f5f7fa);
+    }
+    .aiuse-tab-item {
+        border-radius: 20px 20px 0 0;
+        padding: 14px 18px;
+        margin-bottom: 0;
+        margin-right: 2px;
+    }
+    .aiuse-tab-indicator {
+        left: 0;
+        top: unset;
+        bottom: 0;
+        width: 100%;
+        height: 5px;
+        border-radius: 0 0 6px 6px;
+    }
+    .aiuse-tab-content-outer {
+        padding: 24px 10px;
+        min-height: unset;
+    }
 }

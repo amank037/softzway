@@ -140,7 +140,7 @@ function MetaverseGame() {
             subtitle="Build Powerful Metaverse Solutions with Our"
             title="Metaverse Game Development Services Company"
             desc= "Our Metaverse Game development company fulfills your business objectives with an impressive work quality. Our app development agency makes sure that you get the ideal Metaverse Game development services that will allow you to captivate the attention of your end users naturally. Comprising industry experience of 13 years, we are proficient in executing Metaverse Game development projects of distinct complexities."
-            
+            bg="/metaverse/game.png"
         />
     
         <SolutionsSection

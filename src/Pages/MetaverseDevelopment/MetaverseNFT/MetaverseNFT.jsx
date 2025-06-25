@@ -140,7 +140,7 @@ function MetaverseNFT() {
             subtitle="Build Powerful Metaverse Solutions with Our"
             title="Metaverse NFT Development Services Company"
             desc= "Our Metaverse NFT development company fulfills your business objectives with an impressive work quality. Our app development agency makes sure that you get the ideal Metaverse NFT development services that will allow you to captivate the attention of your end users naturally. Comprising industry experience of 13 years, we are proficient in executing Metaverse NFT development projects of distinct complexities."
-            
+            bg="/metaverse/nft.png"
         />
     
         <SolutionsSection

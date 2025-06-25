@@ -275,11 +275,11 @@ function NFTMarketDev() {
             subtitle="Build Powerful NFT Market Solutions with Our"
             title="NFT Market Development Company"
             desc="Softzway is a leading NFT Market Development Company, specializing in providing comprehensive solutions for businesses and individuals in the realm of non-fungible tokens. Our expert team of developers and blockchain enthusiasts is dedicated to delivering high-quality services tailored to your specific needs. Whether you’re an artist, brand, or platform looking to tokenize assets, create NFT Market collectibles, or build a customized marketplace, we have the expertise to bring your vision to life. Explore the limitless possibilities of blockchain technology with us today."
-            img="https://www.solulab.com/wp-content/uploads/2023/07/NFT Market-Development-Company.png"
+            bg="/blockchain/nftmarket.png"
         />
         <SolutionsSection
             title="Transform Your Business with Custom NFT Market Development"
-            p1="Empower your organization with custom enterprise software solutions that drive efficiency, productivity, and growth. Our team of expert developers at SoluLab specializes in delivering high-quality custom software development services that align with your unique business needs. From automating processes to enhancing collaboration and improving customer experiences, our solutions are designed to help you stay ahead in the competitive market."
+            p1="Empower your organization with custom enterprise software solutions that drive efficiency, productivity, and growth. Our team of expert developers at Softzway specializes in delivering high-quality custom software development services that align with your unique business needs. From automating processes to enhancing collaboration and improving customer experiences, our solutions are designed to help you stay ahead in the competitive market."
             p3="Contact us now and unlock the full potential of enterprise software for your business success."
         />
         <AIDevelopment
@@ -314,7 +314,7 @@ function NFTMarketDev() {
         />
         <AIDevelopment
             aidevTitle="Benefits of Using NFT Market Development Services"
-            aidevDesc="Harness the transformative power of SoluLab- NFT Market smart contract development company Explore the benefits of leveraging our expertise with emerging technologies. Revolutionize your digital assets with SoluLab’s NFT Market development solutions today."
+            aidevDesc="Harness the transformative power of Softzway- NFT Market smart contract development company Explore the benefits of leveraging our expertise with emerging technologies. Revolutionize your digital assets with Softzway’s NFT Market development solutions today."
             aidevGrid={nftBenefits}
             columns={3}
         />

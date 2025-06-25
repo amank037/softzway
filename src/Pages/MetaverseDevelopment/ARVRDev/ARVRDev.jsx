@@ -140,7 +140,7 @@ function ARVRDev() {
             subtitle="Build Powerful VR Solutions with Our"
             title="AR & VR Application Development Services Company"
             desc= "Our AR/VR app development company fulfills your business objectives with an impressive work quality. Our app development agency makes sure that you get the ideal AR/VR app development services that will allow you to captivate the attention of your end users naturally. Comprising industry experience of 13 years, we are proficient in executing AR/VR app development projects of distinct complexities."
-            img="https://cdn.pixabay.com/photo/2017/01/06/19/15/smartphone-1957740_1280.jpg"
+            bg="/metaverse/arvr.png"
         />
     
         <SolutionsSection
