@@ -379,7 +379,7 @@ const navItems = [
                 </div>
                 <div className='header-contact-wrapper'>
                     <div className='header-button'>
-                        <button><Link to="/contact-us">Contact Us</Link></button>
+                        <Link to="/contact-us"><button>Contact Us</button></Link>
                     </div>
                     <div className='contact-menu'>
                         <div className="contact-content">
@@ -402,9 +402,7 @@ const navItems = [
                         </div>
                 
                         <div>
-                            <button>
-                                <Link to="/contact-us">Contact Us</Link>
-                            </button>
+                            <Link to="/contact-us"><button>Contact Us</button></Link>
                         </div>
                 
                     </div>
