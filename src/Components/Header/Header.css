@@ -105,7 +105,19 @@
 .header-nav-sub-arrow {
   transition: transform 0.2s;
 }
+.header-nav-dropdown-parent.open {
+  background: #dbdbdb;
+  color: var(--medium-teal);
+  border-left: 5px solid var(--medium-teal);
+  font-weight: 600;
+}
 
+.header-nav-dropdown-parent.current-route {
+  background: #59c49277;
+  color: #000;
+  border-left: 5px solid var(--dark-teal);
+  font-weight: 700;
+}
 
 .header-button button {
     font-size: 14px;

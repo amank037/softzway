@@ -47,21 +47,19 @@ import IotSoftwareDev from './Pages/SoftwareDevelopment/IotSoftwareDev/IotSoftwa
 import MicroDev from './Pages/SoftwareDevelopment/MicroDev/MicroDev.jsx'
 import ProductDev from './Pages/SoftwareDevelopment/ProductDev/ProductDev.jsx'
 import ProtoDev from './Pages/SoftwareDevelopment/ProtoDev/ProtoDev.jsx'
+import HireIOS from './Pages/HireTalent/Mobile/IOS/HireIOS.jsx'
 
 
 function App() {
   useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.5, // Increase for heavier feel
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smooth: true,
+    const lenis = new Lenis({ 
+      autoRaf: true ,
+      duration: 1.5
     });
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
+    // lenis.on('scroll', (e) => {
+    //   console.log(e);
+    // });
 
     return () => {
       lenis.destroy();
@@ -120,6 +118,8 @@ function App() {
             <Route path="/product-development" element={<ProductDev />} />
             <Route path="/prototype-development" element={<ProtoDev />} />
             <Route path="/microservices-development" element={<MicroDev/>}/>
+
+            <Route path="ios-developer" element={<HireIOS/>}/>
           </Routes>
         </div>
         <Footer />

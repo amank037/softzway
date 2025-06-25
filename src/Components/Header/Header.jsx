@@ -25,6 +25,14 @@ function Header() {
         setActiveSubDropdown(null)
     }, [location.pathname])
 
+    const isDropdownCurrentRoute = (dropdown) => 
+        dropdown.some(sub =>
+            sub.submenu
+            ? sub.submenu.come(menuItem => location.pathname === menuItem.to)
+            : location.pathname === sub.to
+        )
+    
+
     const handleDropdownToggle = (index) => {
         if (isMobile) {
             setActiveDropdown(activeDropdown === index ? null : index);
@@ -34,9 +42,20 @@ function Header() {
 
     const handleMouseEnter = (index) => {
         if (!isMobile) {
-            setActiveDropdown(index);
+        setActiveDropdown(index);
+
+        // If dropdown has submenus, set the activeSubDropdown based on current route
+        const dropdown = navItems[index].dropdown;
+        if (dropdown[0]?.submenu) {
+            // Find the submenu index that contains the current route
+            const foundIndex = dropdown.findIndex(sub =>
+                sub.submenu && sub.submenu.some(menuItem => location.pathname === menuItem.to)
+            );
+            setActiveSubDropdown(foundIndex !== -1 ? foundIndex : 0);
+        } else {
             setActiveSubDropdown(null);
         }
+    }
     };
 
     const handleMouseLeave = () => {
@@ -275,10 +294,11 @@ const navItems = [
                                         <div
                                         key={subIndex}
                                         className={`header-nav-dropdown-item header-nav-dropdown-parent${
-                                            activeSubDropdown === subIndex ||
-                                            (sub.submenu && sub.submenu.some(menuItem => location.pathname === menuItem.to))
-                                            ? ' active'
-                                            : ''
+                                            activeSubDropdown === subIndex ? ' open' : ''
+                                            } ${
+                                            sub.submenu && sub.submenu.some(menuItem => location.pathname === menuItem.to)
+                                                ? ' current-route'
+                                                : ''
                                         }`}
                                         onClick={e => {
                                             e.stopPropagation();

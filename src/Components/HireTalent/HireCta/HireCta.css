@@ -1,0 +1,51 @@
+.hirecta-div{
+    padding: 40px 20px;
+    width: 100%;
+    background: linear-gradient(140deg, var(--dark-teal), #000000);
+}
+
+.hirecta-container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 50px;
+}
+.hirecta-title{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+.hirecta-title h1{
+    font-size: 2.75rem;
+}
+.hirecta-title button{
+    border: 2px solid var(--light-teal);
+    border-radius: 25px 0 25px 0;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.hirecta-title button:hover{
+    background-color: var(--light-teal);
+}
+
+
+
+
+@media screen and (max-width:1200px){
+    .hirecta-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .hirecta-title{
+        align-items: center;
+        text-align: center;
+    }
+}

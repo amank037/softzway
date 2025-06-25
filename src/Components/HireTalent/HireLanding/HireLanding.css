@@ -1,4 +1,4 @@
-.ailanding{
+.hirelanding{
     /* background: linear-gradient(140deg, #000000, var(--medium-teal)); */
     /* background-image: url('/AI agent development.png'); */
     height: 75vh;
@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
 }
 
-.ailanding-container{
+.hirelanding-container{
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
@@ -20,10 +20,10 @@
     align-items: center;
     justify-content: center;
 }
-.ailanding-img{
+.hirelanding-img{
     flex: 2;
 }
-.ailanding-content{
+.hirelanding-content{
     flex: 3;
     display: flex;
     flex-direction: column ;
@@ -31,70 +31,73 @@
     align-items: left;
     gap: 20px;
 }
-.ailanding-content h4{
+.hirelanding-content h4{
     font-size: 1.1vw;
 }
-.ailanding-content h1{
+.hirelanding-content h1{
     font-size: 2.75vw;
     font-weight: 600;
     /* font-size: 2.75rem; */
 }
-.ailanding-content p{
+.hirelanding-content p{
     /* font-size: 1.25rem; */
     font-size: 1.1vw;
     font-weight: 400;
 }
-.ailanding-btns{
+.hirelanding-btns{
     display: flex;
     gap: 30px;
 }
-.ailanding-btns button{
+.hirelanding-btns button{
     padding: 15px 30px;
     font-size: 1.15rem;
     font-weight: 600;
     color: #fff;
 }
-.ailanding-demo-btn{
+.hirelanding-demo-btn{
     background-color: var(--dark-teal);
     border: none;
     border-radius: 25px 25px 0 25px;
 }
-.ailanding-talk-btn{
+.hirelanding-talk-btn{
     background-color: transparent;
     border: 2px solid var(--light-teal);
     border-radius: 0 25px 25px 25px;
 }
 
 @media screen and (max-width: 1200px){
-    .ailanding-content h1{
+    .hirelanding-content h1{
         font-size: 2.25rem;
     }
-    .ailanding-content p{
+    .hirelanding-content p{
         font-size: 1rem;
         font-weight: 400;
     }
-    .ailanding-content h4{
+    .hirelanding-content h4{
         font-size: 1rem;
         font-weight: 400;
     }
 }
 
 @media screen and (max-width: 768px){
-    .ailanding{
+    .hirelanding{
         height: 650px;
         background-size: cover;
     }
-    .ailanding-container{
+    .hirelanding-container{
         display: block;
     }
-    .ailanding-content h1{
+    .hirelanding-img{
+        display: none;
+    }
+    .hirelanding-content h1{
         font-size: 2.25rem;
     }
-    .ailanding-content p{
+    .hirelanding-content p{
         font-size: 1rem;
         font-weight: 400;
     }
-    .ailanding-content h4{
+    .hirelanding-content h4{
         font-size: 1rem;
         font-weight: 400;
     }

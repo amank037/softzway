@@ -1,0 +1,98 @@
+.hire-benefits2-div {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.hire-benefits2-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hire-benefits2-content {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    margin-top: 32px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hire-benefits2-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    flex: 1;
+}
+
+.hire-benefits2-content ul {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    list-style:disc;
+}
+.hire-benefits2-content ul li ul{
+    list-style: circle;
+}
+.hire-benefits2-content li {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 20px 18px 20px;
+    position: relative;
+}
+.hire-benefits2-content li::marker{
+    font-size: 1.5em;
+    color: var(--medium-teal)
+}
+.hire-benefits2-content h4 {
+    margin: 0 0 8px 0;
+    font-size: 1.08rem;
+    color: var(--primary-grey);
+    font-weight: 700;
+}
+
+.hire-benefits2-content p {
+    margin: 0;
+    color: #444;
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    .hire-benefits2-content {
+        flex-direction: column;
+        gap: 28px;
+        align-items: stretch;
+    }
+    .hire-benefits2-content img {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .hire-benefits2-content ul {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hire-benefits2-div {
+        padding: 24px 0;
+    }
+    .hire-benefits2-container {
+        padding: 0 6px;
+    }
+    .hire-benefits2-content li {
+        padding: 14px 10px 12px 12px;
+        font-size: 0.97rem;
+    }
+    .hire-benefits2-content h4 {
+        font-size: 1rem;
+    }
+}
