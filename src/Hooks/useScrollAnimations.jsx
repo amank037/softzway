@@ -30,7 +30,7 @@ export function useScrollAnimations() {
             {
             scrollTrigger: {
                 trigger: el,
-                start: "25% bottom", // when 30% is out of the bottom
+                start: "30% bottom", // when 30% is out of the bottom
                 toggleActions: "play none none none",
                 markers: false, // turn on if debugging
             },

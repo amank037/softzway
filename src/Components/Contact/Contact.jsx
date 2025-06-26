@@ -84,9 +84,11 @@ function Contact() {
                             </div>
 
                             <div className='contact-form-button'>
-                                <button disabled={!captchaValid}><Leftbutton leftbtn="SEND MESSAGE"/></button>
-                                <input type="checkbox" />
-                                <p>Need an NDA</p>
+                                <Leftbutton disabled={!captchaValid} leftbtn="SEND MESSAGE"/>
+                                <div className='contact-nda'>
+                                    <input type="checkbox" />
+                                    <p>Need an NDA</p>
+                                </div>
                             </div>
                         </div>
                     </div>

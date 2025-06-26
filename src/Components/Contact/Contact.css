@@ -1,6 +1,6 @@
 /* General Contact Styles */
 .contact-div {
-    padding: 20px;
+    padding: 40px 20px;
     background-color: var(--gradient-light-green);
     backdrop-filter: blur(10px);
 }
@@ -51,6 +51,7 @@
     flex-direction: row;
     gap: 60px;
     align-items: start;
+    width: 100%;
 }
 
 .contact-text {
@@ -75,7 +76,7 @@
 
 .contact-text h3 {
     font-size: 1.5rem;
-    color: #fff;
+    
     margin-bottom: 20px;
 }
 
@@ -189,7 +190,7 @@
     height: 40px;
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    padding: 0 20px;
 }
 
 .captcha-text {
@@ -207,6 +208,7 @@
     text-align: center;
     background: #fafbfc;
     transition: all 0.3s ease;
+    flex: 1;
 }
 
 .contact-form-captcha input:focus {
@@ -250,16 +252,6 @@
     justify-content: flex-start;
 }
 
-.contact-form-button button {
-    border: none;
-    padding: 15px 30px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
 
 
 .contact-form-button input[type="checkbox"] {
@@ -282,7 +274,6 @@
     .contact-text {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
     }
 
@@ -292,5 +283,114 @@
 
     .contact-form-captcha-container {
         width: 100%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 32px;
+        align-items: stretch;
+    }
+    .contact-form {
+        padding: 18px 10px;
+    }
+    .contact-form-info {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    /* .contact-form-captcha-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        min-width: 0;
+    } */
+}
+
+@media screen and (max-width: 600px) {
+    .contact-div {
+        padding: 18px 2vw;
+    }
+    .contact-container {
+        padding: 0;
+    }
+    .contact-title h2 {
+        font-size: 1.4rem;
+    }
+    .contact-content {
+        gap: 18px;
+    }
+    .contact-text {
+        margin-top: 10px;
+    }
+    .contact-text h2 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    .contact-text p {
+        font-size: 0.98rem;
+        margin-bottom: 18px;
+    }
+    .contact-text h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    .contact-info a {
+        font-size: 0.98rem;
+        padding: 6px 0;
+    }
+    .contact-form {
+        padding: 10px 2vw;
+        border-radius: 12px;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.07);
+    }
+    .contact-form h3 {
+        font-size: 1.2rem;
+        margin-bottom: 18px;
+    }
+    .contact-form-info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+    .contact-form-info input {
+        font-size: 0.97rem;
+        padding: 8px 10px;
+    }
+    .contact-form-msg input {
+        min-height: 40px;
+        font-size: 0.97rem;
+        padding: 8px 10px;
+    }
+    .contact-form-captcha-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 18px;
+    }
+    .captcha-question {
+        margin-left: 10px;
+        height: 32px;
+        align-self: center;
+    }
+    .captcha-text {
+        font-size: 0.98rem;
+    }
+    .contact-form-captcha input {
+        height: 32px;
+        font-size: 1rem;
+    }
+    .contact-form-button {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        gap: 10px;
+    }
+    .contact-nda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 6px;
     }
 }

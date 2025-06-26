@@ -51,12 +51,6 @@
     display: flex;
     gap: 30px;
 }
-.ailanding-btns button{
-    padding: 15px 30px;
-    font-size: 1.15rem;
-    font-weight: 600;
-    overflow: hidden;
-}
 .ailanding-demo-btn{
     background-color: var(--light-green);
     border: none;

@@ -62,18 +62,6 @@
     flex-wrap: wrap;
 }
 
-.aisolutions-btns button {
-    padding: 14px 28px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    border: 1px solid transparent;
-    border-radius: 1.5rem;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
 
 .aisolutions-talk-btn {
     background: #6AAE43;
@@ -195,11 +183,6 @@
         align-items: center;
     }
     
-    .aisolutions-btns button {
-        width: 100%;
-        max-width: 250px;
-        justify-content: center;
-    }
     
     .aisolutions-visual {
         height: 250px;
