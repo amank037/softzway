@@ -24,7 +24,7 @@
     transition: box-shadow 0.3s ease-in-out;
 }
 .aiuse-tab-layout:hover{
-    box-shadow: 0 2px 16px rgba(0, 122, 61, 0.4);
+    box-shadow: 0 2px 16px var(--light-light-green);
 }
 
 .aiuse-tab-list {
@@ -43,7 +43,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     color: #555;
-    padding: 18px 32px;
+    padding: 12px 15px;
     cursor: pointer;
     border: none;
     background: transparent;
@@ -63,8 +63,7 @@
     color: #fff;
 }
 .aiuse-tab-item:hover{
-  background: var(--medium-teal);
-  color: #fff;
+  background: var(--gradient-light-green);
 }
 
 /* .aiuse-tab-item.active .aiuse-tab-indicator {

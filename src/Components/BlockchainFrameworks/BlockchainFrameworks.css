@@ -1,5 +1,5 @@
 .bcf-div{
-    background-color: #57a98348;
+    background-color: var(--gradient-light-green);
     width: 100%;
     padding: 40px 20px
 }

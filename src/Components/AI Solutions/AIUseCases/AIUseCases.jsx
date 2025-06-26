@@ -21,7 +21,6 @@ function AIUseCases({ title, useCases }) {
                                 aria-selected={activeTab === idx}
                             >
                                 <span>{caseItem.title}</span>
-                                <div className="aiuse-tab-indicator" />
                             </div>
                         ))}
                     </div>
