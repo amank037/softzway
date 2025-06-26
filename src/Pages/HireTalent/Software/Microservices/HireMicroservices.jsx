@@ -203,6 +203,7 @@ function HireMicroservices() {
             <HireLanding
                 title="Hire Microservices Software Developers"
                 desc="Unlock the power of microservices architecture with our expert development services. From concept to launch, we deliver high-quality, scalable microservices solutions that drive business growth and operational efficiency."
+                bg="/hire/micro.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Microservices Software Development Team"
@@ -229,7 +230,7 @@ function HireMicroservices() {
                 title="Benefits of Hiring our Dedicated Microservices Software Developers"
                 description="Hire microservices software developers who have in-depth knowledge of various microservices frameworks and tools to build secure, scalable, and high-performing solutions."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

@@ -10,7 +10,7 @@ function AIProcess({ title, processItems }) {
             <Title title={title} />
             <div className="aiprocess-timeline-bar">
             {processItems.map((item, idx) => (
-                <div className="aiprocess-timeline-dot-wrapper animate-on-scroll" data-direction="right" data-delay={idx * 0.1} key={item.title}>
+                <div className="aiprocess-timeline-dot-wrapper animate-on-scroll" data-direction="right" data-delay={idx * 0.2} key={item.title}>
                     <div className="aiprocess-timeline-dot"></div>
                     <div className={`aiprocess-timeline-card ${idx % 2 === 0 ? 'up' : 'down'}`}>
                         <h4>{item.title}</h4>

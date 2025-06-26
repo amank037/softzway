@@ -230,7 +230,7 @@ function HireFullStack() {
                 title="Benefits of Hiring our Dedicated Full Stack Developers"
                 description="Hire full stack developers who have in-depth knowledge of various frontend and backend technologies to build secure, scalable, and high-performing solutions."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

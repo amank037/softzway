@@ -230,7 +230,7 @@ function HireDS() {
                 title="Benefits of Hiring our Dedicated Data Science Developers"
                 description="Hire data science developers who have in-depth knowledge of various data science tools and frameworks to bring your ideas to life."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

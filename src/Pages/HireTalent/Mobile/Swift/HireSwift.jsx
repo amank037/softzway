@@ -203,7 +203,8 @@ function HireSwift() {
             <HireLanding
                 title="Hire Swift App Developers"
                 desc="Unlock the potential of native iOS development with our expert Swift app development services. From concept to launch, we deliver high-quality, user-friendly Swift applications that drive business growth and enhance user engagement."
-                img="https://www.redappletech.com/wp-content/uploads/2024/08/ios-top-image.png"
+                    bg="/hire/swift.png"
+            
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Swift App Development Team"
@@ -230,7 +231,7 @@ function HireSwift() {
                 title="Benefits of Hiring our Dedicated Swift App Developers"
                 description="Hire Swift app developers who have in-depth knowledge of various Swift and iOS development tools to bring alive your imagination."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

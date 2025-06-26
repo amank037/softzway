@@ -203,7 +203,8 @@ function HireFlutter() {
             <HireLanding
                 title="Hire Flutter App Developers"
                 desc="Unlock the potential of cross-platform mobile technology with our expert Flutter app development services. From concept to launch, we deliver high-quality, user-friendly Flutter applications that drive business growth and enhance user engagement."
-                img="https://www.redappletech.com/wp-content/uploads/2024/08/ios-top-image.png"
+                    bg="/hire/flutter.png"
+            
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Flutter App Development Team"
@@ -230,7 +231,7 @@ function HireFlutter() {
                 title="Benefits of Hiring our Dedicated Flutter App Developers"
                 description="Hire Flutter app developers who have in-depth knowledge of various Flutter app development tools to bring alive your imagination."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

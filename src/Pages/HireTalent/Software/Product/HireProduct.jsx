@@ -203,6 +203,7 @@ function HireProductSoftware() {
             <HireLanding
                 title="Hire Product Software Developers"
                 desc="Unlock the potential of innovative product development with our expert software services. From concept to launch, we deliver high-quality, user-friendly product software solutions that drive business growth and enhance user engagement."
+                bg="/hire/product.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Product Software Development Team"
@@ -229,7 +230,7 @@ function HireProductSoftware() {
                 title="Benefits of Hiring our Dedicated Product Software Developers"
                 description="Hire product software developers who have in-depth knowledge of various product development tools to bring your ideas to life."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

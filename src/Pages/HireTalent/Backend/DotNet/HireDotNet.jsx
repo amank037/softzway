@@ -203,6 +203,7 @@ function HireDotNet() {
             <HireLanding
                 title="Hire .NET Backend Developers"
                 desc="Unlock the power of .NET for your backend systems with our expert development services. From scalable APIs to robust integrations, we deliver high-quality, secure .NET backend solutions that drive business growth and efficiency."
+                bg="/hire/net.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our .NET Backend Development Team"
@@ -230,7 +231,7 @@ function HireDotNet() {
                 title="Benefits of Hiring our Dedicated .NET Backend Developers"
                 description="Hire .NET backend developers who have in-depth knowledge of various .NET frameworks and tools to build secure, scalable, and high-performing backend systems."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

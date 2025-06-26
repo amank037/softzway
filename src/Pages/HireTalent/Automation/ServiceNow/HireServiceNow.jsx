@@ -231,7 +231,7 @@ function HireServiceNow() {
                 title="Benefits of Hiring our Dedicated ServiceNow Developers"
                 description="Hire ServiceNow developers who have in-depth knowledge of ServiceNow tools and frameworks to build secure, scalable, and high-performing ITSM solutions."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

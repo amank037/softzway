@@ -10,46 +10,46 @@ import HireBenefits2 from "../../../../Components/HireTalent/HireBenefits2/HireB
 import HireCta from "../../../../Components/HireTalent/HireCta/HireCta"
 import AIFaq from "../../../../Components/AI Solutions/AIFaq/AIFaq"
 
-const androidServicesData = [
+const vueServicesData = [
     {
         image: "https://www.redappletech.com/wp-content/uploads/2024/01/software-red.png",
-        title: "Customized",
-        description: "Hire Android app developers who specialize in crafting scalable, customized, and stable apps tailored to your business needs. Our company offers end-to-end support to ensure your project goals are met with precision and effectiveness."
+        title: "Custom Vue.js Solutions",
+        description: "Hire Vue.js developers who specialize in crafting scalable, customized, and stable web apps tailored to your business needs. Our company offers end-to-end support to ensure your project goals are met with precision and effectiveness."
     },
     {
         image: "https://www.redappletech.com/wp-content/uploads/2024/01/UIUX-red.png",
         title: "UI/UX Design",
-        description: "Hire Android app developers to enhance the visual appeal of your Android applications by integrating the latest UI/UX design trends. They work diligently to create a memorable and engaging experience for your end users."
+        description: "Hire Vue.js developers to enhance the visual appeal of your Vue applications by integrating the latest UI/UX design trends. They work diligently to create a memorable and engaging experience for your end users."
     },
     {
         image: "https://www.redappletech.com/wp-content/uploads/2024/01/api-red.png",
-        title: "API",
-        description: "Hire dedicated Android app developer to integrate next-gen technologies like AI, Cloud, and IoT to create embedded applications for wearables and smart appliances. They ensure timely delivery and desired outcomes with precision."
+        title: "API Integration",
+        description: "Hire dedicated Vue.js developers to integrate next-gen technologies like REST APIs, GraphQL, and third-party services. They ensure timely delivery and desired outcomes with precision."
     },
     {
         image: "https://www.redappletech.com/wp-content/uploads/2024/01/swift-2.png",
-        title: "Kotlin/Java",
-        description: "Hire Android app developers to facilitate a smooth migration of your existing apps into the Android ecosystem. They ensure that your valuable business data remains secure and private throughout the migration process, maintaining your privacy."
+        title: "Migration to Vue.js",
+        description: "Hire Vue.js developers to facilitate a smooth migration of your existing apps into the Vue.js ecosystem. They ensure that your valuable business data remains secure and private throughout the migration process, maintaining your privacy."
     },
     {
         image: "https://www.redappletech.com/wp-content/uploads/2024/01/migration-red.png",
-        title: "Migration",
-        description: "Hire Android app programmer to enhance your existing Android apps by integrating new features and functionalities. They seamlessly incorporate third-party APIs and libraries to boost usability and elevate your app’s performance and capabilities."
+        title: "Feature Enhancement",
+        description: "Hire Vue.js programmers to enhance your existing Vue apps by integrating new features and functionalities. They seamlessly incorporate third-party APIs and libraries to boost usability and elevate your app’s performance and capabilities."
     },
     {
         image: "https://www.redappletech.com/wp-content/uploads/2024/01/red-upgradation-2.png",
         title: "Upgradation",
-        description: "Hire Android app programmer to ensure your Android apps are free from bugs and glitches to maximize end-user engagement. Our dedicated developers conduct rigorous testing with advanced tools, effectively eliminating issues and enhancing the overall quality of your applications."
+        description: "Hire Vue.js programmers to ensure your Vue apps are free from bugs and glitches to maximize end-user engagement. Our dedicated developers conduct rigorous testing with advanced tools, effectively eliminating issues and enhancing the overall quality of your applications."
     },
     {
         image: "https://www.redappletech.com/wp-content/uploads/2024/01/game-testing-1.png",
         title: "App Testing",
-        description: "Hire Android developer who excels in integrating and deploying Android applications across your chosen platforms. They guide you through each deployment stage, ensuring optimal visibility and top-notch performance for your Android apps."
+        description: "Hire Vue.js developers who excel in integrating and deploying Vue applications across your chosen platforms. They guide you through each deployment stage, ensuring optimal visibility and top-notch performance for your Vue apps."
     },
     {
         image: "https://www.redappletech.com/wp-content/uploads/2024/01/maintenance-red.png",
         title: "Maintenance",
-        description: "As technology evolves, your apps must adapt. Hire Android app developer to receive on-demand support and maintenance solutions to ensure that your apps stay up-to-date and maintain high standards in a constantly changing landscape."
+        description: "As technology evolves, your apps must adapt. Hire Vue.js developers to receive on-demand support and maintenance solutions to ensure that your apps stay up-to-date and maintain high standards in a constantly changing landscape."
     }
 ]
 
@@ -141,7 +141,7 @@ const processItems = [
     {
         image: "https://www.redappletech.com/wp-content/uploads/2024/07/connection.png",
         title: "Screening & Selection",
-        description: "This stage rigorously evaluate candidates to identify the best fit based on qualifications and skills for better outcome."
+        description: "This stage rigorously evaluates candidates to identify the best fit based on qualifications and skills for better outcome."
     },
     {
         image: "https://www.redappletech.com/wp-content/uploads/2024/07/start-up.png",
@@ -158,69 +158,68 @@ const processItems = [
 const benefits = [
     {
         heading: "Versatile Deployment",
-        desc: "Android app enables seamless deployment across major OS, ensuring web & desktop applications are universally accessible."
+        desc: "Vue.js enables seamless deployment across major browsers and platforms, ensuring web applications are universally accessible."
     },
     {
         heading: "Stability & Security",
-        desc: "Experience the security, stability and reliability of Android, guaranteeing continuous uptime for your business portals."
+        desc: "Experience the security, stability, and reliability of Vue.js, guaranteeing continuous uptime for your business portals."
     },
     {
         heading: "Accelerated Market Reach",
-        desc: "Leverage the prebuilt Android framework to develop feature-rich solutions swiftly, reducing time-to-market significantly."
+        desc: "Leverage the Vue.js framework to develop feature-rich solutions swiftly, reducing time-to-market significantly."
     },
     {
         heading: "Exceptional User Experience",
-        desc: "With Android, enjoy superior user experiences and unparalleled UI design, making it a globally preferred choice among developers."
+        desc: "With Vue.js, enjoy superior user experiences and unparalleled UI design, making it a globally preferred choice among developers."
     }
 ]
 
-const androidFaqItems = [
+const vueFaqItems = [
     {
-        title: "Why should I hire an Android developer for my app?",
-        description: "Hiring an Android developer ensures your app is optimized for a wide range of Android devices, delivers a seamless user experience, and leverages the latest Android features and security standards."
+        title: "Why should I hire a Vue.js developer for my project?",
+        description: "Hiring a Vue.js developer ensures your web app is optimized for performance, delivers a seamless user experience, and leverages the latest Vue.js features and best practices."
     },
     {
-        title: "How long does it take to develop an Android app?",
-        description: "The development timeline depends on the app's complexity, features, and integrations. Simple Android apps can be built in a few weeks, while more complex solutions may take several months."
+        title: "How long does it take to develop a Vue.js application?",
+        description: "The development timeline depends on the app's complexity, features, and integrations. Simple Vue.js apps can be built in a few weeks, while more complex solutions may take several months."
     },
     {
-        title: "Will my Android app work on all Android devices?",
-        description: "Yes, we ensure your app is compatible with a wide range of Android devices and screen sizes through responsive design and thorough testing."
+        title: "Will my Vue.js app work on all browsers and devices?",
+        description: "Yes, we ensure your Vue.js app is compatible with a wide range of browsers and devices through responsive design and thorough testing."
     },
     {
-        title: "Do you provide post-launch support for Android apps?",
-        description: "Absolutely! We offer ongoing maintenance, updates, and technical support to keep your Android app running smoothly and up-to-date with the latest Android versions."
+        title: "Do you provide post-launch support for Vue.js apps?",
+        description: "Absolutely! We offer ongoing maintenance, updates, and technical support to keep your Vue.js app running smoothly and up-to-date with the latest Vue.js versions."
     },
     {
-        title: "Can you help with Google Play Store submission?",
-        description: "Yes, we handle the entire Google Play Store submission process, ensuring your app meets all Google guidelines and requirements for a successful launch."
+        title: "Can you help with deployment and hosting?",
+        description: "Yes, we handle the entire deployment and hosting process, ensuring your Vue.js app is live, secure, and optimized for performance."
     }
 ]
 
-function HireAndroid() {
+function HireVue() {
     return (
         <div>
             <HireLanding
-                title="Hire Android App Developers"
-                desc="Unlock the potential of mobile technology with our expert Android app development services. From concept to launch, we deliver high-quality, user-friendly Android applications that drive business growth and enhance user engagement."
+                title="Hire Vue.js Developers"
+                desc="Unlock the potential of modern web technology with our expert Vue.js development services. From concept to launch, we deliver high-quality, user-friendly Vue.js applications that drive business growth and enhance user engagement."
                 bg="/hire/vue.png"
-            
             />
             <AIDevelopment
-                aidevTitle="Specialization Of Our Android App Development Team"
-                aidevDesc="Hire Android app developers of Softzway who bring alive your dream project with the effective use of advanced technological resources"
-                aidevGrid={androidServicesData}
+                aidevTitle="Specialization Of Our Vue.js Development Team"
+                aidevDesc="Hire Vue.js developers from Softzway who bring your dream project to life with the effective use of advanced technological resources."
+                aidevGrid={vueServicesData}
                 columns={4}
             />
             <HireTable
-                title="Hire Dedicated Android App Developers to Empower your Project"
-                description="Hire Android app developers to meet your business needs by leveraging our technical elegance."
+                title="Hire Dedicated Vue.js Developers to Empower your Project"
+                description="Hire Vue.js developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
             <Cta />
             <HireTable2
-                title="Hire Dedicated Android App Developers to Empower your Project"
-                description="Hire Android app developers to meet your business needs by leveraging our technical elegance."
+                title="Hire Dedicated Vue.js Developers to Empower your Project"
+                description="Hire Vue.js developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData2}
             />
             <HireProcess
@@ -228,10 +227,10 @@ function HireAndroid() {
                 processItems={processItems}
             />
             <HireBenefits
-                title="Benefits of Hiring our Dedicated Android App Developers"
-                description="Hire Android app developers who have in-depth knowledge of various Android app development tools to bring alive your imagination."
+                title="Benefits of Hiring our Dedicated Vue.js Developers"
+                description="Hire Vue.js developers who have in-depth knowledge of various Vue.js development tools to bring your ideas to life."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"
@@ -239,15 +238,15 @@ function HireAndroid() {
                 image="https://www.redappletech.com/wp-content/uploads/2024/07/Group-22.png"
             />
             <HireCta
-                title="Want to create A Robust Backend for Your App Using Android?"
-                description="Hire Android developers from Softzway Technologies to plan, execute, and infuse brilliance into your projects."
+                title="Want to create a robust frontend for your app using Vue.js?"
+                description="Hire Vue.js developers from Softzway Technologies to plan, execute, and infuse brilliance into your projects."
                 image="https://www.redappletech.com/wp-content/uploads/2024/07/Rectangle-83-1.png"
             />
             <AIFaq
-                aiFaqItems={androidFaqItems}
+                aiFaqItems={vueFaqItems}
             />
         </div>
     )
 }
 
-export default HireAndroid
+export default HireVue

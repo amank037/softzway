@@ -203,6 +203,7 @@ function HireDedicatedSoftware() {
             <HireLanding
                 title="Hire Dedicated Software Developers"
                 desc="Unlock the power of dedicated teams with our expert software development services. From concept to launch, we deliver high-quality, user-friendly dedicated software solutions that drive business growth and efficiency."
+                bg="/hire/dedicated.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Dedicated Software Development Team"
@@ -229,7 +230,7 @@ function HireDedicatedSoftware() {
                 title="Benefits of Hiring our Dedicated Software Developers"
                 description="Hire dedicated software developers who have in-depth knowledge of various technologies and tools to build secure, scalable, and high-performing solutions."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

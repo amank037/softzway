@@ -39,9 +39,11 @@
     flex-direction: column;
     gap: 28px;
     list-style:disc;
+    padding: 0 30px;
 }
 .hire-benefits2-content ul li ul{
     list-style: circle;
+    padding: 0;
 }
 .hire-benefits2-content li {
     background: #fff;

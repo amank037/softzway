@@ -203,6 +203,7 @@ function HireLaravel() {
             <HireLanding
                 title="Hire Laravel Backend Developers"
                 desc="Unlock the power of Laravel for your backend systems with our expert development services. From scalable APIs to robust integrations, we deliver high-quality, secure Laravel backend solutions that drive business growth and efficiency."
+                bg="/hire/laravel.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Laravel Backend Development Team"
@@ -230,7 +231,7 @@ function HireLaravel() {
                 title="Benefits of Hiring our Dedicated Laravel Backend Developers"
                 description="Hire Laravel backend developers who have in-depth knowledge of various Laravel frameworks and tools to build secure, scalable, and high-performing backend systems."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

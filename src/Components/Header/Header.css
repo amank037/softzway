@@ -153,10 +153,12 @@
   width: 1000px;
   background-color: #fafafa;
   padding: 80px;
-  background-image: url(https://d2e3cmtjkfw2a3.cloudfront.net/static/media/header/map.svg);
-  background-size: contain;
+  /* background-image: url(https://d2e3cmtjkfw2a3.cloudfront.net/static/media/header/map.svg); */
+  background: url('/map.png');
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
 }
 .header-contact-wrapper:hover .contact-menu {
   display: flex;
@@ -194,7 +196,7 @@
   gap: 20px;
 }
 .contact-talk h2{
-  color: var(--light-green);
+  /* color: var(--light-green); */
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -394,6 +396,7 @@
   padding: 32px 40px;
   margin: 20px;
   background: var(--gradient-light-green);
+  
 }
 
 .header-nav-dropdown-cta-title {

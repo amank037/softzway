@@ -230,7 +230,7 @@ function HireHTML5() {
                 title="Benefits of Hiring our Dedicated HTML5 Developers"
                 description="Hire HTML5 developers who have in-depth knowledge of various HTML5 tools and frameworks to build secure, scalable, and high-performing web applications."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

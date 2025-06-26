@@ -203,7 +203,7 @@ function HireAndroid() {
             <HireLanding
                 title="Hire Android App Developers"
                 desc="Unlock the potential of mobile technology with our expert Android app development services. From concept to launch, we deliver high-quality, user-friendly Android applications that drive business growth and enhance user engagement."
-                
+                bg="/hire/android.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Android App Development Team"
@@ -230,7 +230,7 @@ function HireAndroid() {
                 title="Benefits of Hiring our Dedicated Android App Developers"
                 description="Hire Android app developers who have in-depth knowledge of various Android app development tools to bring alive your imagination."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

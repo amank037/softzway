@@ -231,7 +231,7 @@ function HireSalesforce() {
                 title="Benefits of Hiring our Dedicated Salesforce Developers"
                 description="Hire Salesforce developers who have in-depth knowledge of Salesforce tools and frameworks to build secure, scalable, and high-performing CRM solutions."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

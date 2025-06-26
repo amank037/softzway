@@ -203,6 +203,7 @@ function HireNode() {
             <HireLanding
                 title="Hire Node.js Backend Developers"
                 desc="Unlock the power of Node.js for your backend systems with our expert development services. From scalable APIs to robust integrations, we deliver high-quality, secure Node.js backend solutions that drive business growth and efficiency."
+                bg="/hire/node.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Node.js Backend Development Team"
@@ -230,7 +231,7 @@ function HireNode() {
                 title="Benefits of Hiring our Dedicated Node.js Backend Developers"
                 description="Hire Node.js backend developers who have in-depth knowledge of various Node.js frameworks and tools to build secure, scalable, and high-performing backend systems."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"

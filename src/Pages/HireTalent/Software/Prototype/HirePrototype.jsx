@@ -203,6 +203,7 @@ function HirePrototypeSoftware() {
             <HireLanding
                 title="Hire Prototype Software Developers"
                 desc="Transform your ideas into interactive prototypes with our expert prototype software development services. From concept to validation, we deliver high-quality, user-friendly prototypes that accelerate your product journey."
+                bg="/hire/proto.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Prototype Software Development Team"
@@ -229,7 +230,7 @@ function HirePrototypeSoftware() {
                 title="Benefits of Hiring our Dedicated Prototype Software Developers"
                 description="Hire prototype software developers who have in-depth knowledge of various prototyping tools and frameworks to bring your ideas to life."
                 benefits={benefits}
-                image="https://www.redappletech.com/wp-content/uploads/2024/07/Default_Man_working_with_laptop_in_office_0.png"
+                image="/hire1.png"
             />
             <HireBenefits2
                 title="Our Commitment to Code Quality"
