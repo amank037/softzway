@@ -1,14 +1,36 @@
-.leftbtn-div button{
-    padding: 15px 30px;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #ffffff;
-    background-color: var(--dark-teal);
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    border-radius: 25px 25px 0 25px;
+.leftbtn-div{
+    background-color: var(--light-green);
+    border: 2px solid var(--light-green);
+    color:#fff;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
 }
-.leftbtn-div button:hover{
-    background-color: var(--medium-teal);
 
+.leftbtn-div span{
+    position: relative;
+    z-index:4;
+}
+.leftbtn-div:hover {
+    color: #000000;
+}
+.leftbtn-div::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    pointer-events: none;
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+    z-index: 1;
+}
+.leftbtn-div:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
 }

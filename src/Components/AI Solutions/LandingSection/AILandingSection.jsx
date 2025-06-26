@@ -1,3 +1,4 @@
+import Rightbutton from '../../reusables/Rightbutton/Rightbutton';
 import './AILandingSection.css'
 
 const gridItems = [
@@ -33,7 +34,8 @@ function AILandingSection({ subtitle, title, desc, img, bg }) {
           <p>{desc}</p>
           <div className='ailanding-btns'>
             {/* <button className='ailanding-demo-btn'>VIEW DEMO</button> */}
-            <button className='hirelanding-talk-btn'><span>TALK TO US</span></button>
+            {/* <button className='hirelanding-talk-btn'><span>TALK TO US</span></button> */}
+            <Rightbutton rightbtn="TALK TO US"/>
           </div>
 
 

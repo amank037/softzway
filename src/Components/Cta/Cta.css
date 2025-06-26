@@ -1,21 +1,22 @@
 .cta-div{
     padding: 40px 20px;
     width: 100%;
-    /* background: linear-gradient(140deg, var(--dark-teal), #000000); */
+    /* background: linear-gradient(90deg, #051020, #0489A2); */
+    background: linear-gradient(140deg, var(--light-green), #000000);
 }
 
 .cta-container{
-    max-width: 1440px;
+    /* max-width: 1440px; */
     width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    background: linear-gradient(140deg, var(--dark-teal), #000000);
-    padding: 50px 70px;
+    /* background: linear-gradient(140deg, var(--light-green), #000000); */
+    padding: 0 70px;
     /* border-radius: 0 100px 0 100px; */
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 
 
@@ -31,14 +32,15 @@
     font-size: 2.75rem;
 }
 .cta-title button{
-    border: 2px solid var(--light-teal);
+    border: 2px solid #fff;
     border-radius: 25px 0 25px 0;
     padding: 15px 30px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 .cta-title button:hover{
-    background-color: var(--light-teal);
+    background-color: #ffffff;
+    color: #000000;
 }
 .cta-card-container{
     flex:1;

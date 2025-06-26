@@ -1,4 +1,4 @@
-.hirelanding{
+.ailanding{
     /* background: linear-gradient(140deg, #000000, var(--medium-teal)); */
     /* background-image: url('/AI agent development.png'); */
     height: 75vh;
@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
 }
 
-.hirelanding-container{
+.ailanding-container{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -20,10 +20,10 @@
     align-items: center;
     justify-content: center;
 }
-.hirelanding-img{
+.ailanding-img{
     flex: 2;
 }
-.hirelanding-content{
+.ailanding-content{
     flex: 3;
     display: flex;
     flex-direction: column ;
@@ -31,104 +31,85 @@
     align-items: left;
     gap: 20px;
 }
-.hirelanding-content h4{
+.ailanding-content h4{
     font-size: 1.1vw;
 }
-.hirelanding-content h1{
+.ailanding-content h1{
     font-size: 2.75vw;
     font-weight: 600;
     /* font-size: 2.75rem; */
 }
-.hirelanding-content p{
-    /* font-size: 1.25rem; */
-    font-size: 1.1vw;
-    font-weight: 400;
+.ailanding-content h2{
+    font-size: 2.5vw;
 }
-.hirelanding-btns{
+.ailanding-content p{
+    /* font-size: 1.25rem; */
+    font-size: 1vw;
+    font-weight: 300;
+}
+.ailanding-btns{
     display: flex;
     gap: 30px;
 }
-.hirelanding-btns button{
+.ailanding-btns button{
     padding: 15px 30px;
     font-size: 1.15rem;
     font-weight: 600;
-    color: #fff;
+    overflow: hidden;
 }
-.hirelanding-demo-btn{
-    background-color: var(--dark-teal);
+.ailanding-demo-btn{
+    background-color: var(--light-green);
     border: none;
     border-radius: 25px 25px 0 25px;
 }
-.hirelanding-talk-btn{
-    background-color: transparent;
-    border: 2px solid var(--light-teal);
-    border-radius: 30px;
-    position: relative;
-    z-index: 2;
-
-}
-.hirelanding-talk-btn span{
-    position: relative;
-    z-index:4;
-}
-.hirelanding-talk-btn:hover {
-    color: #192020;
-    box-shadow: inset 0 0 0 2px #fff;
-}
-.hirelanding-talk-btn::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    top: 0;
-    left: 0;
-    border-radius: 30px;
-    pointer-events: none;
-    transform-origin: 100% 50%;
-    transform: scale3d(0, 1, 1);
-    transition: transform 0.3s;
-    z-index: 1;
-}
-.hirelanding-talk-btn:hover::before {
-    transform-origin: 0% 50%;
-    transform: scale3d(1, 1, 1);
+.ailanding-talk-btn{
+    /* background-color: transparent; */
+    background-color: var(--primary-orange);
+    color: #000;
+    /* border: 2px solid var(--light-teal); */
+    border-radius: 0 25px 25px 25px;
 }
 
 @media screen and (max-width: 1200px){
-    .hirelanding-content h1{
+    .ailanding-content h1{
         font-size: 2.25rem;
     }
-    .hirelanding-content p{
+    .ailanding-content p{
         font-size: 1rem;
         font-weight: 400;
     }
-    .hirelanding-content h4{
+    .ailanding-content h4{
         font-size: 1rem;
         font-weight: 400;
     }
 }
 
 @media screen and (max-width: 768px){
-    .hirelanding{
+    .ailanding{
         height: 650px;
         background-size: cover;
     }
-    .hirelanding-container{
+    .ailanding-container{
         display: block;
     }
-    .hirelanding-img{
-        display: none;
-    }
-    .hirelanding-content h1{
+    .ailanding-content h1{
         font-size: 2.25rem;
     }
-    .hirelanding-content p{
+    .ailanding-content h2{
+        font-size: 2rem;
+    }
+    .ailanding-content p{
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    .ailanding-content h4{
         font-size: 1rem;
         font-weight: 400;
     }
-    .hirelanding-content h4{
-        font-size: 1rem;
-        font-weight: 400;
-    }
+}
+
+.ailanding-grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
 }

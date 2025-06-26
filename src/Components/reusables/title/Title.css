@@ -9,6 +9,6 @@
 .title-line{
     height: 2px;
     width: 200px;
-    background-color: var(--medium-teal);
+    background-color: var(--light-green);
     margin: 20px auto;
 }

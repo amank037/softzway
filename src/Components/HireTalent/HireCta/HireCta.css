@@ -1,7 +1,7 @@
 .hirecta-div{
     padding: 40px 20px;
     width: 100%;
-    background: linear-gradient(140deg, var(--dark-teal), #000000);
+    background: linear-gradient(140deg, var(--light-green), #000000);
 }
 
 .hirecta-container{

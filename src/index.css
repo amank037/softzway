@@ -7,12 +7,14 @@
 :root {
   /* font-family: "Inter", sans-serif; */
   font-family: "Montserrat", sans-serif;
-  --light-green: #6CAF45;
+  --gradient-light-green: #76e4362b;
+  --light-light-green: #89de58;
+  --light-green: #64ab3c;
   --dark-green: #3b732d;
   --primary-orange: #f9bc40;
   --secondary-orange: #fbd17d;
-  --light-teal: #7fb099;
-  --medium-teal: #3d8865;
+  --light-teal: #89de58;
+  --medium-teal: #64ab3c;
   --dark-teal: #005f3a;
   --primary-grey: #232323;
   --secondary-grey: #212529;

@@ -3,7 +3,7 @@ import './Leftbutton.css'
 function Leftbutton({leftbtn}) {
   return (
     <div className='leftbtn-div'>
-        <button>{leftbtn}</button>
+        <button><span>{leftbtn}</span></button>
     </div>
   )
 }

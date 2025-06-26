@@ -1,55 +1,207 @@
-.aisolutions{
+.aisolutions {
     width: 100%;
-    padding: 40px 20px;
+    padding: 100px 24px;
     color: var(--secondary-grey);
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
 }
 
-.aisolutions-container{
+.aisolutions-container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
 }
-.aisolutions-line{
-    height: 2px;
-    width: 200px;
-    background-color: var(--medium-teal);
-}
-.aisolutions-container h1{
-    font-size: 2.75rem;
-    text-align: center;
-}
-.aisolutions-container p{
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-align: center;
-}
-.aisolutions-btns{
-    display: flex;
-    gap: 30px;
-}
-/* .aisolutions-btns button{
-    padding: 15px 30px;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #ffffff;
-    background-color: var(--dark-teal);
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-.aisolutions-talk-btn{
-    border: none;
-    border-radius: 25px 25px 0 25px;
-}
-.aisolutions-meet-btn{
-    border: none;
-    border-radius: 0 25px 25px 25px;
-}
-.aisolutions-btns button:hover{
-    background-color: var(--medium-teal);
 
-} */
+.aisolutions-content {
+    text-align: left;
+}
+
+.aisolutions-title-section {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto 32px;
+}
+
+
+.aisolutions-container h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+.aisolutions-text {
+    margin-bottom: 40px;
+}
+
+.aisolutions-container p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555555;
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    text-align: left;
+}
+
+.aisolutions-container p:last-child {
+    margin-bottom: 0;
+}
+
+.aisolutions-btns {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.aisolutions-btns button {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.aisolutions-talk-btn {
+    background: #6AAE43;
+    color: white;
+    border-color: #6AAE43;
+}
+
+.aisolutions-talk-btn:hover {
+    background: #5a9b3a;
+    border-color: #5a9b3a;
+    transform: translateY(-1px);
+}
+
+.aisolutions-meet-btn {
+    background: transparent;
+    color: #1a1a1a;
+    border-color: #d0d0d0;
+}
+
+.aisolutions-meet-btn:hover {
+    background: #f8f8f8;
+    border-color: #6AAE43;
+    color: #6AAE43;
+}
+
+.aisolutions-visual {
+    position: relative;
+    height: 400px;
+}
+
+.aisolutions-art-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.aisolutions-bg-art {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.aisolutions-float-element {
+    position: absolute;
+    animation: aisolutions-float 6s ease-in-out infinite;
+}
+
+.aisolutions-float-1 {
+    top: 20%;
+    right: 20%;
+    animation-delay: 0s;
+}
+
+.aisolutions-float-2 {
+    top: 60%;
+    left: 15%;
+    animation-delay: -2s;
+}
+
+.aisolutions-float-3 {
+    bottom: 15%;
+    right: 35%;
+    animation-delay: -4s;
+}
+
+@keyframes aisolutions-float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .aisolutions-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+    
+    .aisolutions-content {
+        text-align: center;
+    }
+    
+    .aisolutions-title-section {
+        justify-content: center;
+    }
+    
+    .aisolutions-container h1 {
+        font-size: 2.5rem;
+    }
+    
+    .aisolutions-visual {
+        height: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    .aisolutions {
+        padding: 80px 20px;
+    }
+    
+    .aisolutions-container h1 {
+        font-size: 2rem;
+    }
+    
+    .aisolutions-container p {
+        font-size: 1rem;
+    }
+    
+    .aisolutions-btns {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .aisolutions-btns button {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+    
+    .aisolutions-visual {
+        height: 250px;
+    }
+}

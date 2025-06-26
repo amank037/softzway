@@ -40,14 +40,14 @@
 }
 
 .tabs2-tab-btn.active {
-  color: var(--dark-teal);
-  border-bottom: 3px solid var(--dark-teal);
-  background: #e6faf5;
+  color: #000;
+  border-bottom: 3px solid var(--light-green);
+  background: var(--gradient-light-green);
   font-weight: 700;
 }
 
 .tabs2-tab-btn:not(.active):hover {
-  background: #f0fdfb;
+  background: #f5fdf0;
 }
 
 .tabs2-cards-grid {

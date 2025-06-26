@@ -120,9 +120,9 @@
 }
 
 .header-nav-dropdown-parent.current-route {
-  background: #59c49277;
+  background: var(--gradient-light-green);
   color: #000;
-  border-left: 5px solid var(--dark-teal);
+  border-left: 5px solid var(--light-green);
   font-weight: 700;
 }
 
@@ -130,7 +130,7 @@
     font-size: 14px;
     font-family: "Inter", sans-serif;
 
-    background-color: var(--dark-teal);
+    background-color: var(--light-green);
     color: white;
     border: none;
     padding: 12px 24px;
@@ -166,7 +166,7 @@
 .contact-menu button{
       font-size: 14px;
     font-family: "Inter", sans-serif;
-    background-color: var(--dark-teal);
+    background-color: var(--light-green);
     color: white;
     border: none;
     padding: 12px 24px;
@@ -194,7 +194,7 @@
   gap: 20px;
 }
 .contact-talk h2{
-  color: var(--dark-teal);
+  color: var(--light-green);
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -377,7 +377,7 @@
   height: 1px;
   width: 30%;
   margin: 0 auto;
-  border-bottom: 2px solid var(--dark-teal);
+  border-bottom: 2px solid var(--light-green);
   position: absolute;
   bottom: 0;
   left: 8%;
@@ -393,7 +393,7 @@
   align-items: flex-start;
   padding: 32px 40px;
   margin: 20px;
-  background: #59c49277;
+  background: var(--gradient-light-green);
 }
 
 .header-nav-dropdown-cta-title {

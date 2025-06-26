@@ -3,7 +3,7 @@ import './Rightbutton.css'
 function Rightbutton({rightbtn}) {
   return (
     <div className='rightbtn-div'>
-        <button>{rightbtn}</button>
+        <button><span>{rightbtn}</span></button>
     </div>
   )
 }

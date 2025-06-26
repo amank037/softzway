@@ -58,7 +58,8 @@
 }
 
 .aiuse-tab-item.active {
-    background: var(--dark-teal, #1e3a3a);
+    background: var(--light-green, #1e3a3a);
+    /* background-color: #006858; */
     color: #fff;
 }
 .aiuse-tab-item:hover{
@@ -77,7 +78,7 @@
     top: 0;
     width: 5px;
     height: 100%;
-    background: var(--dark-teal, #1e3a3a);
+    background: var(--light-green, #1e3a3a);
     border-radius: 0 6px 6px 0;
     opacity: 0;
     transform: scaleY(0.5);
