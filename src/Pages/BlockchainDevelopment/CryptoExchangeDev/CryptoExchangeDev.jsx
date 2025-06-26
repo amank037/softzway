@@ -45,12 +45,12 @@ const aidevGrid = [
 
 const CryptoExchangeServices = [
   {
-    image: "https://www.solulab.com/wp-content/uploads/2023/07/Crypto Exchange-Market.png",
+    image: "https://www.solulab.com/wp-content/uploads/2023/07/NFT-Market.png",
     title: "Crypto Exchange Market Development",
     description: "Connect artists, collectors, and enthusiasts in a user-friendly marketplace. Make it easier to acquire, sell, and trade digital assets."
   },
   {
-    image: "https://www.solulab.com/wp-content/uploads/2023/07/Crypto Exchange-Soft.-dev.png",
+    image: "https://www.solulab.com/wp-content/uploads/2023/07/NFT-Soft.-dev.png",
     title: "Crypto Exchange Software Development",
     description: "Tailor custom software solutions for efficient Crypto Exchange management. Distribute digital assets seamlessly across various blockchain platforms."
   },
