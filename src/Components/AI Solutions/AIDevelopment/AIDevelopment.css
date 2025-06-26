@@ -93,9 +93,9 @@
     max-height: 54px;
     max-width: 54px;
     border-radius: 10px;
-    background: #e0f7fa;
+    /* background: #e0f7fa; */
     padding: 6px;
-    box-shadow: 0 2px 8px 0 rgba(0, 150, 136, 0.08);
+    box-shadow: 0 2px 8px 0 rgba(53, 53, 53, 0.3);
 }
 
 .aidev-grid-item p {
@@ -104,6 +104,17 @@
     margin: 0;
     line-height: 1.7;
     letter-spacing: 0.01em;
+}
+
+.aidev-grid-line{
+    height: 2px;
+    background-color: var(--dark-teal);
+    width: 0%;
+    margin: 0 auto;
+    transition: width 0.3s ease-in-out;
+}
+.aidev-grid-item:hover .aidev-grid-line{
+    width: 50%;
 }
 
 @media screen and (max-width: 993px) {

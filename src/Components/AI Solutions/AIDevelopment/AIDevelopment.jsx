@@ -25,6 +25,7 @@ function AIDevelopment({ aidevTitle, aidevDesc, aidevGrid, columns }) {
                                 }
                                 <h3>{item.title}</h3>
                             </div>
+                            <div className='aidev-grid-line'></div>
                             <p>{item.description}</p>
                         </div>
                     ))}

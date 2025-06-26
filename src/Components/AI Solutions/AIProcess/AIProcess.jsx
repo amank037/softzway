@@ -11,11 +11,11 @@ function AIProcess({ title, processItems }) {
             <div className="aiprocess-timeline-bar">
             {processItems.map((item, idx) => (
                 <div className="aiprocess-timeline-dot-wrapper" key={item.title}>
-                <div className="aiprocess-timeline-dot"></div>
-                <div className={`aiprocess-timeline-card ${idx % 2 === 0 ? 'up' : 'down'}`}>
-                    <h4>{item.title}</h4>
-                    <p>{item.description}</p>
-                </div>
+                    <div className="aiprocess-timeline-dot"></div>
+                    <div className={`aiprocess-timeline-card ${idx % 2 === 0 ? 'up' : 'down'}`}>
+                        <h4>{item.title}</h4>
+                        <p>{item.description}</p>
+                    </div>
                 </div>
             ))}
             </div>
