@@ -203,6 +203,7 @@ function HireAI() {
             <HireLanding
                 title="Hire AI Developers"
                 desc="Unlock the potential of artificial intelligence with our expert AI development services. From concept to launch, we deliver high-quality, intelligent AI solutions that drive business growth and innovation."
+                bg="/hire/ai.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our AI Development Team"
@@ -215,9 +216,7 @@ function HireAI() {
                 description="Hire AI developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our AI Developers"
-            />
+            
             <Cta />
             <HireTable2
                 title="Hire Dedicated AI Developers to Empower your Project"

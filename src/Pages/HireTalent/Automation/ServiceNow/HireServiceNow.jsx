@@ -203,6 +203,7 @@ function HireServiceNow() {
             <HireLanding
                 title="Hire ServiceNow Developers"
                 desc="Unlock the power of ServiceNow with our expert development services. From custom ITSM solutions to seamless integrations, we deliver high-quality ServiceNow applications that drive business growth and operational efficiency."
+                bg="/hire/servicenow.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our ServiceNow Development Team"
@@ -215,9 +216,7 @@ function HireServiceNow() {
                 description="Hire ServiceNow developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our ServiceNow Developers"
-            />
+            
             <Cta />
             <HireTable2
                 title="Hire Dedicated ServiceNow Developers to Empower your Project"

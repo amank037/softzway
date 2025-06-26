@@ -4,11 +4,11 @@ import './AILandingSection.css'
 const gridItems = [
   {
     title:"25+",
-    description:"AI Developers"
+    description:"Developers"
   },
   {
-    title:"20+",
-    description:"AI Projects Delivered"
+    title:"500+",
+    description:"Projects Delivered"
   },
   {
     title:"90%",
@@ -28,7 +28,7 @@ function AILandingSection({ subtitle, title, desc, img, bg }) {
   return (
     <div className='ailanding' style={style}>
       <div className='ailanding-container'>
-        <div className='ailanding-content'>
+        <div className='ailanding-content animate-on-scroll' data-direction="left" data-delay="0.5">
           {/* <h4>{subtitle}</h4> */}
           <h1>{title}</h1>
           <p>{desc}</p>

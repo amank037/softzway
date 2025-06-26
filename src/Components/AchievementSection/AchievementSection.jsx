@@ -7,7 +7,7 @@ function AchievementSection({ desc }) {
             <div className='ach-container'>
                 <Title title="For Us, Passion and Vision matters more Than Company Size"/>
                 <p>{desc}</p>
-                <div className='ach-grid'>
+                <div className='ach-grid animate-on-scroll' data-direction="left" data-delay="0.2">
                     <div className="ach-grid-item">
                         <h2 className='ach1'>25%</h2>
                         <div className='ach-grid-text'>

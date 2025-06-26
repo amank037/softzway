@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Contact.css'
+import Leftbutton from '../reusables/Leftbutton/Leftbutton';
 
 function Contact() {
     const [captcha, setCaptcha] = useState({ num1: 0, num2: 0, answer: 0 });
@@ -83,7 +84,7 @@ function Contact() {
                             </div>
 
                             <div className='contact-form-button'>
-                                <button disabled={!captchaValid}>Send Message</button>
+                                <button disabled={!captchaValid}><Leftbutton leftbtn="SEND MESSAGE"/></button>
                                 <input type="checkbox" />
                                 <p>Need an NDA</p>
                             </div>

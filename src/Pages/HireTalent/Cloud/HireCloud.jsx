@@ -203,6 +203,7 @@ function HireCloud() {
             <HireLanding
                 title="Hire Cloud Developers"
                 desc="Unlock the potential of cloud technology with our expert cloud development services. From concept to launch, we deliver high-quality, scalable cloud solutions that drive business growth and enhance user engagement."
+                bg="/hire/cloud.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Cloud Development Team"
@@ -215,9 +216,7 @@ function HireCloud() {
                 description="Hire cloud developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our Cloud Developers"
-            />
+            
             <Cta />
             <HireTable2
                 title="Hire Dedicated Cloud Developers to Empower your Project"

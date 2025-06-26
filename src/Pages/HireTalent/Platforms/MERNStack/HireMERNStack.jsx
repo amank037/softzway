@@ -203,6 +203,7 @@ function HireMERNStack() {
             <HireLanding
                 title="Hire MERN Stack Developers"
                 desc="Unlock the power of end-to-end JavaScript development with our expert MERN stack services. From concept to launch, we deliver high-quality, user-friendly applications that drive business growth and operational efficiency."
+                bg="/hire/mern.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our MERN Stack Development Team"
@@ -214,9 +215,6 @@ function HireMERNStack() {
                 title="Hire Dedicated MERN Stack Developers to Empower your Project"
                 description="Hire MERN stack developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
-            />
-            <HireStack
-                title="Tech Competence of Our MERN Stack Developers"
             />
             <Cta />
             <HireTable2

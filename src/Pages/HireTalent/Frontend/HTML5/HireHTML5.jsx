@@ -203,6 +203,7 @@ function HireHTML5() {
             <HireLanding
                 title="Hire HTML5 Developers"
                 desc="Unlock the potential of modern web technology with our expert HTML5 development services. From concept to launch, we deliver high-quality, user-friendly HTML5 applications that drive business growth and enhance user engagement."
+                bg="/hire/html.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our HTML5 Development Team"
@@ -214,9 +215,6 @@ function HireHTML5() {
                 title="Hire Dedicated HTML5 Developers to Empower your Project"
                 description="Hire HTML5 developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
-            />
-            <HireStack
-                title="Tech Competence of Our HTML5 Developers"
             />
             <Cta />
             <HireTable2

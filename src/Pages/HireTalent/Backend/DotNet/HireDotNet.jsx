@@ -215,9 +215,7 @@ function HireDotNet() {
                 description="Hire .NET backend developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our .NET Backend Developers"
-            />
+            
             <Cta />
             <HireTable2
                 title="Hire Dedicated .NET Backend Developers to Empower your Project"

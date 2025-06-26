@@ -8,8 +8,8 @@ function HireBenefits({ title, description, benefits, image }) {
                 <Title title={title} />
                 <p>{description}</p>
                 <div className='hire-benefits-content'>
-                    <img src={image} alt="" />
-                    <ul>
+                    <img src={image} alt="" className=" animate-on-scroll" data-direction="left" data-delay="0.2"/>
+                    <ul className=" animate-on-scroll" data-direction="right" data-delay="0.2">
                         {benefits.map((item, idx) => (
                         <li key={idx}>
                             <h4>{item.heading}</h4>

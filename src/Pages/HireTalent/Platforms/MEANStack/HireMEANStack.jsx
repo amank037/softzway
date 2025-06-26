@@ -203,6 +203,7 @@ function HireMEANStack() {
             <HireLanding
                 title="Hire MEAN Stack Developers"
                 desc="Unlock the power of end-to-end JavaScript development with our expert MEAN stack services. From concept to launch, we deliver high-quality, user-friendly applications that drive business growth and operational efficiency."
+                bg="/hire/mean.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our MEAN Stack Development Team"
@@ -214,9 +215,6 @@ function HireMEANStack() {
                 title="Hire Dedicated MEAN Stack Developers to Empower your Project"
                 description="Hire MEAN stack developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
-            />
-            <HireStack
-                title="Tech Competence of Our MEAN Stack Developers"
             />
             <Cta />
             <HireTable2

@@ -215,9 +215,6 @@ function HirePrototypeSoftware() {
                 description="Hire prototype software developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our Prototype Software Developers"
-            />
             <Cta />
             <HireTable2
                 title="Hire Dedicated Prototype Software Developers to Empower your Project"

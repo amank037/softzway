@@ -216,9 +216,6 @@ function HireAndroid() {
                 description="Hire Android app developers to meet your business needs by leveraging our technical elegance."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our Android App Developers"
-            />
             <Cta />
             <HireTable2
                 title="Hire Dedicated Android App Developers to Empower your Project"

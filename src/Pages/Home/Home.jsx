@@ -330,7 +330,7 @@ function Home() {
                     <p>As an innovation-led torchbearer of technology, we build customized apps and solutions driven by technologies like Gen AI, AI/ML, Blockchain, and Metaverse.</p>
                     <p>Our services cater to every business’s unique needs, including developing a digital product from zero to one or optimizing your current business processes with technology integration.</p>
 
-                    <div className="home-strat-grid">
+                    <div className="home-strat-grid animate-on-scroll" data-direction="left" data-delay="0.2">
                         {stratItems.map((item, index) => (
                             <div className="home-strat-grid-item" key={index}>
                                 <h3>{item.title}</h3>
@@ -345,12 +345,12 @@ function Home() {
                 <div className="home-future-container">
                     <div className="home-future-title">
                         <h1>Why Build the Future of</h1>
-                        <h1>Your Business with <span className="text-green">softzway</span></h1>
+                        <h1>Your Business with <span className="text-green">Softzway</span></h1>
                     </div>
                     <p className="home-future-desc">Unlock your business potential to drive growth and success by building cutting-edge and tailor-made applications, solutions, and software.</p>
                     <div className="home-future-grid">
                         {futureGridItems.map((item, index) => (
-                            <div className="home-future-grid-item" key={index}>
+                            <div className="home-future-grid-item animate-on-scroll" data-direction="left" data-delay={index*0.1} key={index}>
                                 <h3>{item.title}</h3>
                                 <p>{item.description}</p>
                             </div>
@@ -358,7 +358,7 @@ function Home() {
                     </div>
                     <div className="home-future-bottom">
                         {futureGridButton.map((item, index) => (
-                            <div className="home-future-bottom-item" key={index}>
+                            <div className="home-future-bottom-item animate-on-scroll" data-direction="right" data-delay={index*0.1} key={index}>
                                 <p className="home-future-bottom-number text-green">{item.number}<sup>{item.sup}</sup> </p>
                                 <p className="home-future-bottom-text">{item.description}</p>
                             </div>
@@ -399,7 +399,7 @@ function Home() {
                     <h1>Trusted By Prominent Brands</h1>
                     <div className="home-brands-grid">
                         {brandsItems.map((item, index) => (
-                            <div className="home-brands-grid-item" key={index}>
+                            <div className="home-brands-grid-item animate-on-scroll" data-direction="left" data-delay="0.2" key={index}>
                                 <img src={item.image} alt="" />
                             </div>
                         ))}
@@ -485,7 +485,7 @@ function Home() {
                     </div>
 
                     <div className="home-tech-content">
-                        <div className="home-tech-content-text">
+                        <div className="home-tech-content-text animate-on-scroll" data-direction="left" data-delay="0.2">
                             <div className="home-tech-content-text-item">
                                 <div>
                                     <h1>01</h1>
@@ -501,7 +501,7 @@ function Home() {
                             </div>
                         </div>
 
-                        <div className="home-tech-content-image">
+                        <div className="home-tech-content-image animate-on-scroll" data-direction="right" data-delay="0.2">
                             <img src="https://beta.softzway.com/images/team.webp" alt="" />
                         </div>
                     </div>

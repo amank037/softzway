@@ -216,9 +216,6 @@ function HireIOS() {
         description="Hire iOS app developers to meet your business needs by leveraging our technical elegance."
         tableData={tableData}
       />
-      <HireStack
-        title="Tech Competence of Our iOS App Developers"
-      />
       <Cta />
       <HireTable2
         title="Hire Dedicated iOS App Developers to Empower your Project"

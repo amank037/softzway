@@ -203,6 +203,7 @@ function HireML() {
             <HireLanding
                 title="Hire ML Developers"
                 desc="Unlock the potential of machine learning with our expert ML development services. From concept to launch, we deliver high-quality, intelligent ML solutions that drive business growth and innovation."
+                bg="/hire/ml.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our ML Development Team"
@@ -214,9 +215,6 @@ function HireML() {
                 title="Hire Dedicated ML Developers to Empower your Project"
                 description="Hire ML developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
-            />
-            <HireStack
-                title="Tech Competence of Our ML Developers"
             />
             <Cta />
             <HireTable2

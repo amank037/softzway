@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    overflow: hidden;
 }
 .hire-process-grid{
     width: 100%;
@@ -27,7 +28,7 @@
     background: #707070;
     top: 40px;
 }
-.hire-process-grid-item:before {
+.hire-process-grid-item:nth-child(1):before {
     width: 25px;
     height: 25px;
     position: absolute;
@@ -37,7 +38,7 @@
     left: 0;
     top: 28px;
 }
-.hire-process-grid-item:after {
+.hire-process-grid-item:nth-child(5):after {
     width: 25px;
     height: 25px;
     position: absolute;

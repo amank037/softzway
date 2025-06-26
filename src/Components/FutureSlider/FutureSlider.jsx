@@ -56,7 +56,7 @@ function FutureSlider() {
                 <p>Paving a path for your business’s long-term success and growth by integrating top-notch technologies.</p>
             </div>
 
-            <div className='home-future2-slider'>
+            <div className='home-future2-slider animate-on-scroll' data-direction="left" data-delay="0.2">
                 <Swiper
                     modules={[Pagination]}
                     slidesPerView={4}

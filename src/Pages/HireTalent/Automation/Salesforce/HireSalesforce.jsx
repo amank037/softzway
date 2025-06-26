@@ -203,6 +203,7 @@ function HireSalesforce() {
             <HireLanding
                 title="Hire Salesforce Developers"
                 desc="Unlock the power of Salesforce with our expert development services. From custom CRM solutions to seamless integrations, we deliver high-quality Salesforce applications that drive business growth and operational efficiency."
+                bg="/hire/salesforce.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Salesforce Development Team"
@@ -215,9 +216,7 @@ function HireSalesforce() {
                 description="Hire Salesforce developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our Salesforce Developers"
-            />
+            
             <Cta />
             <HireTable2
                 title="Hire Dedicated Salesforce Developers to Empower your Project"

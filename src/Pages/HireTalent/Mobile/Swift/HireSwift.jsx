@@ -216,9 +216,6 @@ function HireSwift() {
                 description="Hire Swift app developers to meet your business needs by leveraging our technical elegance."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our Swift App Developers"
-            />
             <Cta />
             <HireTable2
                 title="Hire Dedicated Swift App Developers to Empower your Project"

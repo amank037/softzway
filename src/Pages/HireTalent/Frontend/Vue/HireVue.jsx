@@ -203,7 +203,8 @@ function HireAndroid() {
             <HireLanding
                 title="Hire Android App Developers"
                 desc="Unlock the potential of mobile technology with our expert Android app development services. From concept to launch, we deliver high-quality, user-friendly Android applications that drive business growth and enhance user engagement."
-                
+                bg="/hire/vue.png"
+            
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Android App Development Team"
@@ -215,9 +216,6 @@ function HireAndroid() {
                 title="Hire Dedicated Android App Developers to Empower your Project"
                 description="Hire Android app developers to meet your business needs by leveraging our technical elegance."
                 tableData={tableData}
-            />
-            <HireStack
-                title="Tech Competence of Our Android App Developers"
             />
             <Cta />
             <HireTable2

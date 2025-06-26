@@ -203,6 +203,7 @@ function HireAngular() {
             <HireLanding
                 title="Hire Angular Developers"
                 desc="Unlock the potential of modern web technology with our expert Angular development services. From concept to launch, we deliver high-quality, user-friendly Angular applications that drive business growth and enhance user engagement."
+                bg="/hire/angular.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Angular Development Team"
@@ -214,9 +215,6 @@ function HireAngular() {
                 title="Hire Dedicated Angular Developers to Empower your Project"
                 description="Hire Angular developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
-            />
-            <HireStack
-                title="Tech Competence of Our Angular Developers"
             />
             <Cta />
             <HireTable2

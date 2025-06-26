@@ -215,9 +215,6 @@ function HireDedicatedSoftware() {
                 description="Hire dedicated software developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our Dedicated Software Developers"
-            />
             <Cta />
             <HireTable2
                 title="Hire Dedicated Software Developers to Empower your Project"

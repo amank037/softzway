@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Lenis from 'lenis'
+import { useScrollAnimations } from './Hooks/useScrollAnimations.jsx'
 import './App.css'
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
@@ -93,6 +94,8 @@ import ContactUs from './Pages/ContactUs/ContactUs.jsx'
 
 
 function App() {
+  useScrollAnimations()
+
   useEffect(() => {
     const lenis = new Lenis({
       autoRaf: true,
@@ -109,7 +112,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+
       <div className="app">
         <Header />
         <div className="app-content">
@@ -209,7 +212,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </Router>
+
   )
 }
 

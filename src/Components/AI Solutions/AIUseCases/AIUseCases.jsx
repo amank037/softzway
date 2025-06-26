@@ -9,7 +9,7 @@ function AIUseCases({ title, useCases }) {
         <div className="aiuse-tab-root">
             <div className="aiuse-container">
                 <Title title={title} />
-                <div className="aiuse-tab-layout">
+                <div className="aiuse-tab-layout animate-on-scroll" data-direction="left" data-delay="0.2">
                     <div className="aiuse-tab-list">
                         {useCases.map((caseItem, idx) => (
                             <div

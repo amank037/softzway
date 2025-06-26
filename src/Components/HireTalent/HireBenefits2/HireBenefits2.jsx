@@ -8,7 +8,7 @@ function HireBenefits2({ title, description, image }) {
                     <Title title={title} />
                     <p>{description}</p>
                     <div className='hire-benefits2-content'>
-                        <ul>
+                        <ul className=" animate-on-scroll" data-direction="left" data-delay="0.2">
                             <li>
                                 <h4>Upholding Coding Excellence</h4>
                                 <p>We uphold quality with established guidelines, style checks, and clear documentation.</p>
@@ -30,7 +30,7 @@ function HireBenefits2({ title, description, image }) {
                                 <p>Our app development company conducts meticulous code reviews to uphold quality. enhance functionality and prevent potential issues</p>
                             </li>
                         </ul>
-                        <img src={image} alt="" />
+                        <img src={image} alt="" className=" animate-on-scroll" data-direction="right" data-delay="0.2"/>
                     </div>
                 </div>
         </div>

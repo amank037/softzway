@@ -203,6 +203,7 @@ function HireDS() {
             <HireLanding
                 title="Hire Data Science Developers"
                 desc="Unlock the power of data with our expert data science development services. From concept to deployment, we deliver high-quality, intelligent data science solutions that drive business growth and actionable insights."
+                bg="/hire/ds.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Data Science Development Team"
@@ -214,9 +215,6 @@ function HireDS() {
                 title="Hire Dedicated Data Science Developers to Empower your Project"
                 description="Hire data science developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
-            />
-            <HireStack
-                title="Tech Competence of Our Data Science Developers"
             />
             <Cta />
             <HireTable2

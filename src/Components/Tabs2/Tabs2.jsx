@@ -30,7 +30,7 @@ function Tabs2() {
                 </ul>
                 <div className="tabs2-cards-grid">
                     {tabCards[activeTab].map((card, idx) => (
-                    <div className="tabs2-card" key={idx}>
+                    <div className="tabs2-card animate-on-scroll" data-direction="left" data-delay={idx*0.1} key={idx}>
                         <div className="tabs2-card-img">
                         {card.img ? <img src={card.img} alt={card.title} /> : <div className="tabs2-card-img-placeholder" />}
                         </div>

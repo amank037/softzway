@@ -8,7 +8,7 @@ function HireProcess({ title, processItems }) {
                 <Title title={title}/>
                 <div className='hire-process-grid'>
                     {processItems.map((item, index) => (
-                        <div className="hire-process-grid-item" key={index}>
+                        <div className="hire-process-grid-item animate-on-scroll" data-direction="right" data-delay={index*0.2} key={index}>
                             <div className='hire-process-grid-img'>
                                 <img src={item.image} alt="" />
                             </div>

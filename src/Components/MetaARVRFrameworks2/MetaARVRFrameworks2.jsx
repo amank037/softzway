@@ -6,8 +6,8 @@ function MetaARVRFrameworks2() {
     <div className='mf-div'>
         <div className='mf-container'>
             <Title title="Key points"/>
-            <div className='mf-content'>
-                <div className="mf-item">
+            <div className="mf-content">
+                <div className="mf-item animate-on-scroll" data-direction="right" data-delay="0.2">
                     <img src="https://www.luxoft.com/files/pages/2023/3D-AR-and-VR-development-services/3D-AR-and-VR-development-services-Technologies.svg" alt="" />
                     <h1>Technologies</h1>
                     <ul>
@@ -18,7 +18,7 @@ function MetaARVRFrameworks2() {
                     </ul>
                 </div>
 
-                <div className="mf-item">
+                <div className="mf-item animate-on-scroll" data-direction="right" data-delay="0.4">
                     <img src="https://www.luxoft.com/files/pages/2023/3D-AR-and-VR-development-services/3D-AR-and-VR-development-services-SDKs.svg" alt="" />
                     <h1>SDKs</h1>
                     <ul>
@@ -29,7 +29,7 @@ function MetaARVRFrameworks2() {
                     </ul>
                 </div>
 
-                <div className="mf-item">
+                <div className="mf-item animate-on-scroll" data-direction="right" data-delay="0.6">
                     <img src="https://www.luxoft.com/files/pages/2023/3D-AR-and-VR-development-services/3D-AR-and-VR-development-services-Hardware.svg" alt="" />
                     <h1>Hardware</h1>
                     <ul>

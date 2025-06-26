@@ -12,7 +12,7 @@ function SolutionsSection({ title, p1, p2, p3 }) {
       </div>
       <div className="aisolutions-container">
         {/* Left side - Content */}
-        <div className="aisolutions-content">
+        <div className="aisolutions-content animate-on-scroll" data-direction="left" data-delay="0.2">
          
           
           <div className="aisolutions-text">
@@ -35,7 +35,7 @@ function SolutionsSection({ title, p1, p2, p3 }) {
         </div>
         
         {/* Right side - Visual elements */}
-        <div className="aisolutions-visual">
+        <div className="aisolutions-visual animate-on-scroll" data-direction="right" data-delay="0.2">
           <div className="aisolutions-art-container">
             {/* Abstract geometric shapes */}
             <svg className="aisolutions-bg-art" viewBox="0 0 400 400" fill="none">

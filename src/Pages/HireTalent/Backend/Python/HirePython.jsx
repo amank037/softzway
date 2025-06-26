@@ -216,9 +216,7 @@ function HirePython() {
                 description="Hire Python backend developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our Python Backend Developers"
-            />
+            
             <Cta />
             <HireTable2
                 title="Hire Dedicated Python Backend Developers to Empower your Project"

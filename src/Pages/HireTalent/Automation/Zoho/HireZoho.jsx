@@ -203,6 +203,7 @@ function HireZoho() {
             <HireLanding
                 title="Hire Zoho Developers"
                 desc="Unlock the power of Zoho with our expert development services. From custom CRM solutions to seamless integrations, we deliver high-quality Zoho applications that drive business growth and operational efficiency."
+                bg="/hire/zoho.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Zoho Development Team"
@@ -215,9 +216,7 @@ function HireZoho() {
                 description="Hire Zoho developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our Zoho Developers"
-            />
+            
             <Cta />
             <HireTable2
                 title="Hire Dedicated Zoho Developers to Empower your Project"

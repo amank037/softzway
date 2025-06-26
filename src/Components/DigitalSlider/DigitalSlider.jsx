@@ -109,7 +109,7 @@ function DigitalSlider() {
                         <span className="text-green">Millions</span> of Businesses
                         </h1>
                         <div className="home-digital-content">
-                            <div className="home-digital-list">
+                            <div className="home-digital-list animate-on-scroll" data-direction="left" data-delay="0.2">
                                 {digitalSlideItems.map((item, index) => (
                                 <div
                                     className={`home-digital-list-item ${
@@ -129,7 +129,7 @@ function DigitalSlider() {
                                 ))}
                             </div>
 
-                            <div className="home-digital-slider">
+                            <div className="home-digital-slider animate-on-scroll" data-direction="right" data-delay="0.2">
                                 <Swiper
                                 modules={[Pagination]}
                                 pagination={{

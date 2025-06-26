@@ -216,9 +216,7 @@ function HirePHP() {
                 description="Hire PHP backend developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our PHP Backend Developers"
-            />
+            
             <Cta />
             <HireTable2
                 title="Hire Dedicated PHP Backend Developers to Empower your Project"

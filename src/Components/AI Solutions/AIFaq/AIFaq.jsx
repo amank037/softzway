@@ -5,14 +5,14 @@ import './AIFaq.css'
 
 
 function AIFaq({ aiFaqItems }) {
-    const [openIndex, setOpenIndex] = useState(0);
+    const [openIndex, setOpenIndex] = useState(-1);
     return (
         <div className='aifaq-div'>
             <div className="aifaq-container">
                 <Title title="Frequently Asked Questions"/>
                 <div className='aifaq-accordion'>
                     {aiFaqItems.map((caseItem, idx) => (
-                        <div className={`aifaq-panel${openIndex === idx ? ' open' : ''}`} key={caseItem.title}>
+                        <div className={`aifaq-panel${openIndex === idx ? ' open' : ''} animate-on-scroll`} data-direction="right" data-delay={idx*0.1} key={caseItem.title}>
                             <div
                                 className={`aifaq-panel-title${openIndex === idx ? ' open' : ''}`}
                                 onClick={() => setOpenIndex(openIndex === idx ? -1 : idx)}

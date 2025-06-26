@@ -43,7 +43,7 @@ function IndustryGrid() {
             <Title title="Serving a Range of Industries With Market Relevant Capabilities" />
             <div className='idg-grid'>
                 {gridItems.map((item, index) => (
-                    <div key={index} className='idg-grid-item'>
+                    <div key={index} className='idg-grid-item animate-on-scroll' data-direction="bottom" data-delay={index*0.1}>
                         <h2>{item.title}</h2>
                         <img src={item.image} alt="" />
                     </div>

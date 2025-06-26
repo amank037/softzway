@@ -203,6 +203,7 @@ function HireDevOps() {
             <HireLanding
                 title="Hire DevOps Developers"
                 desc="Accelerate your software delivery and infrastructure automation with our expert DevOps development services. From CI/CD pipelines to cloud migration, we deliver robust DevOps solutions that drive business growth and operational efficiency."
+                bg="/hire/devops.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our DevOps Development Team"
@@ -215,9 +216,7 @@ function HireDevOps() {
                 description="Hire DevOps developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our DevOps Developers"
-            />
+            
             <Cta />
             <HireTable2
                 title="Hire Dedicated DevOps Developers to Empower your Project"

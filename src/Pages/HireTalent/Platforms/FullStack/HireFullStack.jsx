@@ -203,6 +203,7 @@ function HireFullStack() {
             <HireLanding
                 title="Hire Full Stack Developers"
                 desc="Unlock the power of end-to-end development with our expert full stack development services. From concept to launch, we deliver high-quality, user-friendly applications that drive business growth and operational efficiency."
+                bg="/hire/full.png"
             />
             <AIDevelopment
                 aidevTitle="Specialization Of Our Full Stack Development Team"
@@ -214,9 +215,6 @@ function HireFullStack() {
                 title="Hire Dedicated Full Stack Developers to Empower your Project"
                 description="Hire full stack developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
-            />
-            <HireStack
-                title="Tech Competence of Our Full Stack Developers"
             />
             <Cta />
             <HireTable2

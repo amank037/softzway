@@ -216,9 +216,6 @@ function HireKotlin() {
                 description="Hire Kotlin app developers to meet your business needs by leveraging our technical elegance."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our Kotlin App Developers"
-            />
             <Cta />
             <HireTable2
                 title="Hire Dedicated Kotlin App Developers to Empower your Project"

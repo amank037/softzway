@@ -216,9 +216,6 @@ function HireIonic() {
                 description="Hire Ionic app developers to meet your business needs by leveraging our technical elegance."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our Ionic App Developers"
-            />
             <Cta />
             <HireTable2
                 title="Hire Dedicated Ionic App Developers to Empower your Project"

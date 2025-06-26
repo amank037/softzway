@@ -215,9 +215,6 @@ function HireMicroservices() {
                 description="Hire microservices software developers to meet your business needs by leveraging our technical excellence."
                 tableData={tableData}
             />
-            <HireStack
-                title="Tech Competence of Our Microservices Software Developers"
-            />
             <Cta />
             <HireTable2
                 title="Hire Dedicated Microservices Software Developers to Empower your Project"

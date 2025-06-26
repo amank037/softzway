@@ -7,7 +7,7 @@ function BlockchainFrameworks() {
             <div className="bcf-container">
                 <Title title="NFT Technology Stack We Use"/>
             {/* Blockchain frameworks and networks */}
-                <div>
+                <div className=" animate-on-scroll" data-direction="left" data-delay="0.2">
                     <div className="bcf-section-title">Blockchain frameworks and networks</div>
                     <div className="bcf-tech-list">
                     <div className="bcf-tech-item"><img src="https://www.scnsoft.com/technologies-logos/blockchain/ethereum.svg" alt="Ethereum" /></div>
@@ -31,7 +31,7 @@ function BlockchainFrameworks() {
                     </div>
                 </div>
                 {/* Blockchain cloud services & Smart contract programming languages side by side */}
-                <div className="bcf-row">
+                <div className="bcf-row animate-on-scroll" data-direction="right" data-delay="0.2">
                     <div className="bcf-col">
                     <div className="bcf-col-title">Blockchain cloud services</div>
                     <div className="bcf-tech-list">
@@ -40,7 +40,7 @@ function BlockchainFrameworks() {
                         <div className="bcf-tech-item"><img src="https://www.scnsoft.com/technologies-logos/blockchain/ibm-blockchain-logo.svg" alt="IBM Blockchain" /></div>
                     </div>
                     </div>
-                    <div className="bcf-col">
+                    <div className="bcf-col animate-on-scroll" data-direction="left" data-delay="0.2">
                     <div className="bcf-col-title">Smart contract programming languages</div>
                     <div className="bcf-tech-list">
                         <div className="bcf-tech-item"><img src="https://www.scnsoft.com/technologies-logos/smart-contract/solidity.svg" alt="Solidity" /></div>
@@ -52,7 +52,7 @@ function BlockchainFrameworks() {
                 </div>
                 {/* Front-end programming languages: Languages & JS frameworks side by side */}
                 <div className="bcf-section-title">Front-end programming languages</div>
-                <div className="bcf-row">
+                <div className="bcf-row animate-on-scroll" data-direction="right" data-delay="0.2">
                     <div className="bcf-col">
                     <div className="bcf-col-title">Languages</div>
                     <div className="bcf-tech-list">
@@ -76,7 +76,7 @@ function BlockchainFrameworks() {
                 </div>
                 {/* DevOps: Containerization & Automation side by side */}
                 <div className="bcf-section-title">DevOps</div>
-                <div className="bcf-row">
+                <div className="bcf-row animate-on-scroll" data-direction="left" data-delay="0.2">
                     <div className="bcf-col">
                     <div className="bcf-col-title">Containerization</div>
                     <div className="bcf-tech-list">

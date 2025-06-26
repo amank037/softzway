@@ -31,7 +31,7 @@ function Tabs() {
     return (
         <div className='tabs-div'>
             <Title title="Our Focus Strategies" />
-            <div className="tabs-container">
+            <div className="tabs-container animate-on-scroll" data-direction="right" data-delay="0.2">
                 <div className="tabs-list">
                     {collaborationModels.map((item, idx) => (
                     <button
