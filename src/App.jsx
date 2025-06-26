@@ -96,7 +96,7 @@ function App() {
   useEffect(() => {
     const lenis = new Lenis({
       autoRaf: true,
-      duration: 1.5
+      duration: 1.3
     });
 
     // lenis.on('scroll', (e) => {

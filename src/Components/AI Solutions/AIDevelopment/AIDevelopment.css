@@ -1,11 +1,11 @@
 .aidev-div {
     width: 100%;
-    padding: 48px 0 56px 0;
+    padding: 40px 20px;
     /* background: linear-gradient(120deg, #e0f7fa 0%, #f8fafc 100%); */
 }
 
 .aidev-container {
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -78,7 +78,7 @@
 }
 
 .aidev-grid-title h3 {
-    font-size: 1.18rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: #000;
     letter-spacing: 0.01em;

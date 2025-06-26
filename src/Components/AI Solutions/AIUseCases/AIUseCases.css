@@ -21,6 +21,10 @@
     box-shadow: 0 2px 16px rgba(0,0,0,0.4);
     margin-top: 32px;
     overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.aiuse-tab-layout:hover{
+    box-shadow: 0 2px 16px rgba(0, 122, 61, 0.4);
 }
 
 .aiuse-tab-list {

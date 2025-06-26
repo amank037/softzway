@@ -24,7 +24,7 @@
 }
 
 .home-slide-container{
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -126,7 +126,7 @@
     padding: 40px 20px;
 }
 .home-strat-container{
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -185,7 +185,7 @@
     background-color: #F7F7F7;
 }
 .home-future-container{
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -274,7 +274,7 @@
     padding: 40px 20px;
 }
 .home-brands-container{
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -327,7 +327,7 @@
 }
 
 .home-digital-container {
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -351,7 +351,7 @@
     background-color: var(--medium-teal);
 }
 .home-cta-container{
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -431,7 +431,7 @@
     position: relative;
 }
 .home-tech-container {
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -588,7 +588,7 @@
     background-color: #f7f7f7;
 }
 .home-trans-container {
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -667,7 +667,7 @@
     background-color: #000;
 }
 .home-cta2-container{
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -720,7 +720,7 @@
     background-color: #f7f7f7;
 }
 .home-insight-container{
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     display: flex;
