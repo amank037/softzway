@@ -243,12 +243,18 @@
     width: 20px;
     height: 20px;
     accent-color: var(--light-green);
+    cursor:pointer;
 }
 
 .contact-form-button p {
     margin: 0;
     color: var(--primary-grey);
     font-size: 0.95rem;
+}
+
+.contact-nda{
+    display: flex;
+    gap: 10px;
 }
 
 @media screen and (max-width: 1200px) {
