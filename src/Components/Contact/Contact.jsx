@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Contact.css'
 import Leftbutton from '../reusables/Leftbutton/Leftbutton';
+import ContactForm from '../ContactForm/ContactForm';
 
 function Contact() {
     const [captcha, setCaptcha] = useState({ num1: 0, num2: 0, answer: 0 });
@@ -50,7 +51,7 @@ function Contact() {
                         </div>
                     </div>
 
-                    <div className='contact-form'>
+                    {/* <div className='contact-form'>
                         <h3>Get a Consultation</h3>
                         <div className='contact-form-info'>
                             <input type="text" placeholder='Name*' name='name'/>
@@ -91,7 +92,8 @@ function Contact() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    <ContactForm/>
                 </div>
             </div>
         </div>

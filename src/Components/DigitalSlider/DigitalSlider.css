@@ -2,7 +2,7 @@
     display: flex;
     gap: 40px;
     align-items: flex-start;
-
+    overflow-x: hidden;
 }
 
 .home-digital-list {

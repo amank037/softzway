@@ -101,8 +101,8 @@
 
 }
 
-.home-future2-slider-button button {
-  background: var(--medium-teal);
+.home-future2-slider-button a {
+  background: var(--light-green);
   border: none;
   border-radius: 2rem;
   width: 100px;
@@ -116,8 +116,8 @@
   -webkit-backdrop-filter: blur(10px);
 }
 
-.home-future2-slider-button button:hover {
-  background: rgba(255, 255, 255, 0.3);
+.home-future2-slider-button a:hover {
+  background: var(--light-green);
   transform: scale(1.1);
 }
 

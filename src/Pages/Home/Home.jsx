@@ -9,6 +9,9 @@ import FutureSlider from "../../Components/FutureSlider/FutureSlider";
 import Testimonial from "../../Components/Testimonial/Testimonial";
 import Marquee from "../../Components/Marquee/Marquee";
 import Contact from "../../Components/Contact/Contact";
+import Leftbutton from "../../Components/reusables/Leftbutton/Leftbutton";
+import Rightbutton from "../../Components/reusables/Rightbutton/Rightbutton"
+import Cta from "../../Components/Cta/Cta"
 
 const slideItems = [
     {
@@ -314,7 +317,7 @@ function Home() {
                                             <h1>{item.title2}</h1>
                                         </div>
                                         <p>{item.description}</p>
-                                        <div><button>{item.button}</button></div>
+                                        <div><Leftbutton leftbtn={item.button}/></div>
                                     </div>
                                 </div>
                             </div>
@@ -462,7 +465,7 @@ function Home() {
 
             <DigitalSlider />
 
-            <div className="home-cta">
+            {/* <div className="home-cta">
                 <div className="home-cta-container">
                     <div className="home-cta-content">
                         <h1>Building Next-Gen Digital Solutions for Modern Business</h1>
@@ -475,7 +478,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Cta />
 
             <div className="home-tech">
                 <div className="home-tech-container">
@@ -555,7 +559,7 @@ function Home() {
                         <p>Build custom-made applications and solutions that enable your business to embrace innovation, drive growth, and achieve unparalleled success.</p>
                     </div>
                     <div className="home-cta2-button">
-                        <button>Lets Talk</button>
+                        <Leftbutton leftbtn="Lets Talk"/>
                     </div>
                 </div>
             </div>

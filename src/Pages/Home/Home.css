@@ -50,21 +50,6 @@
     text-align: left;
 }
 
-.home-slide-container button {
-    padding: 15px 30px;
-    font-size: 1rem;
-    font-weight: 600;
-    background-color: var(--medium-teal);
-    color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.home-slide-container button:hover {
-    background-color: var(--primary-orange);
-}
 .custom-pagination {
     position: absolute;
     bottom: 50px !important;
@@ -183,6 +168,7 @@
     width: 100%;
     padding: 40px 20px;
     background-color: #F7F7F7;
+    overflow-x: hidden;
 }
 .home-future-container{
     max-width: 1200px;
@@ -429,6 +415,7 @@
     padding: 60px 20px 160px;
     background-color: #f7f7f7;
     position: relative;
+    overflow-x: hidden;
 }
 .home-tech-container {
     max-width: 1200px;
@@ -658,6 +645,14 @@
     .home-trans-grid-item h3{
         font-size: 1rem;
     }
+    .home-trans-grid{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media screen and (max-width: 550px){
+    .home-trans-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 
@@ -696,21 +691,7 @@
     font-weight: 500;
     text-align: center;
 }
-.home-cta2-button button{
-    background-color: #fff;
-    border: none;
-    font-size: 1.25rem;
-    padding: 15px 30px;
-    border-radius: 2rem;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border: 2px solid #000;
-}
-.home-cta2-button button:hover{
-    background-color: #000;
-    border: 2px solid #fff;
-    color: #fff;
-}
+
 
 
 
@@ -776,4 +757,12 @@
 }
 .home-insight-grid-item:hover p{
     color: var(--medium-teal);
+}
+@media screen and (max-width: 768px){
+    .home-insight-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 20px;
+    }
 }

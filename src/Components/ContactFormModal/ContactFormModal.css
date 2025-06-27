@@ -1,0 +1,47 @@
+.contact-modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(7px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInModalBg 0.3s;
+    padding: 0 10px;
+}
+@keyframes fadeInModalBg {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.contact-modal-content {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(30,58,58,0.18);
+    padding: 0;
+    max-width: 600px;
+    width: 95vw;
+    position: relative;
+    animation: popInModal 0.3s cubic-bezier(.4,0,.2,1);
+}
+@keyframes popInModal {
+    from { opacity: 0; transform: scale(0.92);}
+    to { opacity: 1; transform: scale(1);}
+}
+.contact-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #1e3a3a;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.2s;
+}
+.contact-modal-close:hover {
+    color: var(--light-green);
+}

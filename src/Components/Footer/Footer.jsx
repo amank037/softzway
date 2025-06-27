@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 function Footer() {
@@ -49,23 +50,21 @@ function Footer() {
                     </div>
 
                     <div className='footer-top-right'>
-                        <div>
+                        
                             <h3>KEY EXPERTISE</h3>
-                            <p>Mobile App Development  </p>
-                            <p>Artificial Intelligence</p>
-                            <p>Blockchain Development</p>
-                            <p>Startup App Development</p>
-                            <p>Dedicated Developers</p>
-                            <p>Metaverse Development</p>
-                        </div>
+                            <Link to="/android-app-development">Mobile App Development  </Link>
+                            <Link to="/generative-ai-application-development">Artificial Intelligence</Link>
+                            <Link to="/crypto-exchange-development">Blockchain Development</Link>
+                            <Link to="/product-development">Startup App Development</Link>
+                            <Link to="/ar-vr-development">Metaverse Development</Link>
+                        
 
                         <div>
-                            <h3>RESOURCES</h3>
-                            <div>
-                                <p>Sitemap</p>
-                                <p>|</p>
-                                <p>Contact Us</p>
-                            </div>
+                            
+                                <h1>
+                                    <Link to="/contact-us">Contact Us</Link>
+                                </h1>
+                            
                         </div>
                     </div>
                 </div>

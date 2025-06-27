@@ -6,6 +6,7 @@
     z-index: 2;
     overflow: hidden;
     padding: 15px 30px;
+    cursor: pointer;
 }
 
 .rightbtn-div span{

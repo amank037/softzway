@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Leftbutton from '../../Components/reusables/Leftbutton/Leftbutton';
 import ContactUsBackgroundSVG from './ContactUsBackgroundSVG';
 import Title from '../../Components/reusables/title/Title'
+import ContactForm from '../../Components/ContactForm/ContactForm';
 
 function ContactUs() {
     const [captcha, setCaptcha] = useState({ num1: 0, num2: 0, answer: 0 });
@@ -54,7 +55,7 @@ function ContactUs() {
                         </div> */}
                     </div>
 
-                    <div className='contact-form'>
+                    {/* <div className='contact-form'>
                         <h3>Get a Consultation</h3>
                         <div className='contact-form-info'>
                             <input type="text" placeholder='Name*' name='name'/>
@@ -91,7 +92,8 @@ function ContactUs() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    <ContactForm />
                 </div>
 
                 
