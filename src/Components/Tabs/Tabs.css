@@ -1,6 +1,6 @@
 .tabs-div{
     padding: 40px 0;
-
+    overflow-x: hidden;
 }
 .tabs-container {
   display: flex;
@@ -80,6 +80,8 @@
     border-left: none;
     border-bottom: 4px solid transparent;
     font-size: 14px;
+    width: 100%;
+    text-align: center;
   }
   .tabs-list-item.active {
     border-left: none;

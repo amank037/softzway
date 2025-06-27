@@ -287,24 +287,39 @@ const navItems = [
                                     <div className="header-nav-dropdown-left">
                                     {item.dropdown[0]?.submenu
                                         ? item.dropdown.map((sub, subIndex) => (
-                                            <div
-                                            key={subIndex}
-                                            className={`header-nav-dropdown-item header-nav-dropdown-parent${
-                                                activeSubDropdown === subIndex ? ' open' : ''
-                                                } ${
-                                                sub.submenu && sub.submenu.some(menuItem => location.pathname === menuItem.to)
-                                                    ? ' current-route'
-                                                    : ''
-                                            }`}
-                                            onClick={e => {
-                                                e.stopPropagation();
-                                                handleSubDropdownToggle(subIndex);
-                                            }}
-                                            >
-                                                <span>
-                                                    {sub.title}
-                                                    <span style={{ marginLeft: 8, fontSize: 12 }} className='header-nav-sub-arrow'>▸</span>
-                                                </span>
+                                            <div key={subIndex}>
+                                                <div
+                                                
+                                                className={`header-nav-dropdown-item header-nav-dropdown-parent${
+                                                    activeSubDropdown === subIndex ? ' open' : ''
+                                                    } ${
+                                                    sub.submenu && sub.submenu.some(menuItem => location.pathname === menuItem.to)
+                                                        ? ' current-route'
+                                                        : ''
+                                                }`}
+                                                onClick={e => {
+                                                    e.stopPropagation();
+                                                    handleSubDropdownToggle(subIndex);
+                                                }}
+                                                >
+                                                    <span>
+                                                        {sub.title}
+                                                        <span style={{ marginLeft: 8, fontSize: 12 }} className='header-nav-sub-arrow'>▸</span>
+                                                    </span>
+                                                </div>
+                                                {isMobile && activeSubDropdown === subIndex && (
+                                                    <div className="header-nav-dropdown-middle" style={{ background: '#fafafa' }}>
+                                                    <p className='header-nav-dropdown-middle-title'>{sub.title}</p>
+                                                    {sub.submenu?.map((menuItem, menuIndex) => (
+                                                        <Link
+                                                        to={menuItem.to}
+                                                        key={menuIndex}
+                                                        className={`header-nav-dropdown-item${location.pathname === menuItem.to ? ' active' : ''}`}>
+                                                        {menuItem.name}
+                                                        </Link>
+                                                    ))}
+                                                    </div>
+                                                )}
                                             </div>
                                         ))
                                         : item.dropdown.map((subItem, subIndex) => (
@@ -318,19 +333,18 @@ const navItems = [
                                     }
                                     </div>
                                     {/* MIDDLE: Submenu items (for dropdown-extra only) */}
-                                    {item.dropdown[0]?.submenu && (
-                
-                                    <div className="header-nav-dropdown-middle">
-                                        <p className='header-nav-dropdown-middle-title'>{item.dropdown[activeSubDropdown ?? 0]?.title}</p>
-                                        {item.dropdown[activeSubDropdown || 0]?.submenu?.map((menuItem, menuIndex) => (
-                                        <Link
-                                            to={menuItem.to}
-                                            key={menuIndex}
-                                            className={`header-nav-dropdown-item${location.pathname === menuItem.to ? ' active' : ''}`}>
-                                            {menuItem.name}
-                                        </Link>
-                                        ))}
-                                    </div>
+                                    {!isMobile && item.dropdown[0]?.submenu && (
+                                        <div className="header-nav-dropdown-middle">
+                                            <p className='header-nav-dropdown-middle-title'>{item.dropdown[activeSubDropdown ?? 0]?.title}</p>
+                                            {item.dropdown[activeSubDropdown || 0]?.submenu?.map((menuItem, menuIndex) => (
+                                            <Link
+                                                to={menuItem.to}
+                                                key={menuIndex}
+                                                className={`header-nav-dropdown-item${location.pathname === menuItem.to ? ' active' : ''}`}>
+                                                {menuItem.name}
+                                            </Link>
+                                            ))}
+                                        </div>
                                     )}
                                     {/* RIGHT: CTA Box */}
                                     <div className="header-nav-dropdown-cta">
@@ -370,7 +384,6 @@ const navItems = [
                                             <button className="header-nav-dropdown-cta-btn"><Link to="/contact-us">Contact Us</Link></button>
                                         </div>
                                     </div>
-                
                                 </div>
                                 )}
                             </div>

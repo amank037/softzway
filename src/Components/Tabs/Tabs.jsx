@@ -31,8 +31,8 @@ function Tabs() {
     return (
         <div className='tabs-div'>
             <Title title="Our Focus Strategies" />
-            <div className="tabs-container animate-on-scroll" data-direction="right" data-delay="0.2">
-                <div className="tabs-list">
+            <div className="tabs-container">
+                <div className="tabs-list animate-on-scroll" data-direction="left" data-delay="0.2">
                     {collaborationModels.map((item, idx) => (
                     <button
                         key={item.title}
@@ -43,7 +43,7 @@ function Tabs() {
                     </button>
                     ))}
                 </div>
-                <div className="tabs-content">
+                <div className="tabs-content animate-on-scroll" data-direction="right" data-delay="0.2">
                     <h3 className="tabs-content-title">{collaborationModels[activeIndex].title}</h3>
                     <p className="tabs-content-desc">{collaborationModels[activeIndex].description}</p>
                     <p className="tabs-content-desc">{collaborationModels[activeIndex].description2}</p>
