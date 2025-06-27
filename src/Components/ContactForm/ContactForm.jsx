@@ -41,7 +41,16 @@ function ContactForm() {
                 <label htmlFor="phone">Please enter your phone no.</label>
             </div>
             <div className='contact-form-subject'>
-                <input type="text" placeholder='Subject*' name='subject'/>
+                <select name="subject" defaultValue="" required>
+                    <option value="" disabled>Select a Service*</option>
+                    <option value="AI Solutions">AI Solutions</option>
+                    <option value="Mobile App Development">Mobile App Development</option>
+                    <option value="Web App Development">Web App Development</option>
+                    <option value="Software Development">Software Development</option>
+                    <option value="Blockchain Development">Blockchain Development</option>
+                    <option value="Metaverse Development">Metaverse Development</option>
+                    <option value="Hire Talent">Hire Talent</option>
+                </select>
                 <label htmlFor="subject">Please enter subject.</label>
             </div>
             <div className='contact-form-msg'>

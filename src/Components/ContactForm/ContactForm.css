@@ -48,20 +48,21 @@
     opacity: 0.8;
 }
 
-.contact-form-subject input{
+.contact-form-subject select {
     width: 100%;
     padding: 10px 15px;
     border: 1px solid #00000095;
     font-size: 1rem;
-    transition: all 0.3s ease;
     border-radius: 5px;
     margin-bottom: 20px;
+    background: #fff;
+    transition: all 0.3s ease;
 }
-.contact-form-subject input:focus {
+
+.contact-form-subject select:focus {
     outline: none;
     border-color: var(--light-green);
     background: white;
-    transform: translateY(-1px);
     box-shadow: 0 5px 15px var(--gradient-light-green);
 }
 .contact-form-subject label{
