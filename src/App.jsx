@@ -91,6 +91,7 @@ import HireDevOps from './Pages/HireTalent/DevOps/HireDevOps.jsx'
 import HireCloud from './Pages/HireTalent/Cloud/HireCloud.jsx'
 import Contact from './Components/Contact/Contact.jsx'
 import ContactUs from './Pages/ContactUs/ContactUs.jsx'
+import ChatOverlay from './Components/ChatOverlay/ChatOverlay.jsx'
 
 
 function App() {
@@ -210,6 +211,7 @@ function App() {
 
           </Routes>
         </div>
+        <ChatOverlay/>
         <Footer />
       </div>
 
